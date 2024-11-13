@@ -62,7 +62,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Win rate complex deal - Asana goal</name>

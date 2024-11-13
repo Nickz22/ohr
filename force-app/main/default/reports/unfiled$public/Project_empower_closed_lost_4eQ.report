@@ -39,7 +39,7 @@
     </columns>
     <filter>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason__c</column>
+            <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>

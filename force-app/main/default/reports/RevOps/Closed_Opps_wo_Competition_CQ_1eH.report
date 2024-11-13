@@ -50,7 +50,7 @@
             <value>New Business</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason_Grouping__c</column>
+            <column>Opportunity.Lost_Reason_Grouping_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>

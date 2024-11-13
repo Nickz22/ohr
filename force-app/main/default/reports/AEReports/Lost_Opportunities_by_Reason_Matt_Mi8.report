@@ -41,7 +41,7 @@
             <value>Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason__c</column>
+            <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
@@ -55,7 +55,7 @@
             <value>amer</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason__c</column>
+            <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
@@ -70,7 +70,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Lost Opportunities by Reason (AMER)</name>

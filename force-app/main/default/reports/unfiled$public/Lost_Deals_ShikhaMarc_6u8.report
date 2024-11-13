@@ -11,7 +11,7 @@
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Opportunity.Lost_Reason__c</groupingColumn>
+        <groupingColumn>Opportunity.Lost_Reason_new__c</groupingColumn>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -37,7 +37,7 @@
         <field>OPPORUNITY.NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason_Grouping__c</field>
+        <field>Opportunity.Lost_Reason_Grouping_new__c</field>
     </columns>
     <columns>
         <field>Opportunity.Lost_Reason_Details__c</field>
@@ -85,7 +85,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

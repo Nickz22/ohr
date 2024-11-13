@@ -66,7 +66,7 @@
         <field>Opportunity.Hot_handoff__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <filter>
         <booleanFilter>((1 AND 2 AND 3 AND 6) OR (1 AND 2 AND 3 AND 4 AND 5)) AND 7</booleanFilter>

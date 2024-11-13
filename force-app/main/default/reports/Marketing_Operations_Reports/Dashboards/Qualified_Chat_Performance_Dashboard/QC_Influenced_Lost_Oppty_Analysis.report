@@ -15,7 +15,7 @@
         <groupingColumn>OPP.CREATED_DATE</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity.Lost_Reason__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Opportunity.Lost_Reason_new__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -95,7 +95,7 @@ Create Date = This Month, Last 5 Months</description>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>[QC] Influenced Lost Oppty Analysis</name>

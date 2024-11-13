@@ -4,7 +4,7 @@
         <field>ACCOUNT_ID</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <columns>
         <field>FISCAL_QUARTER</field>

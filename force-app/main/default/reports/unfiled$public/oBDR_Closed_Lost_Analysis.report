@@ -12,7 +12,7 @@
         <chartType>Donut</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>false</expandOthers>
-        <groupingColumn>Opportunity.Lost_Reason__c</groupingColumn>
+        <groupingColumn>Opportunity.Lost_Reason_new__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>false</showAxisLabels>
@@ -71,7 +71,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>oBDR Closed-Lost Analysis</name>

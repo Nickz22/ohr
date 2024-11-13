@@ -50,7 +50,7 @@
         <field>Opportunity.Deal_Date__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <filter>
         <booleanFilter>1 AND 2 AND 3</booleanFilter>

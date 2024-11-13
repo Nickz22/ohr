@@ -61,7 +61,7 @@
             <value>,Interest,Demo,Customer Eval,Negotiation,Verbal Commit,Closed Won,Closed Lost,Terminated</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason__c</column>
+            <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>

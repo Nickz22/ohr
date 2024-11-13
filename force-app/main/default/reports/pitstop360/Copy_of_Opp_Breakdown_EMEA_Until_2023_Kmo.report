@@ -56,7 +56,7 @@
         <field>Account.Primary_Campaign__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <columns>
         <field>Opportunity.Lost_Reason_Context__c</field>
@@ -130,7 +130,7 @@
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Opportunity.Lost_Reason__c</sortColumn>
+    <sortColumn>Opportunity.Lost_Reason_new__c</sortColumn>
     <sortOrder>Asc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Opportunity.Closed_Lost_Date__c</dateColumn>

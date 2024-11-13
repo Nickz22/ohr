@@ -14,7 +14,7 @@
         <groupingColumn>CREATED</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>Opportunity.Lost_Reason__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Opportunity.Lost_Reason_new__c</secondaryGroupingColumn>
         <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -74,7 +74,7 @@
             <value>Closed Lost</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason__c</column>
+            <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
@@ -110,7 +110,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Opps qualified by BDRs, lost reasons</name>

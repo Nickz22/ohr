@@ -10,7 +10,7 @@
         <field>Opportunity.Lost_to_Competitor_Name__c</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <columns>
         <field>CLOSE_DATE</field>

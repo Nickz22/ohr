@@ -56,7 +56,7 @@
         <field>LEAD_SOURCE</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <description>new reports using deal date and created by profile</description>
     <filter>
@@ -75,7 +75,7 @@
             <value>AMER AE,AMERICAS AE</value>
         </criteriaItems>
         <criteriaItems>
-            <column>Opportunity.Lost_Reason__c</column>
+            <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>excludes</operator>

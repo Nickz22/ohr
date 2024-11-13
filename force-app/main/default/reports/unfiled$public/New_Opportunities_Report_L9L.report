@@ -28,7 +28,7 @@
         <field>TYPE</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <columns>
         <field>Opportunity.Lost_Reason_Details__c</field>
@@ -109,7 +109,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason_Grouping__c</field>
+        <field>Opportunity.Lost_Reason_Grouping_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Kellie BDR closed lost opps</name>

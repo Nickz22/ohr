@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Report xmlns="http://soap.sforce.com/2006/04/metadata"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <block>
         <blockInfo>
             <blockId>B1</blockId>
@@ -26,13 +27,13 @@
             <field>Risk_and_Blocker__c.Potential_cArr_Loss__c</field>
         </columns>
         <columns>
-            <field>FK_$Opportunity.Lost_Reason__c</field>
+            <field>FK_$Opportunity.Lost_Reason_new__c</field>
         </columns>
         <columns>
             <field>FK_$Opportunity.Lost_Reason_Details__c</field>
         </columns>
         <columns>
-            <field>FK_$Opportunity.Lost_Reason_Grouping__c</field>
+            <field>FK_$Opportunity.Lost_Reason_Grouping_new__c</field>
         </columns>
         <filter>
             <criteriaItems>
@@ -59,7 +60,7 @@
         </timeFrameFilter>
     </block>
     <blockInfo>
-        <blockId xsi:nil="true"/>
+        <blockId xsi:nil="true" />
         <joinTable>x</joinTable>
     </blockInfo>
     <description>To view R&amp;Bs by Category and Sub-category</description>

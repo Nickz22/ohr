@@ -101,7 +101,7 @@
         <field>STAGE_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>

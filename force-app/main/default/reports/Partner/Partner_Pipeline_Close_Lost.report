@@ -117,12 +117,12 @@
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason_Grouping__c</field>
+        <field>Opportunity.Lost_Reason_Grouping_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Partner Pipeline Close Lost</name>

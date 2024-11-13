@@ -14,7 +14,7 @@
         <groupingColumn>CREATED_DATE</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>Opportunity.Lost_Reason__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>Opportunity.Lost_Reason_new__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -91,7 +91,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Opportunity.Lost_Reason__c</field>
+        <field>Opportunity.Lost_Reason_new__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Lost Deal Reason Chart</name>
