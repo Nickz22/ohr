@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_16329294</developerName>
+        <masterLabel>Industry Bad (-14)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Industry_Cognism__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Staffing and Recruiting</sourceValue>
+            </sourceValues>
+            <value>Industry Bad (-14)</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_20954835</developerName>
+        <masterLabel>Industry Bad (-8)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Industry_Cognism__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Retail</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Health Care Providers &amp; Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Education Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hotels, Restaurants &amp; Leisure</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Construction and Engineering</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Manufacturing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Banking</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Motor Vehicle Manufacturing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Retailing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Government Administration</sourceValue>
+            </sourceValues>
+            <value>Industry Bad -8</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_80032268</developerName>
+        <masterLabel>Industry Best (+6)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Industry_Cognism__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Computer Games</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Software Development</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technology, Information and Internet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Computer Software</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internet Publishing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>E-Learning Providers</sourceValue>
+            </sourceValues>
+            <value>Industry Best (+6)</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_44431554</developerName>
+        <masterLabel>Industry Good (+4)</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Industry_Cognism__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>IT Services and IT Consulting</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Financial Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Technology</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Information and Internet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Internet Advertising Services</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Computer and Network Security</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <value>Industry Good (+4)</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
+        <field>Account.Talk_Tracks__c</field>
+    </columns>
+    <columns>
+        <field>Account.Dev_Jobs__c</field>
+    </columns>
+    <columns>
+        <field>Account.Countries__c</field>
+    </columns>
+    <columns>
+        <field>Account.Open_Jobs__c</field>
+    </columns>
+    <columns>
+        <field>Account.Last_Funding_Round__c</field>
+    </columns>
+    <columns>
+        <field>Account.Founded_Year__c</field>
+    </columns>
+    <columns>
+        <field>Account.Industry_Cognism__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_20954835</field>
+    </columns>
+    <columns>
+        <field>BucketField_16329294</field>
+    </columns>
+    <columns>
+        <field>BucketField_80032268</field>
+    </columns>
+    <columns>
+        <field>BucketField_44431554</field>
+    </columns>
+    <columns>
+        <field>Account.Remote_Roles__c</field>
+    </columns>
+    <columns>
+        <field>Account.Closed_Lost_Opps__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Talk_Tracks__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>remote friendly companies</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Remote Friendly Companies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

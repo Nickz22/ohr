@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GP_Country_Required</fullName>
+    <active>true</active>
+    <description>Requires the user to choose countries where GP is needed by the prospect.</description>
+    <errorConditionFormula>AND(
+   Global_Payroll_Products__c &gt; 0, 
+   GP_Countries_formula__c = TRUE
+)</errorConditionFormula>
+    <errorDisplayField>Global_Payroll_Countries__c</errorDisplayField>
+    <errorMessage>Please choose in which countries Global Payroll is needed in the [Global Payroll - Countries] field. Include all countries, even if not supported.</errorMessage>
+</ValidationRule>

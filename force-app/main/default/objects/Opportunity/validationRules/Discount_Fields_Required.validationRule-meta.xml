@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Fields_Required</fullName>
+    <active>true</active>
+    <description>Certain opp product fields are required when the stage changes to Verbal Commit.</description>
+    <errorConditionFormula>ISCHANGED(StageName)
+&amp;&amp;
+OR(
+    ISPICKVAL(StageName, &quot;Verbal Commit&quot;),
+    ISPICKVAL(StageName, &quot;Closed Won&quot;)
+)
+
+&amp;&amp;
+Products_with_Discount_Required__c != Products_With_Discount_Fields__c
+
+&amp;&amp;
+RecordType.DeveloperName &lt;&gt; &quot;Partner&quot;
+&amp;&amp;
+RecordType.DeveloperName &lt;&gt; &quot;Expansion_Upsell&quot;</errorConditionFormula>
+    <errorMessage>Please make sure that all opportunity products (other than Benefits Enrollment, Scale, and Contractor) have the following fields filled in: Discount Type, Discount Duration, Discount %, Billing Currency</errorMessage>
+</ValidationRule>

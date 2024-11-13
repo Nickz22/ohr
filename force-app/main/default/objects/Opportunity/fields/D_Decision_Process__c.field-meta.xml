@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_Decision_Process__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this to document our plan for getting all parties at the customer’s company to sign off on Oyster’s solution. Note people involved, processes required, and estimated timeline.</inlineHelpText>
+    <label>ZZZ_D - Decision Process</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

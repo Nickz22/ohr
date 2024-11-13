@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchasing_Criteria_1__c</fullName>
+    <description>Use to document the prospect&apos;s need</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe the criteria mentioned by the client as impactful of their purchasing decision.</inlineHelpText>
+    <label>Purchasing Criteria 1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>BPC_categories</valueSetName>
+    </valueSet>
+</CustomField>

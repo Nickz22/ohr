@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Contacted_Stage_Account_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ISBLANK(TEXT( Account.Region__c )),
+ISBLANK( Account.Website )
+)
+&amp;&amp;
+AND(
+RecordType.Name  = &apos;Partner&apos;,
+ISCHANGED( StageName ),
+ISPICKVAL( StageName,&quot;Contacted&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please ensure the following fields are populated on the Account to be able to move the stage to Contacted:
+[Region], [Website]</errorMessage>
+</ValidationRule>

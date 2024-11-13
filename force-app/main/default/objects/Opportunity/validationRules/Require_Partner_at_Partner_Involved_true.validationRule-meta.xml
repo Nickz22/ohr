@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Partner_at_Partner_Involved_true</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Was_a_Partner_Involved_in_Sales_Cycle__c, &quot;Yes&quot;),
+ISBLANK(Partner_strategic__c),
+ISBLANK(Partner__c))</errorConditionFormula>
+    <errorMessage>When &quot;Was a Partner Involved or leveraged?&quot; is &quot;Yes,&quot; Partner (Strategic) or Partner (Transactional) must have a value.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_Context_is_required</fullName>
+    <active>true</active>
+    <description>Lost Reason Context is required once opp is closed (only if Deal Date is filled in)</description>
+    <errorConditionFormula>AND(
+    IsClosed = True,
+    IsWon = FALSE,
+    ISCHANGED(StageName),
+    RecordType.DeveloperName &lt;&gt; &quot;Partner&quot;,
+    RecordType.DeveloperName &lt;&gt; &quot;Churn_Contraction_Risk&quot;,
+    RecordType.DeveloperName &lt;&gt; &quot;Expansion_Upsell&quot;,
+    RecordType.DeveloperName &lt;&gt; &quot;Organic_Growth&quot;,
+    RecordType.DeveloperName &lt;&gt; &quot;Renewal&quot;,
+    ISBLANK(Lost_Reason_Context__c),
+    NOT(ISBLANK(Deal_Date__c))
+)</errorConditionFormula>
+    <errorDisplayField>Lost_Reason_Details__c</errorDisplayField>
+    <errorMessage>Please fill in &quot;Lost Reason Details&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Months_Btw_Close_First_Assisted_Setup__c</fullName>
+    <description>The number of months between the Opportunity Close Date and the Customer&apos;s First Assisted Setup Date.</description>
+    <externalId>false</externalId>
+    <formula>(MONTH(CloseDate) + (12*(YEAR(CloseDate)-YEAR(Account.Customer_First_Assisted_Setup_Date__c))) - MONTH(Account.Customer_First_Assisted_Setup_Date__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The number of months between the Opportunity Close Date and the Customer&apos;s First Assisted Setup Date.</inlineHelpText>
+    <label>Months Btw Close &amp; First Assisted Setup</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

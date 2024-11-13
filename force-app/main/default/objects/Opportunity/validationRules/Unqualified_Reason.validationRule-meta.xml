@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unqualified_Reason</fullName>
+    <active>true</active>
+    <description>Require Unqualified Reason if Unqualified is selected as the Meeting Outcome</description>
+    <errorConditionFormula>AND (
+   ISPICKVAL(Meeting_Outcome__c, &quot;Unqualified&quot;),
+   ISBLANK( Unqualified_Reason__c )
+)</errorConditionFormula>
+    <errorDisplayField>Unqualified_Reason__c</errorDisplayField>
+    <errorMessage>Please enter a reason why the Meeting Outcome was Unqualified.</errorMessage>
+</ValidationRule>

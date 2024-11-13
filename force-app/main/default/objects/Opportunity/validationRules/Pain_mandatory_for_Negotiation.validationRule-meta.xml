@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pain_mandatory_for_Negotiation</fullName>
+    <active>false</active>
+    <description>Checks the &quot;Pain&quot; field is filled in when moving to negotiation.</description>
+    <errorConditionFormula>AND (
+NOT(ISPICKVAL(Type, &quot;Existing Business&quot;)),
+ISCHANGED( StageName ),
+ISPICKVAL( StageName, &quot;Negotiation&quot; ),
+ISBLANK( Pain__c )
+)</errorConditionFormula>
+    <errorMessage>Fill in &quot;Pain&quot; Field.</errorMessage>
+</ValidationRule>

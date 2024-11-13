@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Discovery_Stage_Account_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ISBLANK(TEXT(  Account.Category__c   )),
+ISBLANK(TEXT(  Account.Account_Segment__c  )),
+ISBLANK(TEXT(  Account.Account_SubSegment__c )),
+ISBLANK(TEXT(  Account.Commercial_Value__c ))
+)
+&amp;&amp;
+AND(
+RecordType.Name  = &apos;Partner&apos;,
+ISCHANGED( StageName ),
+ISPICKVAL( StageName,&quot;Discovery&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please ensure the following Account fields are populated before moving to Discovery:
+[Partner Program], [Account Segment], [Account SubSegment], [Commercial Model]</errorMessage>
+</ValidationRule>

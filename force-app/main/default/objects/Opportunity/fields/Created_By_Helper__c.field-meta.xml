@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_By_Helper__c</fullName>
+    <description>Helper field for reporting. A text version of the Created By field</description>
+    <externalId>false</externalId>
+    <formula>CreatedBy.FirstName &amp; &apos; &apos; &amp; CreatedBy.LastName</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Helper field for reporting. A text version of the Created By field</inlineHelpText>
+    <label>Created By (Helper)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Won_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(StageName)
+&amp;&amp;
+OR(
+    ISPICKVAL(StageName,&quot;Verbal Commit&quot;),
+    ISPICKVAL(StageName,&quot;Closed Won&quot;)
+)
+&amp;&amp;
+ISBLANK(Won_Reason__c)
+&amp;&amp; RecordType.DeveloperName &lt;&gt; &quot;Partner&quot;
+&amp;&amp; RecordType.DeveloperName &lt;&gt; &quot;Organic_Growth&quot;
+&amp;&amp; RecordType.DeveloperName &lt;&gt; &quot;Renewal&quot;
+&amp;&amp; RecordType.DeveloperName &lt;&gt; &quot;Expansion_Upsell&quot;</errorConditionFormula>
+    <errorDisplayField>Won_Reason__c</errorDisplayField>
+    <errorMessage>Please choose a Won Reason.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discount_Info__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Pls explain the commercial proposal here for CSM to be aware</inlineHelpText>
+    <label>Discount Info</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

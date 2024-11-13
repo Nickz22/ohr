@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Closed_Won_if_Discount_Rejected</fullName>
+    <active>true</active>
+    <description>If Discount Status = Rejected, opp can&apos;t be closed won unless all opp product discounts are set to 0.</description>
+    <errorConditionFormula>ISPICKVAL(Discount_Status__c,&quot;Rejected&quot;)
+&amp;&amp;
+Max_Discount__c &gt; 0
+&amp;&amp;
+ISCHANGED(StageName)
+&amp;&amp;
+IsWon</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Since this discount was rejected, you may not close win this opportunity unless all opportunity products have their Discount % set to 0%.</errorMessage>
+</ValidationRule>

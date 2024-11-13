@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meetings_Required__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of meetings / calls required to close the deal</inlineHelpText>
+    <label>Meetings Required</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Meetings_Required</valueSetName>
+    </valueSet>
+</CustomField>

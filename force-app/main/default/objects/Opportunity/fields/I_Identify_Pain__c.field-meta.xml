@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_Identify_Pain__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the problem can we can solve which will make us an invaluable resource to the customer.</inlineHelpText>
+    <label>I - Identify Pain</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

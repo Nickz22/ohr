@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scale_Products_with_Date_and_Term__c</fullName>
+    <description>Used for validation rules.  The number of Oyster Scale products with Subscription Start Date, Contract Term (months), and Billing Currency filled in.</description>
+    <externalId>false</externalId>
+    <label>Scale Products with Date and Term</label>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Name__c</field>
+        <operation>equals</operation>
+        <value>Oyster Scale</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Subscription_Start_Date__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Contract_Term_months__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Billing_Currency__c</field>
+        <operation>notEqual</operation>
+        <value></value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

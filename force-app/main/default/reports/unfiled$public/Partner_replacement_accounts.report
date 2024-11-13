@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Primary_Campaign__c</field>
+    </columns>
+    <columns>
+        <field>Account.Subregion__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0014v00002Lcvcd,0014v00002UEzs2,0014v00002jr419,0016g00000Lyfxa,0014v00002jr45G,0014v00002judxG,0014v00002jueBR,0014v00002jre49,0014v00002jqzFW,0014v00002jrZwb,0014v00002YjZD7,0014v00002jqyux,0014v00002Zscwj,0014v00002jueFw</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Partner Replacement Accts for BDRs/AEs</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

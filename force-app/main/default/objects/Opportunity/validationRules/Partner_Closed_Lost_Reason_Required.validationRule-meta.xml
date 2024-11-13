@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Closed_Lost_Reason_Required</fullName>
+    <active>true</active>
+    <description>Partner Closed Lost Reason is required once opp is closed</description>
+    <errorConditionFormula>AND(
+IsClosed = TRUE,
+IsWon = FALSE,
+ISBLANK( Partner_Closed_Lost_Reason__c ),
+RecordType.Name = &apos;Partner&apos;,
+ISCHANGED( StageName))</errorConditionFormula>
+    <errorDisplayField>Partner_Closed_Lost_Reason__c</errorDisplayField>
+    <errorMessage>Please fill in &quot;Partner Closed Lost Reason&quot; field</errorMessage>
+</ValidationRule>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>cbit__Clearbit__c.cbit__Account__c</field>
+    </columns>
+    <columns>
+        <field>cbit__Clearbit__c.cbit__Contact__c</field>
+    </columns>
+    <columns>
+        <field>cbit__Clearbit__c.cbit__Lead__c</field>
+    </columns>
+    <columns>
+        <field>cbit__Clearbit__c.cbit__Email__c</field>
+    </columns>
+    <columns>
+        <field>cbit__Clearbit__c.cbit__Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>cbit__Clearbit__c.cbit__Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>422</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Clearbit Invalid Emails</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$cbit__Clearbit__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>cbit__Clearbit__c.cbit__ActiveAt__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

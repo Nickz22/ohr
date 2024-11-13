@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Date__c</fullName>
+    <description>The date a new team member(s) is due to be employed from on the Oyster Platform.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date a new team member(s) is due to be employed from on the Oyster Platform.</inlineHelpText>
+    <label>Live Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

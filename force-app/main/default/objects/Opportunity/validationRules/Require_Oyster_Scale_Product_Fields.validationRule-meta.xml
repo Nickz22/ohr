@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Oyster_Scale_Product_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    INCLUDES(Product_Name__c,&quot;Oyster Scale&quot;),
+    RecordType.Name = &quot;Expansion/Upsell&quot;,
+    OR(
+        ISBLANK(Number_of_Seats__c),
+        ISBLANK(Price_Per_Seat__c),
+        ISPICKVAL(Payment_Terms__c,&quot;&quot;),
+        ISBLANK(Subscription_Start_Date__c),
+        ISBLANK(Contract_Term__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>Please fill in the following fields: [Number of Seats], [Price Per Seat], [Payment Terms], [Subscription Start Date], [Contract Term]</errorMessage>
+</ValidationRule>

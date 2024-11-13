@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Editing_Lead_Source</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(PRIORVALUE(LeadSource)))
+&amp;&amp;
+ISCHANGED(LeadSource)
+&amp;&amp;
+AND(
+    !$Permission.Edit_Lead_Source,
+    $Profile.Name != &quot;System Administrator&quot;,
+    !$Permission.Edit_Partner_Lead_Source_Opportunity
+)
+&amp;&amp;
+NOW() - CreatedDate &gt; 2/1440</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>You may not edit the Lead Source field.</errorMessage>
+</ValidationRule>

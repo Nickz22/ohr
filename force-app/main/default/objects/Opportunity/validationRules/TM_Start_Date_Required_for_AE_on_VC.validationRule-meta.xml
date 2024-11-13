@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TM_Start_Date_Required_for_AE_on_VC</fullName>
+    <active>true</active>
+    <description>TM Start Date required for AE&apos;s only when an opp moves to VC</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(StageName,&quot;Verbal Commit&quot;),
+$Profile.Name=&quot;AE User&quot;,
+ISBLANK( TM_Start_Date__c)
+)</errorConditionFormula>
+    <errorMessage>TM Start Date is required on verbal commit</errorMessage>
+</ValidationRule>

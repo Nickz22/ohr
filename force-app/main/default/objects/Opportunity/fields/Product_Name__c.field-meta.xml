@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Name__c</fullName>
+    <description>For use by AMs on AM-specific record types instead of opportunity products.</description>
+    <externalId>false</externalId>
+    <label>Product Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EaaS - FTE</fullName>
+                <default>false</default>
+                <label>EaaS - FTE</label>
+            </value>
+            <value>
+                <fullName>EaaS - Contractor</fullName>
+                <default>false</default>
+                <label>EaaS - Contractor</label>
+            </value>
+            <value>
+                <fullName>Safetywings Insurance</fullName>
+                <default>false</default>
+                <label>Safetywings Insurance</label>
+            </value>
+            <value>
+                <fullName>Basic Health</fullName>
+                <default>false</default>
+                <label>Basic Health</label>
+            </value>
+            <value>
+                <fullName>Benefits Enrollment</fullName>
+                <default>false</default>
+                <label>Benefits Enrollment</label>
+            </value>
+            <value>
+                <fullName>Premium Health</fullName>
+                <default>false</default>
+                <label>Premium Health</label>
+            </value>
+            <value>
+                <fullName>Tier Five - Annual</fullName>
+                <default>false</default>
+                <label>Tier Five - Annual</label>
+            </value>
+            <value>
+                <fullName>Tier Two, Three, Four - Annual</fullName>
+                <default>false</default>
+                <label>Tier Two, Three, Four - Annual</label>
+            </value>
+            <value>
+                <fullName>Tier One - Monthly</fullName>
+                <default>false</default>
+                <label>Tier One - Monthly</label>
+            </value>
+            <value>
+                <fullName>Tier Two, Three, Four - Monthly</fullName>
+                <default>false</default>
+                <label>Tier Two, Three, Four - Monthly</label>
+            </value>
+            <value>
+                <fullName>Tier Five - Monthly</fullName>
+                <default>false</default>
+                <label>Tier Five - Monthly</label>
+            </value>
+            <value>
+                <fullName>Tier One - Annual</fullName>
+                <default>false</default>
+                <label>Tier One - Annual</label>
+            </value>
+            <value>
+                <fullName>Consultative Services</fullName>
+                <default>false</default>
+                <label>Consultative Services</label>
+            </value>
+            <value>
+                <fullName>Benefits</fullName>
+                <default>false</default>
+                <label>Benefits</label>
+            </value>
+            <value>
+                <fullName>Oyster Scale</fullName>
+                <default>false</default>
+                <label>Oyster Scale</label>
+            </value>
+            <value>
+                <fullName>Consultative Selling</fullName>
+                <default>false</default>
+                <label>Consultative Selling</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Equity</fullName>
+                <default>false</default>
+                <label>Equity</label>
+            </value>
+            <value>
+                <fullName>Global Payroll</fullName>
+                <default>false</default>
+                <label>Global Payroll</label>
+            </value>
+            <value>
+                <fullName>Salary Insights</fullName>
+                <default>false</default>
+                <label>Salary Insights</label>
+            </value>
+            <value>
+                <fullName>Oyster Shell</fullName>
+                <default>false</default>
+                <label>Oyster Shell</label>
+            </value>
+            <value>
+                <fullName>EaaS $599 annual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EaaS $599 annual</label>
+            </value>
+            <value>
+                <fullName>EaaS $699 monthly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EaaS $699 monthly</label>
+            </value>
+            <value>
+                <fullName>EaaS $899 annual</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EaaS $899 annual</label>
+            </value>
+            <value>
+                <fullName>EaaS $999 monthly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EaaS $999 monthly</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

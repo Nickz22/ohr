@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products_with_Discount_Required__c</fullName>
+    <description>Counts opp products but excludes ones that don&apos;t require discounts</description>
+    <externalId>false</externalId>
+    <label># Products with Discount Required</label>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Name__c</field>
+        <operation>notEqual</operation>
+        <value>Benefits Enrollment,Oyster Scale,Contractor</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Discount_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Max Discount Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Free First Hire</fullName>
+                <default>false</default>
+                <label>Free First Hire</label>
+            </value>
+            <value>
+                <fullName>Startup Offer</fullName>
+                <default>false</default>
+                <label>Startup Offer</label>
+            </value>
+            <value>
+                <fullName>Oyster for Impact</fullName>
+                <default>false</default>
+                <label>Oyster for Impact</label>
+            </value>
+            <value>
+                <fullName>&quot;HR Transform Attendee&quot;</fullName>
+                <default>false</default>
+                <label>&quot;HR Transform Attendee&quot;</label>
+            </value>
+            <value>
+                <fullName>Competitive Discount</fullName>
+                <default>false</default>
+                <label>Competitive Discount</label>
+            </value>
+            <value>
+                <fullName>Service Delivery Rectification</fullName>
+                <default>false</default>
+                <label>Service Delivery Rectification</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Low salary discount</fullName>
+                <default>false</default>
+                <label>Low salary discount</label>
+            </value>
+            <value>
+                <fullName>Oyster for Refugee</fullName>
+                <default>false</default>
+                <label>Oyster for Refugee</label>
+            </value>
+            <value>
+                <fullName>Partnership Discount</fullName>
+                <default>false</default>
+                <label>Partnership Discount</label>
+            </value>
+            <value>
+                <fullName>VC Partners</fullName>
+                <default>false</default>
+                <label>VC Partners</label>
+            </value>
+            <value>
+                <fullName>Volume Discount</fullName>
+                <default>false</default>
+                <label>Volume Discount</label>
+            </value>
+            <value>
+                <fullName>2022 Year End Promo - $699 countries only</fullName>
+                <default>false</default>
+                <label>2022 Year End Promo - $699 countries only</label>
+            </value>
+            <value>
+                <fullName>$399 Price Lock</fullName>
+                <default>false</default>
+                <label>$399 Price Lock</label>
+            </value>
+            <value>
+                <fullName>Partner Buy 2 / 1 Free</fullName>
+                <default>false</default>
+                <label>Partner Buy 2 / 1 Free</label>
+            </value>
+            <value>
+                <fullName>Partnerships Discount - 20%</fullName>
+                <default>false</default>
+                <label>Partnerships Discount - 20%</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_CloseWon_Stage_Account_Fields</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+ Account.Agreement_signed__c = FALSE,
+ISBLANK(Account.Agreement_type__c),
+ISBLANK( Account.Agreement_Date__c ),
+ISBLANK(TEXT( Account.Revenue_Share_to_Partner__c )),
+ISBLANK(Account.Link_to_Agreement__c)
+)
+&amp;&amp;
+AND(
+RecordType.Name  = &apos;Partner&apos;,
+ISCHANGED( StageName ),
+ISPICKVAL( StageName,&quot;Closed Won&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please ensure the following Account fields are populated before moving to Closed Won:
+[Agreement Signed], [Agreement Type], [Agreement Date], [Revenue Share (to Partner)], [Link to Agreement]</errorMessage>
+</ValidationRule>

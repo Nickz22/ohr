@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchasing_Criteria_Details_2__c</fullName>
+    <description>user to document buying purchasing criteria (BPC)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide details on said criteria.</inlineHelpText>
+    <label>Purchasing Criteria Details 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Purchasing_Criteria_2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>BPC_Details</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Service level</controllingFieldValue>
+            <valueName>Fast response, clear support SLAs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service level</controllingFieldValue>
+            <valueName>Guidance &amp; support to leverage the platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service level</controllingFieldValue>
+            <valueName>Sales, CS, legal advisory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service level</controllingFieldValue>
+            <valueName>Dedicated Team Member support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service level</controllingFieldValue>
+            <valueName>Dedicated CSM for customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Service level</controllingFieldValue>
+            <valueName>Clarity of onboarding &amp; hiring process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>Country coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>Number of direct entities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>Direct entity in a given country</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>Hiring in a given country</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Infrastructure</controllingFieldValue>
+            <valueName>Support both FTE &amp; contractors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brand</controllingFieldValue>
+            <valueName>Mission-driven</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brand</controllingFieldValue>
+            <valueName>Thought leadership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Bullet proof compliance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Bullet proof data protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Strong IP &amp; Confidentiality Protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Liability Indemnification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Certifications &amp; Verifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Flexible non-compete clauses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Ease of use</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Customizable reporting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Access right management capabilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>User permissions and roles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Pearl in hiring flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Self-serve / contextual knowledge on platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Automated contracts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Expense management tool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Clear and easy off-boarding process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Platform</controllingFieldValue>
+            <valueName>Single Sign-on</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Ability to support adjacent use cases via partner or acquisition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Bulk contractor conversion process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local HR knowledge</controllingFieldValue>
+            <valueName>HR knowledge &quot;hire&quot; tools (cost calculator, salary benchmarks etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local HR knowledge</controllingFieldValue>
+            <valueName>Cost calculator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local HR knowledge</controllingFieldValue>
+            <valueName>Compensation benchmarking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Local HR knowledge</controllingFieldValue>
+            <valueName>Tailored compensation and benefits advisory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integration</controllingFieldValue>
+            <valueName>ATS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integration</controllingFieldValue>
+            <valueName>HRIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integration</controllingFieldValue>
+            <valueName>ERP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hire</controllingFieldValue>
+            <valueName>Speed of hire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hire</controllingFieldValue>
+            <valueName>Hiring an employee on a visa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hire</controllingFieldValue>
+            <valueName>Ability to customise employment contracts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hire</controllingFieldValue>
+            <valueName>Ability to offer equity to TMs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pay</controllingFieldValue>
+            <valueName>Accuracy &amp; timeliness of payments &amp; payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pay</controllingFieldValue>
+            <valueName>Diversity of payment methods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pay</controllingFieldValue>
+            <valueName>Flexibility of payroll cycles (payroll calendar &amp; payment terms)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pay</controllingFieldValue>
+            <valueName>Payroll in multiple countries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pay</controllingFieldValue>
+            <valueName>Clear invoicing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pay</controllingFieldValue>
+            <valueName>Ease of payment administration (bulk approval etc.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Care</controllingFieldValue>
+            <valueName>Localised benefits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Care</controllingFieldValue>
+            <valueName>Best-in-class team member experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>FTE pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Contractor pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Deposits</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

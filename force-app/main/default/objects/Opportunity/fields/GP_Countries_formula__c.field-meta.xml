@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GP_Countries_formula__c</fullName>
+    <description>Indicates no countries were chosen in the Field indicating in which countries GP is needed. Used for validation rule.</description>
+    <externalId>false</externalId>
+    <formula>ISBLANK(Global_Payroll_Countries__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>GP Countries [formula]</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

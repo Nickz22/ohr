@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Churn_Contraction_Reasons__c</fullName>
+    <externalId>false</externalId>
+    <label>Secondary Churn/Contraction Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Primary_Churn_Contraction_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Absenteeism / attendance / tardiness</fullName>
+                <default>false</default>
+                <label>Absenteeism / attendance / tardiness</label>
+            </value>
+            <value>
+                <fullName>Acquisition / merger</fullName>
+                <default>false</default>
+                <label>Acquisition / merger</label>
+            </value>
+            <value>
+                <fullName>Benefit coverage</fullName>
+                <default>false</default>
+                <label>Benefit coverage</label>
+            </value>
+            <value>
+                <fullName>Benefits Coverage</fullName>
+                <default>false</default>
+                <label>Benefits Coverage</label>
+            </value>
+            <value>
+                <fullName>Career break</fullName>
+                <default>false</default>
+                <label>Career break</label>
+            </value>
+            <value>
+                <fullName>Career change</fullName>
+                <default>false</default>
+                <label>Career change</label>
+            </value>
+            <value>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+                <label>Commercial</label>
+            </value>
+            <value>
+                <fullName>Company revokes engagement</fullName>
+                <default>false</default>
+                <label>Company revokes engagement</label>
+            </value>
+            <value>
+                <fullName>Compliance concern</fullName>
+                <default>false</default>
+                <label>Compliance concern</label>
+            </value>
+            <value>
+                <fullName>Conflict with colleagues or supervisor</fullName>
+                <default>false</default>
+                <label>Conflict with colleagues or supervisor</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>Country Coverage</fullName>
+                <default>false</default>
+                <label>Country Coverage</label>
+            </value>
+            <value>
+                <fullName>Death</fullName>
+                <default>false</default>
+                <label>Death</label>
+            </value>
+            <value>
+                <fullName>Deposit fees</fullName>
+                <default>false</default>
+                <label>Deposit fees</label>
+            </value>
+            <value>
+                <fullName>Dissatisfaction with Oyster</fullName>
+                <default>false</default>
+                <label>Dissatisfaction with Oyster</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t want to disclose</fullName>
+                <default>false</default>
+                <label>Don&apos;t want to disclose</label>
+            </value>
+            <value>
+                <fullName>Employee moved to contractor</fullName>
+                <default>false</default>
+                <label>Employee moved to contractor</label>
+            </value>
+            <value>
+                <fullName>Entered military service</fullName>
+                <default>false</default>
+                <label>Entered military service</label>
+            </value>
+            <value>
+                <fullName>EOR issues</fullName>
+                <default>false</default>
+                <label>EOR issues</label>
+            </value>
+            <value>
+                <fullName>Expense / payment / invoice issues</fullName>
+                <default>false</default>
+                <label>Expense / payment / invoice issues</label>
+            </value>
+            <value>
+                <fullName>Family obligations</fullName>
+                <default>false</default>
+                <label>Family obligations</label>
+            </value>
+            <value>
+                <fullName>Fixed term expiration</fullName>
+                <default>false</default>
+                <label>Fixed term expiration</label>
+            </value>
+            <value>
+                <fullName>Found a new role</fullName>
+                <default>false</default>
+                <label>Found a new role</label>
+            </value>
+            <value>
+                <fullName>Further education</fullName>
+                <default>false</default>
+                <label>Further education</label>
+            </value>
+            <value>
+                <fullName>Going On-site</fullName>
+                <default>false</default>
+                <label>Going On-site</label>
+            </value>
+            <value>
+                <fullName>Health reasons</fullName>
+                <default>false</default>
+                <label>Health reasons</label>
+            </value>
+            <value>
+                <fullName>Improper behavior</fullName>
+                <default>false</default>
+                <label>Improper behavior</label>
+            </value>
+            <value>
+                <fullName>In lieu of termination</fullName>
+                <default>false</default>
+                <label>In lieu of termination</label>
+            </value>
+            <value>
+                <fullName>Invoice payment failure</fullName>
+                <default>false</default>
+                <label>Invoice payment failure</label>
+            </value>
+            <value>
+                <fullName>Involuntary retirement</fullName>
+                <default>false</default>
+                <label>Involuntary retirement</label>
+            </value>
+            <value>
+                <fullName>Job abandonment</fullName>
+                <default>false</default>
+                <label>Job abandonment</label>
+            </value>
+            <value>
+                <fullName>Lack of features in the platform</fullName>
+                <default>false</default>
+                <label>Lack of features in the platform</label>
+            </value>
+            <value>
+                <fullName>Layoff / redundancy / role elimination /  business shutting down</fullName>
+                <default>false</default>
+                <label>Layoff / redundancy / role elimination /  business shutting down</label>
+            </value>
+            <value>
+                <fullName>Migration from EOR to Oyster</fullName>
+                <default>false</default>
+                <label>Migration from EOR to Oyster</label>
+            </value>
+            <value>
+                <fullName>Move workers into in-office roles</fullName>
+                <default>false</default>
+                <label>Move workers into in-office roles</label>
+            </value>
+            <value>
+                <fullName>Onboarding Issues</fullName>
+                <default>false</default>
+                <label>Onboarding Issues</label>
+            </value>
+            <value>
+                <fullName>Opening entity</fullName>
+                <default>false</default>
+                <label>Opening entity</label>
+            </value>
+            <value>
+                <fullName>Price / Cost</fullName>
+                <default>false</default>
+                <label>Price / Cost</label>
+            </value>
+            <value>
+                <fullName>Relocation</fullName>
+                <default>false</default>
+                <label>Relocation</label>
+            </value>
+            <value>
+                <fullName>Retirement</fullName>
+                <default>false</default>
+                <label>Retirement</label>
+            </value>
+            <value>
+                <fullName>Serious misconduct</fullName>
+                <default>false</default>
+                <label>Serious misconduct</label>
+            </value>
+            <value>
+                <fullName>Start my own project/startup</fullName>
+                <default>false</default>
+                <label>Start my own project/startup</label>
+            </value>
+            <value>
+                <fullName>Support responsiveness</fullName>
+                <default>false</default>
+                <label>Support responsiveness</label>
+            </value>
+            <value>
+                <fullName>Team member onboarding issues</fullName>
+                <default>false</default>
+                <label>Team member onboarding issues</label>
+            </value>
+            <value>
+                <fullName>Team member relocation</fullName>
+                <default>false</default>
+                <label>Team member relocation</label>
+            </value>
+            <value>
+                <fullName>Team member revokes employment</fullName>
+                <default>false</default>
+                <label>Team member revokes employment</label>
+            </value>
+            <value>
+                <fullName>Temporary hire</fullName>
+                <default>false</default>
+                <label>Temporary hire</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Unsatisfactory performance</fullName>
+                <default>false</default>
+                <label>Unsatisfactory performance</label>
+            </value>
+            <value>
+                <fullName>Visa Support Limitations</fullName>
+                <default>false</default>
+                <label>Visa Support Limitations</label>
+            </value>
+            <value>
+                <fullName>Work schedule</fullName>
+                <default>false</default>
+                <label>Work schedule</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Acquisition or Merge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acquisition or Merge</label>
+            </value>
+            <value>
+                <fullName>Bulk Termination / Redundancy Round</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bulk Termination / Redundancy Round</label>
+            </value>
+            <value>
+                <fullName>Business Shutting Down</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Shutting Down</label>
+            </value>
+            <value>
+                <fullName>Compliance Concerns</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Compliance Concerns</label>
+            </value>
+            <value>
+                <fullName>Customer wants in-office team</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer wants in-office team</label>
+            </value>
+            <value>
+                <fullName>EOR dissatisfaction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EOR dissatisfaction</label>
+            </value>
+            <value>
+                <fullName>Expense Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Expense Issues</label>
+            </value>
+            <value>
+                <fullName>Invoice Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice Issues</label>
+            </value>
+            <value>
+                <fullName>Layoff</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Layoff</label>
+            </value>
+            <value>
+                <fullName>Legal Counsel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Legal Counsel</label>
+            </value>
+            <value>
+                <fullName>Non-payment termination</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-payment termination</label>
+            </value>
+            <value>
+                <fullName>Operational Responsiveness (Support/Finance, other BUs)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Operational Responsiveness (Support/Finance, other BUs)</label>
+            </value>
+            <value>
+                <fullName>Oyster migration to direct</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oyster migration to direct</label>
+            </value>
+            <value>
+                <fullName>TM FTE moved to contractor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM FTE moved to contractor</label>
+            </value>
+            <value>
+                <fullName>TM Resignation / End of Contract</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM Resignation / End of Contract</label>
+            </value>
+            <value>
+                <fullName>TM Termination</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM Termination</label>
+            </value>
+            <value>
+                <fullName>TM end of fixed-term employment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM end of fixed-term employment</label>
+            </value>
+            <value>
+                <fullName>TM onboarding issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM onboarding issues</label>
+            </value>
+            <value>
+                <fullName>TM payment issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM payment issues</label>
+            </value>
+            <value>
+                <fullName>TM performance-related termination</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM performance-related termination</label>
+            </value>
+            <value>
+                <fullName>TM relocation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM relocation</label>
+            </value>
+            <value>
+                <fullName>Temporary Hires - Opening Entity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Temporary Hires - Opening Entity</label>
+            </value>
+            <value>
+                <fullName>Temporary Hires - Relocation Ongoing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Temporary Hires - Relocation Ongoing</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Career break</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Career change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Conflict with colleagues or supervisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Dissatisfaction with Oyster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <valueName>Don&apos;t want to disclose</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Employee moved to contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Entered military service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Family obligations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Found a new role</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Further education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Health reasons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>In lieu of termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Job abandonment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Relocation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Retirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Start my own project/startup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <controllingFieldValue>Unknown</controllingFieldValue>
+            <controllingFieldValue>Serious misconduct termination</controllingFieldValue>
+            <controllingFieldValue>Termination during probation</controllingFieldValue>
+            <controllingFieldValue>Business-related termination</controllingFieldValue>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Cancellation before start date</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <controllingFieldValue>Non-payment termination</controllingFieldValue>
+            <controllingFieldValue>Death-related termination</controllingFieldValue>
+            <controllingFieldValue>Fixed term expiration</controllingFieldValue>
+            <controllingFieldValue>Involuntary termination</controllingFieldValue>
+            <controllingFieldValue>Migration from EOR to Oyster</controllingFieldValue>
+            <controllingFieldValue>Oyster decision</controllingFieldValue>
+            <controllingFieldValue>Performance-related termination</controllingFieldValue>
+            <valueName>Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <valueName>Work schedule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resignation</controllingFieldValue>
+            <controllingFieldValue>Termination during probation</controllingFieldValue>
+            <controllingFieldValue>Business-related termination</controllingFieldValue>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Cancellation before start date</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <controllingFieldValue>Involuntary termination</controllingFieldValue>
+            <controllingFieldValue>Performance-related termination</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Serious misconduct termination</controllingFieldValue>
+            <valueName>Serious misconduct</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination during probation</controllingFieldValue>
+            <controllingFieldValue>Performance-related termination</controllingFieldValue>
+            <valueName>Absenteeism / attendance / tardiness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination during probation</controllingFieldValue>
+            <controllingFieldValue>Performance-related termination</controllingFieldValue>
+            <valueName>Improper behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination during probation</controllingFieldValue>
+            <controllingFieldValue>Performance-related termination</controllingFieldValue>
+            <valueName>Unsatisfactory performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business-related termination</controllingFieldValue>
+            <valueName>Acquisition / merger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Business-related termination</controllingFieldValue>
+            <valueName>Layoff / redundancy / role elimination /  business shutting down</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Benefit coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Compliance concern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Country Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Deposit fees</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>EOR issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Expense / payment / invoice issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Lack of features in the platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Price / Cost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Support responsiveness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Team member onboarding issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to another service provider</controllingFieldValue>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Visa Support Limitations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancellation before start date</controllingFieldValue>
+            <valueName>Company revokes engagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancellation before start date</controllingFieldValue>
+            <valueName>Team member revokes employment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Move workers into in-office roles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Team member relocation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transfer to own entity</controllingFieldValue>
+            <valueName>Temporary hire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-payment termination</controllingFieldValue>
+            <valueName>Invoice payment failure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Death-related termination</controllingFieldValue>
+            <valueName>Death</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixed term expiration</controllingFieldValue>
+            <valueName>Fixed term expiration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Involuntary termination</controllingFieldValue>
+            <valueName>Involuntary retirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Migration from EOR to Oyster</controllingFieldValue>
+            <valueName>Migration from EOR to Oyster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oyster decision</controllingFieldValue>
+            <valueName>Commercial</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

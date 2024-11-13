@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won_Reason_Required</fullName>
+    <active>false</active>
+    <description>Require users to select a Won Reason at Verbal Commit or Closed Won</description>
+    <errorConditionFormula>AND(
+    NOT(ISPICKVAL(Type, &quot;Existing Business&quot;)),
+    ISCHANGED( StageName ),
+    OR (
+        ISPICKVAL( StageName , &quot;Verbal Commit&quot; ),
+        ISPICKVAL( StageName, &quot;Closed Won&quot;)
+    ),
+    ISBLANK(Won_Reason__c  )
+)</errorConditionFormula>
+    <errorDisplayField>Won_Reason__c</errorDisplayField>
+    <errorMessage>Please select a reason this Opportunity was Won before changing to Verbal Commit or Closed Won</errorMessage>
+</ValidationRule>

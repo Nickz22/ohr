@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Current_Provider</fullName>
+    <active>true</active>
+    <description>Require Current Provider if Use Case = &quot;Live FTE from Competitor&quot;</description>
+    <errorConditionFormula>AND(
+    INCLUDES(Use_Case__c,&quot;Live FTE from Competitor&quot;),
+    ISBLANK(Current_provider__c)
+)</errorConditionFormula>
+    <errorDisplayField>Current_provider__c</errorDisplayField>
+    <errorMessage>Please fill in the Current Provider.</errorMessage>
+</ValidationRule>

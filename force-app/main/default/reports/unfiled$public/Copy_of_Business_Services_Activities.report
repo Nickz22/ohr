@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>EVENT_SUBTYPE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Account_SubSegment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,ATS,Accelerator,Accounting,Accounting/Tax,Affiliate,Analytics,Benefits Brokers,Contractor Payroll,Credit Cards,Culture &amp; Team Engagement,Direct to Consumer,EOR,ERP,Equipment,Equity,Expense Management,Freelance/Contractor,Future of Work,Global System Integrator,HR Consulting,HRIS,Incubator,Insurance,Job Boards,Knowledge Management,Learning &amp; Development,Legal,Management Consulting,Mission Driven,OFR,Other,PEO,PEO Broker,Payments,Payroll,Productivity,Recruiting Agency,Referencing &amp; Background Checks,Relocation,Retirement/Pension plan,Screening &amp; Verification,Security,Social Impact,Sourcing,Talent Communities,Transportation,VC,Visa Processing,Visa Sponsorship,Wellness,Working Spaces</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ACCOUNT_OWNER_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>nels pederson,patrick jordan richards</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ACCOUNT.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Copy of Business Services Activities</name>
+    <params>
+        <name>closed</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>te</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountActivity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>EVENT_SUBTYPE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

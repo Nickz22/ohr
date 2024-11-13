@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_96029398</developerName>
+        <masterLabel>Sub-Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>OWNER_FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Elise Lavielle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Renan Lesaffre</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jack Corrigan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mohamed Embaby</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittni Ralston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>João Matos</sourceValue>
+            </sourceValues>
+            <value>Cata&apos;s team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Nasser Yndestad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matt Morley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kasperi Helikivi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Giuseppe Vitale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aneta Janiec</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Konstantin Drosdek</sourceValue>
+            </sourceValues>
+            <value>Heleen&apos;s team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jesse Dahms</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniyar Yerdenov</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Sutton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hannah Crow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collin Kinser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Denis Kalamar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brina Martens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carley Montague</sourceValue>
+            </sourceValues>
+            <value>Will&apos;s team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Peyton Parker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>William Morton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ariane Bobiash</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Chan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tyler Sutherland</sourceValue>
+            </sourceValues>
+            <value>DZ&apos;s team</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_96029398</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>FIRST_NAME</field>
+    </columns>
+    <columns>
+        <field>ROLE</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Seniority_for_rollup__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>Contact.Role__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Contact_Roles__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>STAGE_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Discovery,Validation,Negotiation,Verbal Commit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Deal_Complexity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>complex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Business</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Pilot_customer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>BucketField_96029398</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Cata&apos;s team,Heleen&apos;s team,Will&apos;s team,DZ&apos;s team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>OPPORTUNITY_ID</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0064v000023wZgP,0064v000023xDfQ,0064v000023xTcl,0064v000023xS5H,0064v000023xioR,0064v000023wJeg,0064v000023wwMM,0064v000023xiLt,0064v000023xA77,0064v00001zaguX,0064v000023x1kj,0064v00001zawpc,0064v00001zaZQv,0064v0000209K4k,0064v00001uinP2,0064v000023wvdH,0064v000023x3mM,0064v000023xNgc,0064v000023wIAf,0064v0000225TQd,0064v000023x2Zw</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_96029398</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OWNER_FULL_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>OPPORTUNITY.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>no Decision Maker involved</name>
+    <params>
+        <name>include</name>
+        <value>open</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityContact</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

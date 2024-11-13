@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Name_Initial_Hidden__c</fullName>
+    <description>Hidden field that populates based on Product Name (NB). Product Name Initial pulls from this field and is needed to correctly format commas separating values.</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+OR(
+Contains(Product_Name_NB__c, &quot;Tier Five - Annual&quot;),
+Contains(Product_Name_NB__c, &quot;Tier Five - Monthly&quot;),
+Contains(Product_Name_NB__c, &quot;Tier One - Monthly&quot;),
+Contains(Product_Name_NB__c, &quot;Tier One - Annual&quot;),
+Contains(Product_Name_NB__c, &quot;Tier Two, Three, Four - Annual&quot;),
+Contains(Product_Name_NB__c, &quot;Tier Two, Three, Four - Monthly&quot;),
+Contains(Product_Name_NB__c, &quot;Oyster Scale&quot;)),
+
+&quot;EOR, &quot;, Null)
+
+&amp;
+
+
+IF( 
+OR(
+Contains(Product_Name_NB__c, &quot;Contractor&quot;),
+Contains(Product_Name_NB__c, &quot;Oyster Shell&quot;)),
+
+&quot;Contractor, &quot;, Null)
+
+&amp;
+
+IF( 
+OR(
+Contains(Product_Name_NB__c, &quot;Benefits Enrollment&quot;),
+Contains(Product_Name_NB__c, &quot;Equity&quot;)),
+
+&quot;Benefits, &quot;, Null)
+
+&amp;
+
+IF( 
+OR(
+Contains(Product_Name_NB__c, &quot;Global Payroll&quot;)),
+
+
+&quot;Global Payroll, &quot;, Null)
+
+&amp;
+
+IF( 
+OR(
+Contains(Product_Name_NB__c, &quot;Salary Insights&quot;)),
+
+
+&quot;Salary Insights, &quot;, Null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Product Name Initial (Hidden)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

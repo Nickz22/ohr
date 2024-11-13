@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_86067903</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>MEMBER_STATUS</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Not Contacted</sourceValue>
+            </sourceValues>
+            <value>1. Not Contacted</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sent</sourceValue>
+            </sourceValues>
+            <value>2. Sent</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Meeting Set</sourceValue>
+            </sourceValues>
+            <value>4. Meeting Set</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Opportunity Open</sourceValue>
+            </sourceValues>
+            <value>5. Opportunity Open</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Opportunity Closed Won</sourceValue>
+            </sourceValues>
+            <value>6. Opportunity Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Opportunity Closed Lost</sourceValue>
+            </sourceValues>
+            <value>7. Opportunity Lost</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Responded</sourceValue>
+            </sourceValues>
+            <value>3. Responded</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>CAMPAIGN_MEMBER_ID</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_OWNER</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS1_STATE</field>
+    </columns>
+    <columns>
+        <field>CAMPAIGN_NAME</field>
+    </columns>
+    <columns>
+        <field>BucketField_86067903</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>CAMPAIGN_NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Named accounts - Q3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Stage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Released</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Named Accounts Q3 Campaign RELEASED</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CampaignAccount</reportType>
+    <scope>orgAll</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+</Report>

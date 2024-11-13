@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Partner</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+CONTAINS(TEXT(LeadSource),&quot;Partner&quot;),
+NOT(ISPICKVAL(LeadSource,&quot;Partnerships&quot;)),
+NOT(ISPICKVAL(LeadSource,&quot;Partner Traffic&quot;)),
+NOT(ISPICKVAL(LeadSource,&quot;Partner Outbound&quot;)),
+NOT(ISPICKVAL(LeadSource,&quot;Partner Inbound&quot;))
+),
+ISPICKVAL(LeadSource,&quot;VC Referral&quot;)
+)
+&amp;&amp;
+ISBLANK(Partner__c)
+&amp;&amp;
+OR(ISNEW(),DATEVALUE(CreatedDate) &gt;= DATE(2022,03,09))
+&amp;&amp;
+RecordType.Name != &quot;Partner&quot;</errorConditionFormula>
+    <errorDisplayField>Partner__c</errorDisplayField>
+    <errorMessage>Please fill in the &quot;Partner&quot; field.</errorMessage>
+</ValidationRule>

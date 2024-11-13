@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Involvement_Approval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISCHANGED(Partner_Involvement_Approved__c),
+  NOT(
+    OR(
+      $Profile.Name = &quot;System Administrator&quot;,
+      $User.Username = &quot;adrienne.coburn@oysterhr.com&quot;,
+      $User.Username = &quot;jess.romano@oysterhr.com&quot;,
+      $User.Username = &quot;marc.manuele@oysterhr.com&quot;,
+      $User.Username = &quot;marc.mastrocola@oysterhr.com&quot;
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>The field Partner Involvement Approved field cannot be edited by this user.</errorMessage>
+</ValidationRule>

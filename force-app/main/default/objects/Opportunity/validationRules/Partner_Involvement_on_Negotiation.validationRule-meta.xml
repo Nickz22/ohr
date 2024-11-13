@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Involvement_on_Negotiation</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.Name != &quot;Partner&quot;
+&amp;&amp;
+ISPICKVAL(Was_a_Partner_Involved_in_Sales_Cycle__c, &quot;&quot;)
+&amp;&amp;
+ISCHANGED(StageName)
+&amp;&amp;
+ISPICKVAL(StageName,&quot;Negotiation&quot;)
+&amp;&amp;
+RecordType.DeveloperName &lt;&gt; &quot;Expansion_Upsell&quot;</errorConditionFormula>
+    <errorDisplayField>Was_a_Partner_Involved_in_Sales_Cycle__c</errorDisplayField>
+    <errorMessage>Please choose a value for &quot;Was a Partner Involved in Sales Cycle&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_Editing_Partner_Lead_Source</fullName>
+    <active>true</active>
+    <description>Allows users with the &quot;Edit Partner Lead Source (Opportunity)&quot; permission set to edit the lead source, but only from one lead source in the &quot;Partner&quot; lead source group to another.</description>
+    <errorConditionFormula>AND(
+    $Permission.Edit_Partner_Lead_Source_Opportunity,
+    ISCHANGED(LeadSource),
+    NOT(PRIORVALUE(Lead_Source_Group_Opp__c) = &quot;Partner&quot; &amp;&amp; Lead_Source_Group_Opp__c = &quot;Partner&quot; ),
+    NOW() - CreatedDate &gt; 2/1440
+)</errorConditionFormula>
+    <errorDisplayField>LeadSource</errorDisplayField>
+    <errorMessage>You may only change the Lead Source from one Partner value to another.</errorMessage>
+</ValidationRule>

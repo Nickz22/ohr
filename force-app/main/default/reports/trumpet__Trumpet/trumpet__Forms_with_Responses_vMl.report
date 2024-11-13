@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>trumpet__Form__c.trumpet__Form_To_Pods__r.trumpet__Form_Responses__r.trumpet__Form_Response_Questions__r$Name</field>
+    </columns>
+    <columns>
+        <field>trumpet__Form__c.trumpet__Form_To_Pods__r.trumpet__Form_Responses__r$trumpet__PersonName__c</field>
+    </columns>
+    <columns>
+        <field>trumpet__Form__c.trumpet__Form_To_Pods__r.trumpet__Form_Responses__r.trumpet__Form_Response_Questions__r$trumpet__Answer__c</field>
+    </columns>
+    <columns>
+        <field>trumpet__Form__c.trumpet__Form_To_Pods__r.trumpet__Form_Responses__r.trumpet__Form_Response_Questions__r$trumpet__Type__c</field>
+    </columns>
+    <columns>
+        <field>trumpet__Form__c.trumpet__Form_To_Pods__r$trumpet__CreatedAt__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>trumpet__Form__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>trumpet__Form__c.trumpet__Form_To_Pods__r$trumpet__Pod__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Forms with Responses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>trumpet__Forms__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>trumpet__Form__c$trumpet__CreatedAt__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

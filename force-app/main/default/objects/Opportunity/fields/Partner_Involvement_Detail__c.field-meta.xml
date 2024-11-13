@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Involvement_Detail__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe in detail the extent and manner of the partner&apos;s involvement in the sales process.</inlineHelpText>
+    <label>Partner Involvement Det (transactional)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Partner_Involvement_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner Led</fullName>
+                <default>false</default>
+                <label>Partner Led</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Marketing Lead</fullName>
+                <default>false</default>
+                <label>Marketing Lead</label>
+            </value>
+            <value>
+                <fullName>Referring Existing Lead</fullName>
+                <default>false</default>
+                <label>Referring Existing Lead</label>
+            </value>
+            <value>
+                <fullName>Partner Network</fullName>
+                <default>false</default>
+                <label>Partner Network</label>
+            </value>
+            <value>
+                <fullName>Introduction</fullName>
+                <default>false</default>
+                <label>Introduction</label>
+            </value>
+            <value>
+                <fullName>Account is a Partner</fullName>
+                <default>false</default>
+                <label>Account is a Partner</label>
+            </value>
+            <value>
+                <fullName>Value Added Services or Solutions</fullName>
+                <default>false</default>
+                <label>Value Added Services or Solutions</label>
+            </value>
+            <value>
+                <fullName>Recommendation \ Referrence</fullName>
+                <default>false</default>
+                <label>Recommendation \ Referrence</label>
+            </value>
+            <value>
+                <fullName>Intel</fullName>
+                <default>false</default>
+                <label>Intel</label>
+            </value>
+            <value>
+                <fullName>Campaign Activation</fullName>
+                <default>false</default>
+                <label>Campaign Activation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>VC Outbound Campaign</fullName>
+                <default>false</default>
+                <label>VC Outbound Campaign</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Partner Generated</controllingFieldValue>
+            <valueName>Partner Led</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Generated</controllingFieldValue>
+            <valueName>Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Generated</controllingFieldValue>
+            <valueName>Marketing Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Generated</controllingFieldValue>
+            <valueName>VC Outbound Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Converted</controllingFieldValue>
+            <valueName>Referring Existing Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Converted</controllingFieldValue>
+            <valueName>Partner Network</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Converted</controllingFieldValue>
+            <valueName>Introduction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Converted</controllingFieldValue>
+            <valueName>Account is a Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Influence</controllingFieldValue>
+            <valueName>Value Added Services or Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Influence</controllingFieldValue>
+            <valueName>Recommendation \ Referrence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Influence</controllingFieldValue>
+            <valueName>Intel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Influence</controllingFieldValue>
+            <valueName>Campaign Activation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Partner Influence</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Involvement_Type_strategic__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Involvement Type (strategic)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partner Generated</fullName>
+                <default>false</default>
+                <label>Partner Generated</label>
+            </value>
+            <value>
+                <fullName>Partner Converted</fullName>
+                <default>false</default>
+                <label>Partner Converted</label>
+            </value>
+            <value>
+                <fullName>Partner Influence</fullName>
+                <default>false</default>
+                <label>Partner Influence</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

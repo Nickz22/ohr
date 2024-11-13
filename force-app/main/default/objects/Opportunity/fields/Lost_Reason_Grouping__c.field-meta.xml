@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_Grouping__c</fullName>
+    <description>Used for measuring competitive win rates. Based on &quot;lost reason&quot; field.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  OR(
+    INCLUDES(Lost_Reason__c, &quot;Client Unresponsive&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Not a Priority for the Moment&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Meeting Never Set&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Team Member Dropped Out&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Misqualified&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Not a Priority&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Disqualified&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Setup Own Entity&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Stopped Recruiting&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Did not hire&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Duplicate&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Position Filled in country of presence&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Duplicate Opp&quot;),
+    INCLUDES(Lost_Reason__c, &quot;Qualified incorrectly&quot;)
+    ),
+    &quot;Non-Competitive Loss&quot;,
+    &quot;Competitive Loss&quot;
+)</formula>
+    <inlineHelpText>Used for measuring competitive win rates. Based on &quot;lost reason&quot; field.</inlineHelpText>
+    <label>zzz_Lost Reason Grouping</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Sales_Activity_Opportunity__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(DATEVALUE(Last_Sales_Event_Opportunity__c) &gt; BLANKVALUE(Last_Sales_Task_Opportunity__c,DATE(1970,1,1)), DATEVALUE(Last_Sales_Event_Opportunity__c), Last_Sales_Task_Opportunity__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Sales Activity (Opportunity)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Manager_Notes__c</fullName>
+    <description>field hidden from the page layouts, used only in reports, for the sales manager to smoothly share updates with the CS team</description>
+    <externalId>false</externalId>
+    <label>Sales Manager Notes</label>
+    <length>1000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

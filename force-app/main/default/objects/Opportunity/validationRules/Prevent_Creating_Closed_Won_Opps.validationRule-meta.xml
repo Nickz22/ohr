@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Creating_Closed_Won_Opps</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW()
+&amp;&amp; IsClosed
+&amp;&amp; IsWon
+&amp;&amp; RecordType.Name &lt;&gt; &apos;Organic Growth&apos;
+&amp;&amp; RecordType.Name &lt;&gt; &apos;Expansion/Upsell&apos;
+&amp;&amp; RecordType.Name &lt;&gt; &apos;Churn/Contraction Risk&apos;</errorConditionFormula>
+    <errorMessage>You may not create a closed won opportunity.  Please create this opportunity with an open stage and add products before proceeding.</errorMessage>
+</ValidationRule>

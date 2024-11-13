@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Specialist_needed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identifies the need to involve a PS from the initial qualification</description>
+    <externalId>false</externalId>
+    <inlineHelpText>+250 employees
+OR
+Series C or above
+OR
+5+ immediate hires (ie bulk hire, or existing provider switch, contractor conversion etc)</inlineHelpText>
+    <label>Product Specialist needed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

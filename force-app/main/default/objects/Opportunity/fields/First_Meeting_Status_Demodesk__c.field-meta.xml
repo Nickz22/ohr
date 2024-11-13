@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Meeting_Status_Demodesk__c</fullName>
+    <description>Populated by DLRS.  &quot;Meeting Status (Demodesk)&quot; of the first event for this opportunity - no longer leveraging DD automation (keeping the API name to avoid issues with integrations)</description>
+    <externalId>false</externalId>
+    <label>First Meeting Status</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

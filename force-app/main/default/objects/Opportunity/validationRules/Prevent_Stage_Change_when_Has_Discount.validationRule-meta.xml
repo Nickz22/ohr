@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Stage_Change_when_Has_Discount</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Discount_Status__c,&quot;Requested&quot;)
+&amp;&amp; ISCHANGED(StageName)
+&amp;&amp; !ISCHANGED(RecordTypeId)</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>You may not change the stage until the discount change is approved.</errorMessage>
+</ValidationRule>

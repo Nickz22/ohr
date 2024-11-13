@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Empower_Details_Won__c</fullName>
+    <description>To document exceptions requested, imposed by project empower, in order to win the deal</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select what exception you requested approval for, in order to win the deal</inlineHelpText>
+    <label>Project Empower Details (Won)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ability to manage equity,not only advise</fullName>
+                <default>false</default>
+                <label>Ability to manage equity,not only advise</label>
+            </value>
+            <value>
+                <fullName>Country Availability</fullName>
+                <default>false</default>
+                <label>Country Availability</label>
+            </value>
+            <value>
+                <fullName>Customer Support SLAs</fullName>
+                <default>false</default>
+                <label>Customer Support SLAs</label>
+            </value>
+            <value>
+                <fullName>FX charge</fullName>
+                <default>false</default>
+                <label>FX charge</label>
+            </value>
+            <value>
+                <fullName>Monthly Deposit</fullName>
+                <default>false</default>
+                <label>Monthly Deposit</label>
+            </value>
+            <value>
+                <fullName>Non-negotiable terms</fullName>
+                <default>false</default>
+                <label>Non-negotiable terms</label>
+            </value>
+            <value>
+                <fullName>Non-standard pricing</fullName>
+                <default>false</default>
+                <label>Non-standard pricing</label>
+            </value>
+            <value>
+                <fullName>No Payroll Solution</fullName>
+                <default>false</default>
+                <label>No Payroll Solution</label>
+            </value>
+            <value>
+                <fullName>Not direct country coverage</fullName>
+                <default>false</default>
+                <label>Not direct country coverage</label>
+            </value>
+            <value>
+                <fullName>Not wanting to use a Direct Debit</fullName>
+                <default>false</default>
+                <label>Not wanting to use a Direct Debit</label>
+            </value>
+            <value>
+                <fullName>Short-term agreement (&lt;3 months)</fullName>
+                <default>false</default>
+                <label>Short-term agreement (&lt;3 months)</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>Time to onboard</fullName>
+                <default>false</default>
+                <label>Time to onboard</label>
+            </value>
+            <value>
+                <fullName>Upfront Payment</fullName>
+                <default>false</default>
+                <label>Upfront Payment</label>
+            </value>
+            <value>
+                <fullName>Visa Requirements</fullName>
+                <default>false</default>
+                <label>Visa Requirements</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

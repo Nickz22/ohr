@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AE_opp_product_fields_required</fullName>
+    <active>true</active>
+    <description>All fields related to discounts
+Visa Required Notes
+Risk &amp; Concerns Notes
+Billing Currency
+
+Are required to move to VC or Won stage for AE profile</description>
+    <errorConditionFormula>Owner.Profile.Name = &apos;AE User&apos;
+&amp;&amp;
+ISCHANGED(StageName)
+
+&amp;&amp;
+OR(
+ISPICKVAL(StageName, &quot;Verbal Commit&quot;),
+ISPICKVAL(StageName, &quot;Closed Won&quot;)
+)
+
+&amp;&amp;
+of_Opportunity_Products__c != Products_With_Discount_Fields_NEW__c
+
+&amp;&amp;
+RecordType.DeveloperName &lt;&gt; &quot;Partner&quot;
+&amp;&amp;
+RecordType.DeveloperName &lt;&gt; &quot;Expansion_Upsell&quot;</errorConditionFormula>
+    <errorMessage>Please make sure that all opportunity products have the following fields filled in: Discount Type, Discount Duration, Discount %,
+Visa Required Notes, Risk &amp; Concerns Notes, Billing Currency</errorMessage>
+</ValidationRule>

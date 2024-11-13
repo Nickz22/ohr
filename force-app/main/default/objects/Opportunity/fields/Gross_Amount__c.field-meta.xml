@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gross_Amount__c</fullName>
+    <description>calculates the gross amount as a roll up of all the opp product amounts, before the discount.</description>
+    <externalId>false</externalId>
+    <label>Gross Amount</label>
+    <summarizedField>OpportunityLineItem.amount_wo_discount__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

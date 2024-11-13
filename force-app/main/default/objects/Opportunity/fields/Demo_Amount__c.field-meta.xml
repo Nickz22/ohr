@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Amount when first entered Discovery stage</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Amount when first entered Discovery stage</inlineHelpText>
+    <label>Discovery - Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

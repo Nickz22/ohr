@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negative_Amount_for_Churn_Contraction</fullName>
+    <active>true</active>
+    <description>Requires Amount to be negative for Churn/Contraction opps</description>
+    <errorConditionFormula>AND(
+    RecordType.Name = &apos;Churn/Contraction Risk&apos;,
+    Amount &gt;= 0 || ISBLANK(Amount)
+)</errorConditionFormula>
+    <errorDisplayField>Amount</errorDisplayField>
+    <errorMessage>Amount must be negative.</errorMessage>
+</ValidationRule>

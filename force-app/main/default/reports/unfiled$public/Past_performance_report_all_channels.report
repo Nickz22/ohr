@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <columns>
+        <field>FK_$cbit__Clearbit__c.cbit__CompanyCategoryIndustryGroup__c</field>
+    </columns>
+    <columns>
+        <field>FK_$cbit__Clearbit__c.cbit__CompanyCategoryIndustry__c</field>
+    </columns>
+    <columns>
+        <field>FK_$cbit__Clearbit__c.cbit__CompanyCategorySubIndustry__c</field>
+    </columns>
+    <columns>
+        <field>FK_$cbit__Clearbit__c.cbit__CompanyCategorySector__c</field>
+    </columns>
+    <columns>
+        <field>COUNTRY</field>
+    </columns>
+    <columns>
+        <field>STATE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>STATUS</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contacted,Working,Qualified,Nurture,Meeting Set</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Past performance report all channels</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList@Lead.cbit__Clearbit__c</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2022-07-24</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-07-01</startDate>
+    </timeFrameFilter>
+</Report>

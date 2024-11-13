@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opp_origin_type__c</fullName>
+    <description>for BDRs to enter what triggered the opportunity creation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>for BDRs to enter what triggered the opportunity creation</inlineHelpText>
+    <label>Opportunity origin type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Social</fullName>
+                <default>false</default>
+                <label>Social</label>
+            </value>
+            <value>
+                <fullName>LinkedIn InMail</fullName>
+                <default>false</default>
+                <label>LinkedIn InMail</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+                <label>Qualified</label>
+            </value>
+            <value>
+                <fullName>AE Outbound</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AE Outbound</label>
+            </value>
+            <value>
+                <fullName>Outbound influenced</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outbound influenced</label>
+            </value>
+            <value>
+                <fullName>Video Prospecting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Video Prospecting</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

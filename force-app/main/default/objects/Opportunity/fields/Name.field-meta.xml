@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name</fullName>
+    <inlineHelpText>Pls follow the name convention: Company Name + Number of Hires + Country Acronym 
+( i.e Oyster - 1 PT , 1 SP , 2 FR , 3 IND )</inlineHelpText>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+</CustomField>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_to_Request_Product_Specialist__c</fullName>
+    <description>Used in flow called by &quot;Request Product Specialist&quot; button</description>
+    <externalId>false</externalId>
+    <label>Reason to Request Product Specialist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Data &amp; Metrics - Contractor Misclassification Analysis</fullName>
+                <default>false</default>
+                <label>Data &amp; Metrics - Contractor Misclassification Analysis</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Metrics - Competitive Intel</fullName>
+                <default>false</default>
+                <label>Data &amp; Metrics - Competitive Intel</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Metrics - Entity Setup Cost Analysis</fullName>
+                <default>false</default>
+                <label>Data &amp; Metrics - Entity Setup Cost Analysis</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Metrics - Salary Banding Analysis</fullName>
+                <default>false</default>
+                <label>Data &amp; Metrics - Salary Banding Analysis</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Metrics - Cost Breakdowns</fullName>
+                <default>false</default>
+                <label>Data &amp; Metrics - Cost Breakdowns</label>
+            </value>
+            <value>
+                <fullName>Implementation Support - Asset Generation/Contribution</fullName>
+                <default>false</default>
+                <label>Implementation Support - Asset Generation/Contribution</label>
+            </value>
+            <value>
+                <fullName>Implementation Support - Implementation Project Plans</fullName>
+                <default>false</default>
+                <label>Implementation Support - Implementation Project Plans</label>
+            </value>
+            <value>
+                <fullName>Implementation Support - Q&amp;A Sessions</fullName>
+                <default>false</default>
+                <label>Implementation Support - Q&amp;A Sessions</label>
+            </value>
+            <value>
+                <fullName>Infrastructure or Country Specific Knowledge - RFPs</fullName>
+                <default>false</default>
+                <label>Infrastructure or Country Specific Knowledge - RFPs</label>
+            </value>
+            <value>
+                <fullName>Infrastructure or Country Specific Knowledge - Country Specific Research</fullName>
+                <default>false</default>
+                <label>Infrastructure or Country Specific Knowledge - Country Specific Research</label>
+            </value>
+            <value>
+                <fullName>Product Knowledge - Infosec / Vendor Reviews</fullName>
+                <default>false</default>
+                <label>Product Knowledge - Infosec / Vendor Reviews</label>
+            </value>
+            <value>
+                <fullName>Product Knowledge - Product Demos (Integrations)</fullName>
+                <default>false</default>
+                <label>Product Knowledge - Product Demos (Integrations)</label>
+            </value>
+            <value>
+                <fullName>Product Knowledge - Product Information Sharing (i.e. Integrations)</fullName>
+                <default>false</default>
+                <label>Product Knowledge - Product Information Sharing (i.e. Integrations)</label>
+            </value>
+            <value>
+                <fullName>BAU Support - Bulk Uploads</fullName>
+                <default>false</default>
+                <label>BAU Support - Bulk Uploads</label>
+            </value>
+            <value>
+                <fullName>BAU Support - Ask-Product-Specialists Slack</fullName>
+                <default>false</default>
+                <label>BAU Support - Ask-Product-Specialists Slack</label>
+            </value>
+            <value>
+                <fullName>BAU Support - Risk and Blockers</fullName>
+                <default>false</default>
+                <label>BAU Support - Risk and Blockers</label>
+            </value>
+            <value>
+                <fullName>BAU Support - Handovers</fullName>
+                <default>false</default>
+                <label>BAU Support - Handovers</label>
+            </value>
+            <value>
+                <fullName>BAU Support - Consultive Deal Support</fullName>
+                <default>false</default>
+                <label>BAU Support - Consultive Deal Support</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>BAU Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BAU Support</label>
+            </value>
+            <value>
+                <fullName>Data &amp; Metrics</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data &amp; Metrics</label>
+            </value>
+            <value>
+                <fullName>Implementation Support</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementation Support</label>
+            </value>
+            <value>
+                <fullName>Implementation Support - Trumpet Pod Setup</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementation Support - Trumpet Pod Setup</label>
+            </value>
+            <value>
+                <fullName>Infrastructure or Country Specific Knowledge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Infrastructure or Country Specific Knowledge</label>
+            </value>
+            <value>
+                <fullName>Product Knowledge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Product Knowledge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

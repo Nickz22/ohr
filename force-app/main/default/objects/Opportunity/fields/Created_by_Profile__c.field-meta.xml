@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Created_by_Profile__c</fullName>
+    <description>Profile of the User who created the Opportunity</description>
+    <externalId>false</externalId>
+    <formula>CreatedBy.Profile.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Profile of the User who created the Opportunity</inlineHelpText>
+    <label>Created by Profile</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

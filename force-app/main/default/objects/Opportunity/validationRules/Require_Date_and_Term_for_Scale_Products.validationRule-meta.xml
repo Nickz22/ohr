@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Date_and_Term_for_Scale_Products</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        RecordType.Name = &apos;Initial Opportunity&apos;,
+        RecordType.Name = &apos;Subsequent Opportunity&apos;
+    ),
+    ISCHANGED(StageName),
+    OR(
+        ISPICKVAL(StageName, &quot;Verbal Commit&quot;),
+        ISPICKVAL(StageName, &quot;Closed Won&quot;)
+    ),
+    Number_of_Oyster_Scale_Products__c &gt; 0,
+    Scale_Products_with_Date_and_Term__c &lt;&gt; Number_of_Oyster_Scale_Products__c
+)</errorConditionFormula>
+    <errorMessage>Please fill in [Subscription Start Date], [Contract Term (months)], and [Billing Currency] on the Oyster Scale opportunity product before updating the Stage.</errorMessage>
+</ValidationRule>

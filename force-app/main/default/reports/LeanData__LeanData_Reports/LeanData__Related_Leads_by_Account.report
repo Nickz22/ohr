@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.LeanData__Leads__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$Title</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$Company</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$Owner</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$LeadSource</field>
+    </columns>
+    <columns>
+        <field>Account.LeanData__Leads__r$Status</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.LeanData__Leads__r$LeanData__Reporting_Matched_Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Related Leads by Account</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeanData__Account_with_Related_Leads__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

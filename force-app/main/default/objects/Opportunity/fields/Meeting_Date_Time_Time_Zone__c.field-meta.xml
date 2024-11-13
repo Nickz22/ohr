@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meeting_Date_Time_Time_Zone__c</fullName>
+    <description>Time zone for Meeting Date/Time (UTC)</description>
+    <externalId>false</externalId>
+    <label>Meeting Date/Time Time Zone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PST</fullName>
+                <default>false</default>
+                <label>PST</label>
+            </value>
+            <value>
+                <fullName>MST</fullName>
+                <default>false</default>
+                <label>MST</label>
+            </value>
+            <value>
+                <fullName>CST</fullName>
+                <default>false</default>
+                <label>CST</label>
+            </value>
+            <value>
+                <fullName>EST</fullName>
+                <default>false</default>
+                <label>EST</label>
+            </value>
+            <value>
+                <fullName>GMT</fullName>
+                <default>false</default>
+                <label>GMT</label>
+            </value>
+            <value>
+                <fullName>CET</fullName>
+                <default>false</default>
+                <label>CET</label>
+            </value>
+            <value>
+                <fullName>EET</fullName>
+                <default>false</default>
+                <label>EET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

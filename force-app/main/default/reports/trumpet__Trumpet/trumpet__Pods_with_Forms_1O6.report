@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>trumpet__Pod__c.trumpet__Form_To_Pods__r$trumpet__Form__c</field>
+    </columns>
+    <columns>
+        <field>trumpet__Pod__c.trumpet__Form_To_Pods__r.trumpet__Form_Responses__r$trumpet__PersonName__c</field>
+    </columns>
+    <columns>
+        <field>trumpet__Pod__c$trumpet__CreatedAt__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>trumpet__Pod__c$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>trumpet__Pod__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pods with Forms</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>trumpet__Pods_with_Forms__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>trumpet__Pod__c$trumpet__CreatedAt__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

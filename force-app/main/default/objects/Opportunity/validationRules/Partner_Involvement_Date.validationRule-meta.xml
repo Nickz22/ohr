@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Involvement_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(TEXT(Partner_Involvement_Type__c))),
+ISBLANK( Partner_Involvement_date__c)
+)</errorConditionFormula>
+    <errorMessage>Partner Involvement Date fields needs to be filled.</errorMessage>
+</ValidationRule>

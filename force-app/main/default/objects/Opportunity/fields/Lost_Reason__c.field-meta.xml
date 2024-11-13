@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe the primary reason(s) why the deal was not won.</inlineHelpText>
+    <label>zzz_Lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Country coverage/direct entities</fullName>
+                <default>false</default>
+                <label>Country coverage/direct entities</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Local HR Knowledge</fullName>
+                <default>false</default>
+                <label>Local HR Knowledge</label>
+            </value>
+            <value>
+                <fullName>Missing Integration</fullName>
+                <default>false</default>
+                <label>Missing Integration</label>
+            </value>
+            <value>
+                <fullName>Other product gap</fullName>
+                <default>false</default>
+                <label>Other product gap</label>
+            </value>
+            <value>
+                <fullName>Time to hire</fullName>
+                <default>false</default>
+                <label>Time to hire</label>
+            </value>
+            <value>
+                <fullName>Unable to support Visa</fullName>
+                <default>false</default>
+                <label>Unable to support Visa</label>
+            </value>
+            <value>
+                <fullName>Unable to offer equity</fullName>
+                <default>false</default>
+                <label>Unable to offer equity</label>
+            </value>
+            <value>
+                <fullName>Unable to customise contract</fullName>
+                <default>false</default>
+                <label>Unable to customise contract</label>
+            </value>
+            <value>
+                <fullName>Pay (payment method, payroll cycle, ...)</fullName>
+                <default>false</default>
+                <label>Pay (payment method, payroll cycle, ...)</label>
+            </value>
+            <value>
+                <fullName>Benefits</fullName>
+                <default>false</default>
+                <label>Benefits</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Global Payroll</fullName>
+                <default>false</default>
+                <label>Global Payroll</label>
+            </value>
+            <value>
+                <fullName>Setup Own Entity</fullName>
+                <default>false</default>
+                <label>Setup Own Entity</label>
+            </value>
+            <value>
+                <fullName>Client Unresponsive</fullName>
+                <default>false</default>
+                <label>Client Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Duplicate Opp</fullName>
+                <default>false</default>
+                <label>Duplicate Opp</label>
+            </value>
+            <value>
+                <fullName>Misqualified</fullName>
+                <default>false</default>
+                <label>Misqualified</label>
+            </value>
+            <value>
+                <fullName>Meeting Never Set</fullName>
+                <default>false</default>
+                <label>Meeting Never Set</label>
+            </value>
+            <value>
+                <fullName>No disclosed reason</fullName>
+                <default>false</default>
+                <label>No disclosed reason</label>
+            </value>
+            <value>
+                <fullName>Project Empower</fullName>
+                <default>false</default>
+                <label>Project Empower</label>
+            </value>
+            <value>
+                <fullName>Economic Downturn</fullName>
+                <default>false</default>
+                <label>Economic Downturn</label>
+            </value>
+            <value>
+                <fullName>Did not hire</fullName>
+                <default>false</default>
+                <label>Did not hire</label>
+            </value>
+            <value>
+                <fullName>Not a Priority</fullName>
+                <default>false</default>
+                <label>Not a Priority</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Opted for contractor</fullName>
+                <default>false</default>
+                <label>Opted for contractor</label>
+            </value>
+            <value>
+                <fullName>Competitive Loss</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Competitive Loss</label>
+            </value>
+            <value>
+                <fullName>Country Coverage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Country Coverage</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Disqualified</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Equity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Equity</label>
+            </value>
+            <value>
+                <fullName>HR Tech stack/integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HR Tech stack/integration</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Legal Blocker</label>
+            </value>
+            <value>
+                <fullName>Non-resident payroll</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-resident payroll</label>
+            </value>
+            <value>
+                <fullName>Not a Priority for the Moment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not a Priority for the Moment</label>
+            </value>
+            <value>
+                <fullName>Onboarding Issue</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Onboarding Issue</label>
+            </value>
+            <value>
+                <fullName>Position Filled in country of presence</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Position Filled in country of presence</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Qualified incorrectly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qualified incorrectly</label>
+            </value>
+            <value>
+                <fullName>Remained with Current Provider</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Remained with Current Provider</label>
+            </value>
+            <value>
+                <fullName>Stopped Recruiting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Stopped Recruiting</label>
+            </value>
+            <value>
+                <fullName>Team Member Dropped Out</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Team Member Dropped Out</label>
+            </value>
+            <value>
+                <fullName>Unable to satisfy the buyer purchasing criteria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unable to satisfy the buyer purchasing criteria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

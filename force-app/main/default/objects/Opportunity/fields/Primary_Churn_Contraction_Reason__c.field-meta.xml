@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Churn_Contraction_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary Churn/Contraction Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business-related termination</fullName>
+                <default>false</default>
+                <label>Business-related termination</label>
+            </value>
+            <value>
+                <fullName>Cancellation before start date</fullName>
+                <default>false</default>
+                <label>Cancellation before start date</label>
+            </value>
+            <value>
+                <fullName>Death-related termination</fullName>
+                <default>false</default>
+                <label>Death-related termination</label>
+            </value>
+            <value>
+                <fullName>Fixed term expiration</fullName>
+                <default>false</default>
+                <label>Fixed term expiration</label>
+            </value>
+            <value>
+                <fullName>Involuntary termination</fullName>
+                <default>false</default>
+                <label>Involuntary termination</label>
+            </value>
+            <value>
+                <fullName>Migration from EOR to Oyster</fullName>
+                <default>false</default>
+                <label>Migration from EOR to Oyster</label>
+            </value>
+            <value>
+                <fullName>Non-payment termination</fullName>
+                <default>false</default>
+                <label>Non-payment termination</label>
+            </value>
+            <value>
+                <fullName>Oyster decision</fullName>
+                <default>false</default>
+                <label>Oyster decision</label>
+            </value>
+            <value>
+                <fullName>Performance-related termination</fullName>
+                <default>false</default>
+                <label>Performance-related termination</label>
+            </value>
+            <value>
+                <fullName>Resignation</fullName>
+                <default>false</default>
+                <label>Resignation</label>
+            </value>
+            <value>
+                <fullName>Serious misconduct termination</fullName>
+                <default>false</default>
+                <label>Serious misconduct termination</label>
+            </value>
+            <value>
+                <fullName>Termination during probation</fullName>
+                <default>false</default>
+                <label>Termination during probation</label>
+            </value>
+            <value>
+                <fullName>Transfer to another service provider</fullName>
+                <default>false</default>
+                <label>Transfer to another service provider</label>
+            </value>
+            <value>
+                <fullName>Transfer to own entity</fullName>
+                <default>false</default>
+                <label>Transfer to own entity</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Acquisition or Merge</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acquisition or Merge</label>
+            </value>
+            <value>
+                <fullName>Benefits Coverage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Benefits Coverage</label>
+            </value>
+            <value>
+                <fullName>Bulk Termination / Redundancy Round</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Bulk Termination / Redundancy Round</label>
+            </value>
+            <value>
+                <fullName>Business Shutting Down</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business Shutting Down</label>
+            </value>
+            <value>
+                <fullName>Compliance Concerns</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Compliance Concerns</label>
+            </value>
+            <value>
+                <fullName>Control</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Control</label>
+            </value>
+            <value>
+                <fullName>Country Coverage</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Country Coverage</label>
+            </value>
+            <value>
+                <fullName>Customer wants in-office team</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer wants in-office team</label>
+            </value>
+            <value>
+                <fullName>Deposit fees</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deposit fees</label>
+            </value>
+            <value>
+                <fullName>EOR dissatisfaction</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EOR dissatisfaction</label>
+            </value>
+            <value>
+                <fullName>Expense Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Expense Issues</label>
+            </value>
+            <value>
+                <fullName>Going On-site</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Going On-site</label>
+            </value>
+            <value>
+                <fullName>Invoice Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invoice Issues</label>
+            </value>
+            <value>
+                <fullName>Layoff</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Layoff</label>
+            </value>
+            <value>
+                <fullName>Legal Counsel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Legal Counsel</label>
+            </value>
+            <value>
+                <fullName>Onboarding Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Onboarding Issues</label>
+            </value>
+            <value>
+                <fullName>Opening entity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Opening entity</label>
+            </value>
+            <value>
+                <fullName>Operational Responsiveness (Support/Finance, other BUs)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Operational Responsiveness (Support/Finance, other BUs)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Oyster migration to direct</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oyster migration to direct</label>
+            </value>
+            <value>
+                <fullName>Price / Cost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Price / Cost</label>
+            </value>
+            <value>
+                <fullName>Support responsiveness</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Support responsiveness</label>
+            </value>
+            <value>
+                <fullName>TM FTE moved to contractor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM FTE moved to contractor</label>
+            </value>
+            <value>
+                <fullName>TM Resignation / End of Contract</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM Resignation / End of Contract</label>
+            </value>
+            <value>
+                <fullName>TM Termination</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM Termination</label>
+            </value>
+            <value>
+                <fullName>TM end of fixed-term employment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM end of fixed-term employment</label>
+            </value>
+            <value>
+                <fullName>TM onboarding issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM onboarding issues</label>
+            </value>
+            <value>
+                <fullName>TM payment issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM payment issues</label>
+            </value>
+            <value>
+                <fullName>TM performance-related termination</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM performance-related termination</label>
+            </value>
+            <value>
+                <fullName>TM relocation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TM relocation</label>
+            </value>
+            <value>
+                <fullName>Temporary Hires - Opening Entity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Temporary Hires - Opening Entity</label>
+            </value>
+            <value>
+                <fullName>Temporary Hires - Relocation Ongoing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Temporary Hires - Relocation Ongoing</label>
+            </value>
+            <value>
+                <fullName>Visa Support Limitations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Visa Support Limitations</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

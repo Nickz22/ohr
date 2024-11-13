@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Country_mandatory_for_Closed_Won</fullName>
+    <active>false</active>
+    <description>Checks the &quot;New Country request&quot; field is filled in when moving to Closed won.</description>
+    <errorConditionFormula>AND (
+ISCHANGED( StageName ),
+ISPICKVAL(StageName, &quot;Closed Won&quot;),
+ISBLANK(text(  New_Country_Request__c  ))
+)</errorConditionFormula>
+    <errorDisplayField>New_Country_Request__c</errorDisplayField>
+    <errorMessage>Fill in &quot;New Country Request&quot; Field.</errorMessage>
+</ValidationRule>

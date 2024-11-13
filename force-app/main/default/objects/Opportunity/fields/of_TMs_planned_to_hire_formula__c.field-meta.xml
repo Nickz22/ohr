@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_TMs_planned_to_hire_formula__c</fullName>
+    <description>Used for Super Round Robin.  Converts the &quot;# of FTEs planned to hire&quot; picklist value to a number.  Note that if &quot;20+&quot; is selected, this formula will return 21.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(How_many_TM__c, &quot;20+&quot;), 21,VALUE(TEXT(How_many_TM__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label># of FTEs planned to hire (formula)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

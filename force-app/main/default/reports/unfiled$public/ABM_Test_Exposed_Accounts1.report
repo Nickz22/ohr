@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>EMAIL</field>
+    </columns>
+    <columns>
+        <field>OWNER_FULL_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Actively_Worked__c</field>
+    </columns>
+    <columns>
+        <field>LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>INDUSTRY</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.ADDRESS1_COUNTRY</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_COUNTRY</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MacStadium,MRP,nCino,Inc.,Salonkee,MediaMath,YipitData,First&amp;Third,Culture Amp,TIP,United Software Group Inc,Sherweb,tado°,Appear,Braze,Iterable,Talentify.io,Arable,Menlo Security Inc.,Contra,PitchGround,Polco,Tyto Athene,LLC,Givelify,Creative Capsule,Guided Solutions,Paddle,VySystems,HedgeServ,Outsight,MeridianLink,Mintos,Distru,iSpot.tv,Zippin,Minitab,AntiMatter Games Limited,Phocas Software,Cricut,Impress,Fraugster,Accume Partners,RMI,OJCommerce,MANTA,Stream,Mediavine,rebuy recommerce,denkwerk,Superside,Berkeley Lights,DriveNets,Adarga,Calnex Solutions,Sycor,Spyrosoft,Fission Labs,GHX,Beyond Key,MVF - 1st in the Sunday Times Best Companies to Work For,Resilia,Claris,an Apple company,Olympic Channel,Connecteam,Caseware,Netwrix Corporation,BuySellAds,Hutch,Elemica,Preset,Creditspring,Fusion Health,Mavrck,TripActions,CoreView,CMR Surgical,Poloniex,Attraqt,Litmus,Firebolt,OGL,Binti,NPAW,Health Service,Corti,Forte Group,IntraNerve Neuroscience,EDITEC,CData Software,Neontri,Clue by Biowink,KUBRA,PALO IT,Heal,MGID,CharterUP,ROI·DNA,Worldwide TechServices,Dataprise,Logcomex,Zenoti,tink,MacroFab,Circle Medical - a UCSF Health Affiliate,Precision Nutrition,MediaKind,Vytalize Health,SafeAI,ChartHop,Indigov,eyeo,Gadgeon Systems Inc.,Winnow,Morressier,Rain Instant Pay,Novia Financial Plc,BravoTECH,Performan</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>ABM Test - Exposed Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

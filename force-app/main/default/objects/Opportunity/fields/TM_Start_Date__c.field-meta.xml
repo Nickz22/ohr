@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TM_Start_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the contract start date of the TM. If an opp has more than 1 TM, input the nearest start date</inlineHelpText>
+    <label>TM Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

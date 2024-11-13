@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recheck_Countries__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Last check for the reps to make sure all relevant information was included in the qualification fields. Used for validation of Closed Lost Opps.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please make sure you included all countries, especially if lack of coverage was the loss reason in the Global Payroll - Countries field above.</inlineHelpText>
+    <label>Recheck GP Countries</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

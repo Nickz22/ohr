@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Editing_when_No_Show</fullName>
+    <active>true</active>
+    <description>Opp can only be moved to Closed Lost or reassigned to a BDR (or Inside Sales Rep) when Meeting Status (Demodesk) = No Show</description>
+    <errorConditionFormula>Meeting_Status_Demodesk__c = &quot;No show&quot;
+&amp;&amp;
+!ISCHANGED(RecordTypeId)
+&amp;&amp;
+ISCHANGED(OwnerId) 
+&amp;&amp; !CONTAINS(Owner.Profile.Name,&quot;BDR&quot;)
+&amp;&amp; !CONTAINS(Owner.Profile.Name,&quot;Inside Sales Rep&quot;)</errorConditionFormula>
+    <errorMessage>You can only move this opp to Closed Lost or reassign it to a BDR.</errorMessage>
+</ValidationRule>

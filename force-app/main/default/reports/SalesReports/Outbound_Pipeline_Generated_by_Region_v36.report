@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>WON:SUM/RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Win Rate</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>AMOUNT:SUM/AMOUNT:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Pipeline %</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_78288724</developerName>
+        <masterLabel>Pipeline Category</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>LEAD_SOURCE</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>AE Outbound</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>BDR Outbound</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Offline Sources</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Operatix</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>List</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Growthonics</sourceValue>
+            </sourceValues>
+            <value>Outbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Qualified_Chat</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Webinar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Startup Offer Inbound</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Webflow_Employee_Signup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Organic Social</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Referrals</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Organic Search</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paid Search</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paid Social</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Direct Traffic</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Email Marketing</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Video</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Display</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Inbound Other</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Event</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Oyster Employee Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Native_Form_Lead</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>External Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Other Campaigns</sourceValue>
+            </sourceValues>
+            <value>Inbound</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>VC Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>PartnerStack</sourceValue>
+            </sourceValues>
+            <value>Partners</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>AMOUNT</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStackedTo100</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>ROLLUP_DESCRIPTION</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_78288724</secondaryGroupingColumn>
+        <showAxisLabels>false</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>FULL_NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>STAGE_NAME</field>
+    </columns>
+    <columns>
+        <field>FISCAL_QUARTER</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>AMOUNT</field>
+    </columns>
+    <columns>
+        <field>NEXT_STEP</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>LEAD_SOURCE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Business</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Rep</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ROLLUP_DESCRIPTION</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_78288724</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Outbound Pipeline Generated by Region</name>
+    <params>
+        <name>open</name>
+        <value>all</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>LEAD_SOURCE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_PREV1</interval>
+    </timeFrameFilter>
+</Report>

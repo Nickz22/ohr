@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewed_Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>When opportunities are auto-created by the &quot;Opportunity - Create Renewal for Scale Opps&quot; flow, this field is populated with the original opportunity that was renewed.</description>
+    <externalId>false</externalId>
+    <label>Renewed Opportunity</label>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Opportunities</relationshipLabel>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

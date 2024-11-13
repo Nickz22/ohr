@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negotiation_Partner_Relationship_Context</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED(StageName)
+&amp;&amp; OR(
+    ISPICKVAL(StageName, &quot;Negotiation&quot;),
+    IsWon
+)
+&amp;&amp; ISBLANK(Account.Partner_Relationship_Context__c)
+&amp;&amp; RecordType.DeveloperName = &quot;Partner&quot;</errorConditionFormula>
+    <errorMessage>Please fill in &quot;Partner Relationship Context&quot; on the related account before changing this opportunity&apos;s Stage.</errorMessage>
+</ValidationRule>

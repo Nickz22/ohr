@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Churn%2FContraction Risk</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Open</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Saved</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

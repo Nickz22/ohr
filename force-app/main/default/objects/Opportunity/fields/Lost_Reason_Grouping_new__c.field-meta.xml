@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_Grouping_new__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Lost_Reason_new__c),
+    &quot;Feature gap&quot;, &quot;Product/Service gap&quot;,
+    &quot;Service gap (example: Visas, Benefits, Time to Hire etc)&quot;, &quot;Product/Service gap&quot;,
+    &quot;Country coverage/ Infrastructure&quot;, &quot;Product/Service gap&quot;,
+    &quot;Empower&quot;, &quot;Product/Service gap&quot;,
+    &quot;Price&quot;, &quot;Price/Deposit&quot;,
+    &quot;Deposit&quot;, &quot;Price/Deposit&quot;,
+    &quot;Did not hire&quot;, &quot;Status Quo&quot;,
+    &quot;Stayed with provider&quot;, &quot;Status Quo&quot;,
+    &quot;Stayed as contractor&quot;, &quot;Status Quo&quot;,
+    &quot;Kept own entity&quot;, &quot;Status Quo&quot;,
+    &quot;Open own entity&quot;, &quot;Other Solution&quot;,
+    &quot;Opted for contractor&quot;, &quot;Other Solution&quot;,
+    &quot;Undisclosed/other alternative&quot;, &quot;Misqualified&quot;,
+    &quot;Incorrect qualification/ Incorrectly qualified&quot;, &quot;Misqualified&quot;,
+    &quot;Unresponsive&quot;, &quot;Misqualified&quot;,
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lost Reason Grouping</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

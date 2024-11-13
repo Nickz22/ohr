@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_month__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>to capture customers that will benefit from the promo</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if the prospect is being offered the 3-month free promo</inlineHelpText>
+    <label>3-month free promo</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

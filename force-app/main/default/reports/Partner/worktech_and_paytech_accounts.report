@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Stage__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Partner_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Account$Category__c</field>
+    </columns>
+    <columns>
+        <field>Account$Account_Segment__c</field>
+    </columns>
+    <columns>
+        <field>Account$Account_SubSegment__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Account.Partner_RT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Work Tech,PEO/Payroll,Talent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Account_Segment__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Benefits,Finance &amp; ERP,Visa_&amp;_Relocation,Operations,Tools/Software,PEO,Payroll,EOR,Talent Acquisition Technology,Social Impact,Mission Driven,OFR,Future of Work,Direct to Consumer,Other</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Partner_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Won,Negotiation,Onboarded</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>worktech and paytech accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CriticalCompelling_Event_required_Negot</fullName>
+    <active>false</active>
+    <description>Requires users to fill out Critical/Compelling Event field when stage changes to Negotiation</description>
+    <errorConditionFormula>AND (
+NOT(ISPICKVAL(Type, &quot;Existing Business&quot;)),
+ISCHANGED( StageName ),
+ISPICKVAL( StageName, &quot;Negotiation&quot; ),
+ISBLANK(  Critical_Compelling_Event__c  )
+)</errorConditionFormula>
+    <errorMessage>Fill in &quot;Critical/Compelling Event&quot; field.</errorMessage>
+</ValidationRule>

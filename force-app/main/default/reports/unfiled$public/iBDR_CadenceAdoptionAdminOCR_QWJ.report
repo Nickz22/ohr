@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>WHO_NAME:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Count Unique</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>#Enrollments</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Activity.SalesLoft1__SalesLoft_Unique_View_Count__c:SUM /RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Open %</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Activity.SalesLoft1__SalesLoft_Unique_Click_Count__c:SUM /RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Click %</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Activity.SalesLoft1__SalesLoft_Unique_Reply_Count__c:SUM /RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Reply %</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>WHO_NAME</field>
+    </columns>
+    <columns>
+        <field>SUBJECT</field>
+    </columns>
+    <columns>
+        <field>ASSIGNED</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT</field>
+    </columns>
+    <columns>
+        <field>CONTACT</field>
+    </columns>
+    <columns>
+        <field>LEAD</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Activity.SalesLoft1__SalesLoft_View_Count__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Activity.SalesLoft1__SalesLoft_Clicked_Count__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Activity.SalesLoft1__SalesLoft_Replies_Count__c</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>IF(
+    CONTAINS(Activity.SalesLoft1__SalesLoft_Cadence_Name__c, &apos;DEMO&apos;), &apos;Demo&apos;,
+    IF(
+        CONTAINS(Activity.SalesLoft1__SalesLoft_Cadence_Name__c, &apos;ADMIN SIGN&apos;), &apos;Admin&apos;,
+        IF(
+            CONTAINS(Activity.SalesLoft1__SalesLoft_Cadence_Name__c, &apos;DORMANT&apos;), &apos;Dormant&apos;,
+            IF(
+                CONTAINS(Activity.SalesLoft1__SalesLoft_Cadence_Name__c, &apos;OBDR&apos;), &apos;Outbound&apos;,
+                &apos;Other&apos;
+            )
+        )
+    )
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Cadence Type</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>SUBJECT</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>Email:,Call,Other:,LinkedIn:,Reply:,Note,Meeting Booked,LinkedIn Sales Navigator:</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.SalesLoft1__SalesLoft_Cadence_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.Assigned_To_Profile__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Inbound BDR,BDR User,Inside Sales Rep</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ASSIGNED</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>inactive</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Activity.SalesLoft1__SalesLoft_Cadence_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>ADMIN</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity.SalesLoft1__SalesLoft_Cadence_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Activity.SalesLoft1__SalesLoft_Email_Template_Title__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BDR CadenceAdoption|Admin|O/C/R</name>
+    <params>
+        <name>closed</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>type</name>
+        <value>t</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Activity</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>DUE_DATE</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_PREVCURFY</interval>
+    </timeFrameFilter>
+</Report>

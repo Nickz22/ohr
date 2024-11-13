@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_HR_Tech_Stack_for_Global_Payroll</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        INCLUDES(Product_Name__c,&quot;Global Payroll&quot;),
+        Global_Payroll_Products__c &gt; 0
+    ),
+    ISBLANK(HR_Tech_Stack_Integration_Open__c),
+    NOT(IsClosed)
+)</errorConditionFormula>
+    <errorDisplayField>HR_Tech_Stack_Integration_Open__c</errorDisplayField>
+    <errorMessage>Please fill in [HR Tech Stack/Integration (Open)] on the opportunity before adding a Global Payroll product.</errorMessage>
+</ValidationRule>

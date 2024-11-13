@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Won_Reason_Context_Must_Be_Completed</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    NOT(ISPICKVAL(Type, &quot;Existing Business&quot;)),
+    ISCHANGED( StageName ),
+    OR (
+        ISPICKVAL( StageName , &quot;Verbal Commit&quot; ),
+        ISPICKVAL( StageName, &quot;Closed Won&quot;)
+    ),
+    ISBLANK(Won_Reason_Context__c)
+)</errorConditionFormula>
+    <errorDisplayField>Won_Reason_Context__c</errorDisplayField>
+    <errorMessage>Won Reason Context must be filled in before saving.</errorMessage>
+</ValidationRule>

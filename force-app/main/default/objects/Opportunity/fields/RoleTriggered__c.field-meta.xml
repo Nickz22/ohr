@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RoleTriggered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This is for the opportunitycontactroletrigger handler to avoid recursive triggerings</description>
+    <externalId>false</externalId>
+    <label>RoleTriggered?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

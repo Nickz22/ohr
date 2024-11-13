@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Oyster_Scale_Products__c</fullName>
+    <description>Used for &quot;Opportunity - Create Renewal for Scale Opps&quot; flow</description>
+    <externalId>false</externalId>
+    <label>Number of Oyster Scale Products</label>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Product_Name__c</field>
+        <operation>equals</operation>
+        <value>Oyster Scale</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_strategic_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(Partner_strategic__c)),
+ISBLANK(Partner_Manager_strategic__c),
+ISBLANK(TEXT(Partner_Involvement_Type_strategic__c)),
+ISBLANK(TEXT(Partner_Involvement_Detail_strategic__c)), 
+ISBLANK(Partner_Context_strategic__c), 
+ISBLANK(Partner_Involvement_Date_strategic__c))</errorConditionFormula>
+    <errorMessage>Please fill Partner (strategic) fields: Partner Manager (strategic), Partner Involvement Type (strategic), Partner Involvement Type (strategic), Partner Involvement Detail (strategic), Involvement Context (strategic) and Partner Involvement Date (strate.</errorMessage>
+</ValidationRule>

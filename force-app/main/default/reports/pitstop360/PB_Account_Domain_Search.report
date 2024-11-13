@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>URL</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>LAST_UPDATE</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>URL</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>grin.co,unqork.com,leaflink.com,project44.com,flexe.com,fairmarkit.com,spryker.com,lokalise.com,iboss.com,getaccept.com,airtable.com,clickup.com,eightfold.ai,ordermark.com,hyperscience.com,bambee.com,ultimate.ai,boardable.com,ushur.com,scale.com,zeotap.com,getshogun.com,contractbook.com,venminder.com,reveleer.com,brightflag.com,controlup.com,aidash.com,skilljar.com,shopmonkey.io</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>PB Account Domain Search</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

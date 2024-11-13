@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_34514630</developerName>
+        <masterLabel>sub-region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>FULL_NAME</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Elise Lavielle</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mostafa Nasr</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brittni Ralston</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jack Corrigan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Renan Lesaffre</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>João Matos</sourceValue>
+            </sourceValues>
+            <value>Cata&apos;s team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Matt Morley</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Nasser Yndestad</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Kasperi Helikivi</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Giuseppe Vitale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Aneta Janiec</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Konstantin Drosdek</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yann Tano</sourceValue>
+            </sourceValues>
+            <value>Heleen&apos;s team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Jesse Dahms</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniyar Yerdenov</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Matthew Sutton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Hannah Crow</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collin Kinser</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Denis Kalamar</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Brina Martens</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Carley Montague</sourceValue>
+            </sourceValues>
+            <value>Will&apos;s team</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Peyton Parker</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>William Morton</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Laney Lui</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Ariane Bobiash</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chris Chan</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tyler Sutherland</sourceValue>
+            </sourceValues>
+            <value>DZ&apos;s team</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
+        <field>OPPORTUNITY_NAME</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_Reason_Context__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_to_Competitor_Name__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Lost_to_Comp__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6) AND 7</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Deal_Complexity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Complex</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Lost_Reason__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>excludes</operator>
+            <value>Not a Priority,Misqualified,Duplicate Opp,Client Unresponsive,Meeting Never Set,Did not hire</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Deal_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Company_size_employee__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>enterprise</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New Business</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Pilot_customer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ROLLUP_DESCRIPTION</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>AE</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>STAGE_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Won_Reason__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity.Lost_Reason__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Win loss reasons</name>
+    <params>
+        <name>open</name>
+        <value>closed</value>
+    </params>
+    <params>
+        <name>probability</name>
+        <value>&gt;0</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunity</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CLOSE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2023-04-21</startDate>
+    </timeFrameFilter>
+</Report>

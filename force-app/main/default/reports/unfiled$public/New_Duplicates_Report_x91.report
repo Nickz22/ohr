@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>DuplicateRecordSet.DuplicateRecordItems$Name</field>
+    </columns>
+    <description>Each Duplicate Record Set contains Duplicate Record Items. These items are records that match the Matching Rules defined by Salesforce. Click the Duplicate Record Set link, then navigate to &quot;Related&quot; tab to see the specific duplicate records.</description>
+    <filter>
+        <criteriaItems>
+            <column>DuplicateRecordSet$RecordCount</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>DuplicateRecordSet$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Duplicates Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Duplicates__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DuplicateRecordSet$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

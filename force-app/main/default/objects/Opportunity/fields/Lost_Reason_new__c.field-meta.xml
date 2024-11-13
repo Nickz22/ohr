@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lost_Reason_new__c</fullName>
+    <externalId>false</externalId>
+    <label>Lost Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Feature gap</fullName>
+                <default>false</default>
+                <label>Feature gap</label>
+            </value>
+            <value>
+                <fullName>Service gap (example: Visas, Benefits, Time to Hire etc)</fullName>
+                <default>false</default>
+                <label>Service gap (example: Visas, Benefits, Time to Hire etc)</label>
+            </value>
+            <value>
+                <fullName>Country coverage/ Infrastructure</fullName>
+                <default>false</default>
+                <label>Country coverage/ Infrastructure</label>
+            </value>
+            <value>
+                <fullName>Empower</fullName>
+                <default>false</default>
+                <label>Empower</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Deposit</fullName>
+                <default>false</default>
+                <label>Deposit</label>
+            </value>
+            <value>
+                <fullName>Did not hire</fullName>
+                <default>false</default>
+                <label>Did not hire</label>
+            </value>
+            <value>
+                <fullName>Stayed with provider</fullName>
+                <default>false</default>
+                <label>Stayed with provider</label>
+            </value>
+            <value>
+                <fullName>Stayed as contractor</fullName>
+                <default>false</default>
+                <label>Stayed as contractor</label>
+            </value>
+            <value>
+                <fullName>Kept own entity</fullName>
+                <default>false</default>
+                <label>Kept own entity</label>
+            </value>
+            <value>
+                <fullName>Open own entity</fullName>
+                <default>false</default>
+                <label>Open own entity</label>
+            </value>
+            <value>
+                <fullName>Opted for contractor</fullName>
+                <default>false</default>
+                <label>Opted for contractor</label>
+            </value>
+            <value>
+                <fullName>Undisclosed/other alternative</fullName>
+                <default>false</default>
+                <label>Undisclosed/other alternative</label>
+            </value>
+            <value>
+                <fullName>Incorrect qualification/ Incorrectly qualified</fullName>
+                <default>false</default>
+                <label>Incorrect qualification/ Incorrectly qualified</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

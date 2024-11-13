@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity.OpportunityContactRoles$FirstName</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles$LastName</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles$Title</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.OpportunityContactRoles$Owner</field>
+    </columns>
+    <description>My Promising Contacts for New Business. Contacts associated with MY Closed-Won Opportunities who are flagged as “Not at Company” by LinkedIn Sales Navigator Data Validation. Use this report to identify potential champions now at new companies.</description>
+    <filter>
+        <booleanFilter>1 AND (2 AND 3)</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.OpportunityContactRoles*Contact$LID__No_longer_at_Company__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Not at Company</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$IsClosed</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Probability</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>100.0</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SN: My Past Customers at New Companies</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LID__LinkedIn_Opportunities_with_Contact_Roles_at_Risk__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Discount__c</fullName>
+    <description>The maximum Discount % from all opportunity products</description>
+    <externalId>false</externalId>
+    <inlineHelpText>State the maximum allowable discount percentage for the deal.</inlineHelpText>
+    <label>Max Discount %</label>
+    <summarizedField>OpportunityLineItem.Discount__c</summarizedField>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

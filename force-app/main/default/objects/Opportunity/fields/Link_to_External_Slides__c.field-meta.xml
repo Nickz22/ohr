@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_External_Slides__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If applicable, provide a hyperlink to an external presentation or document that further explains the &apos;3 WHYs&apos; or related project details.</inlineHelpText>
+    <label>Link to External Slides</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>
