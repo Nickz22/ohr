@@ -52,7 +52,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Client Unresponsive</value>
+            <value>Unresponsive</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
@@ -61,7 +61,7 @@
         <field>FULL_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Client Unresponsive C/L Global Q3 onward</name>
+    <name>Unresponsive C/L Global Q3 onward</name>
     <params>
         <name>open</name>
         <value>all</value>

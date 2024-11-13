@@ -178,7 +178,8 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>excludes</operator>
-            <value>Not a Priority,Misqualified,Duplicate Opp,Client Unresponsive,Meeting Never Set,Did not hire</value>
+            <value>Not a Priority,Misqualified,Duplicate Opp,Unresponsive,Meeting Never Set,Did not
+                hire</value>
         </criteriaItems>
         <criteriaItems>
             <column>Opportunity.Deal_Date__c</column>

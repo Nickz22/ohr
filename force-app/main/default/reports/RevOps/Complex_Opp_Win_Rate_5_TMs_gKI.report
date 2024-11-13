@@ -86,7 +86,9 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>false</isUnlocked>
             <operator>notEqual</operator>
-            <value>Client Unresponsive,Qualified incorrectly,Duplicate,Meeting Never Set,Not a Priority for the Moment,Position Filled in country of presence,Setup Own Entity,Stopped Recruiting,Team Member Dropped Out</value>
+            <value>Unresponsive,Qualified incorrectly,Duplicate,Meeting Never Set,Not a Priority for
+                the Moment,Position Filled in country of presence,Setup Own Entity,Stopped
+                Recruiting,Team Member Dropped Out</value>
         </criteriaItems>
     </filter>
     <format>Summary</format>

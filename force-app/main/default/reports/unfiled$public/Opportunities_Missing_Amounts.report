@@ -56,7 +56,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>notEqual</operator>
-            <value>Client Unresponsive,Meeting Never Set</value>
+            <value>Unresponsive,Meeting Never Set</value>
         </criteriaItems>
         <criteriaItems>
             <column>STAGE_NAME</column>

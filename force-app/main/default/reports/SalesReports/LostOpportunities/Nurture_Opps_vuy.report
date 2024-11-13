@@ -47,7 +47,7 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Client Unresponsive,Not a Priority for the Moment,Remained with Current Provider</value>
+            <value>Unresponsive,Not a Priority for the Moment,Remained with Current Provider</value>
         </criteriaItems>
     </filter>
     <format>Tabular</format>
