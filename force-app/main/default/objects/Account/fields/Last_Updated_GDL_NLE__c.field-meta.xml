@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Updated_GDL_NLE__c</fullName>
+    <label>Last Updated: GDL NLE</label>
+    <type>Date</type>
+    <description>GDL NLE = Globally Distributed Locations No Legal Entities. Last updated date. Provides information about countries where company doesn't have
+        legal entity, comparing employees location and company's office locations. Enrichment
+        source: Clay.</description>
+</CustomField> 

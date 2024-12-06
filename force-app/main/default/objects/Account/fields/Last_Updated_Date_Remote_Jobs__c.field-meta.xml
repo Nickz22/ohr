@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Updated_Date_Remote_Jobs__c</fullName>
+    <label>Last Updated Date: Remote Jobs?</label>
+    <type>Date</type>
+    <description>Latest enriched date. Provides information whether the company is hiring remotely.
+        Possible enrichment sources: Clay, Madkudu.</description>
+</CustomField> 

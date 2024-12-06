@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hiring_Title_Count_Bucket__c</fullName>
+    <label>Hiring Title Count Bucket</label>
+    <type>Picklist</type>
+    <description>Provides information how many job openings the company has. Possible enrichment
+        sources: Clay, Madkudu.</description>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <label>0</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>1 - 5</fullName>
+                <label>1 - 5</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>6 - 15</fullName>
+                <label>6 - 15</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>16 - 45</fullName>
+                <label>16 - 45</label>
+                <default>false</default>
+            </value>
+            <value>
+                <fullName>more than 45</fullName>
+                <label>more than 45</label>
+                <default>false</default>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField> 

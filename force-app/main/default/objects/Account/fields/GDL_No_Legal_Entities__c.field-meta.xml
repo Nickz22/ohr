@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GDL_No_Legal_Entities__c</fullName>
+    <label>GDL No Legal Entities</label>
+    <type>Text</type>
+    <length>255</length>
+    <description>GDL = Globally Distributed Locations. Provides information about countries where the company doesn't have legal entity,
+        comparing employees location and company's office locations. Enrichment source: Clay.</description>
+</CustomField> 
