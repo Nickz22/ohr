@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Remote_hiring_accounts_EMEA</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>Funding_Date__c</columns>
+    <columns>Funding_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Funding_Type__c</field>
+        <operation>equals</operation>
+        <value>Series B,Series C,Series D</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notEqual</operation>
+        <value>Elvin,schat,memba</value>
+    </filters>
+    <label>Series B &amp; C &amp; D</label>
+</ListView>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subregion__c</fullName>
+    <externalId>false</externalId>
+    <label>Subregion</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMER - California</fullName>
+                <default>false</default>
+                <label>AMER - California</label>
+            </value>
+            <value>
+                <fullName>AMER - Canada East</fullName>
+                <default>false</default>
+                <label>AMER - Canada East</label>
+            </value>
+            <value>
+                <fullName>AMER - Canada West</fullName>
+                <default>false</default>
+                <label>AMER - Canada West</label>
+            </value>
+            <value>
+                <fullName>AMER - Mid Atlantic</fullName>
+                <default>false</default>
+                <label>AMER - Mid Atlantic</label>
+            </value>
+            <value>
+                <fullName>AMER - Midwest</fullName>
+                <default>false</default>
+                <label>AMER - Midwest</label>
+            </value>
+            <value>
+                <fullName>AMER - Mountain West</fullName>
+                <default>false</default>
+                <label>AMER - Mountain West</label>
+            </value>
+            <value>
+                <fullName>AMER - New York</fullName>
+                <default>false</default>
+                <label>AMER - New York</label>
+            </value>
+            <value>
+                <fullName>AMER - Northeast</fullName>
+                <default>false</default>
+                <label>AMER - Northeast</label>
+            </value>
+            <value>
+                <fullName>AMER - Pacific Northwest</fullName>
+                <default>false</default>
+                <label>AMER - Pacific Northwest</label>
+            </value>
+            <value>
+                <fullName>AMER - Southeast</fullName>
+                <default>false</default>
+                <label>AMER - Southeast</label>
+            </value>
+            <value>
+                <fullName>AMER - Southwest</fullName>
+                <default>false</default>
+                <label>AMER - Southwest</label>
+            </value>
+            <value>
+                <fullName>AMER - Tri State</fullName>
+                <default>false</default>
+                <label>AMER - Tri State</label>
+            </value>
+            <value>
+                <fullName>EMEA - BeNeLux</fullName>
+                <default>false</default>
+                <label>EMEA - BeNeLux</label>
+            </value>
+            <value>
+                <fullName>EMEA - CEE</fullName>
+                <default>false</default>
+                <label>EMEA - CEE</label>
+            </value>
+            <value>
+                <fullName>EMEA - CIS</fullName>
+                <default>false</default>
+                <label>EMEA - CIS</label>
+            </value>
+            <value>
+                <fullName>EMEA - DACH</fullName>
+                <default>false</default>
+                <label>EMEA - DACH</label>
+            </value>
+            <value>
+                <fullName>EMEA - Israel</fullName>
+                <default>false</default>
+                <label>EMEA - Israel</label>
+            </value>
+            <value>
+                <fullName>EMEA - MEA</fullName>
+                <default>false</default>
+                <label>EMEA - MEA</label>
+            </value>
+            <value>
+                <fullName>EMEA - Nordics</fullName>
+                <default>false</default>
+                <label>EMEA - Nordics</label>
+            </value>
+            <value>
+                <fullName>EMEA - SEE</fullName>
+                <default>false</default>
+                <label>EMEA - SEE</label>
+            </value>
+            <value>
+                <fullName>EMEA - UKI</fullName>
+                <default>false</default>
+                <label>EMEA - UKI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

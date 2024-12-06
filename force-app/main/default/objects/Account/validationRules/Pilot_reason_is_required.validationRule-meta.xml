@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilot_reason_is_required</fullName>
+    <active>true</active>
+    <description>put the reason for pilot when you request an approval to set the customer for pilot</description>
+    <errorConditionFormula>AND(
+ Request_approval_of_Customer_pilot__c = True,
+ISBLANK( Pilot_Customer_Reason__c )
+)</errorConditionFormula>
+    <errorDisplayField>Pilot_Customer_Reason__c</errorDisplayField>
+    <errorMessage>Add the &quot;Pilot Customer reason&quot; information to save the changes</errorMessage>
+</ValidationRule>

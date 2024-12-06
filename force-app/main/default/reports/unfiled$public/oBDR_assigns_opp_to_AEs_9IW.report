@@ -92,7 +92,7 @@
             <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>excludes</operator>
+            <operator>notEqual</operator>
             <value>Other product gap,Country coverage/direct entities,Meeting Never Set</value>
         </criteriaItems>
     </filter>

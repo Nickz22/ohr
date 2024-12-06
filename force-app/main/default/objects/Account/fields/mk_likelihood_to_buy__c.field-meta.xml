@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>mk_likelihood_to_buy__c</fullName>
+    <description>MadKudu likelihood to buy emoji</description>
+    <externalId>false</externalId>
+    <formula>IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;,&quot;&quot;,0,0) +
+CASE(mk_likelihood_to_buy_segment__c ,
+&apos;very high&apos;, 
+IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20) + 
+IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20) + 
+IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20),
+&apos;high&apos;, 
+IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20) + 
+IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20),
+&apos;medium&apos;, 
+IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20),
+&apos;low&apos;,
+IMAGE(&quot;https://cdn.madkudu.com/images/snowflake.png&quot;, &quot;Snowflake&quot;, 20, 20),
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MK Account Likelihood to Buy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

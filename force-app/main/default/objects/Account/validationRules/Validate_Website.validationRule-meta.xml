@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Website</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISNEW() &amp;&amp; NOT(ISBLANK(Website)) || (ISCHANGED(Website) &amp;&amp; NOT(ISBLANK(Website)))) &amp;&amp;
+
+OR(
+    !REGEX(Website,&quot;^((http|https)://)??(www[.])??([a-zA-Z0-9]|-)+?([.][a-zA-Z0-9(-|/|=|?)??]+?)+?$&quot;),
+    Invalid_Website__c = TRUE
+)</errorConditionFormula>
+    <errorDisplayField>Website</errorDisplayField>
+    <errorMessage>Please enter a valid website.</errorMessage>
+</ValidationRule>

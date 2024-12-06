@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_with_ADP_2022</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Development_Matrix_Link__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Plan_needed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Accounts with ADP 2022</label>
+    <sharedTo>
+        <role>AMERICAS_Account_Management</role>
+        <role>Account_Management</role>
+        <role>EMEA_Account_Management</role>
+        <role>Executive</role>
+    </sharedTo>
+</ListView>

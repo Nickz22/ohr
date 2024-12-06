@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Region_HQ_Billing__c</fullName>
+    <description>New Subregion based on Country HQ/State HQ if not blank, otherwise based on Billing Country/Billing State</description>
+    <externalId>false</externalId>
+    <formula>CASE(BLANKVALUE(Country_HQ__c,BillingCountry),
+&quot;United States&quot;,IF(ISBLANK(TEXT(State_HQ__c)),AMER_State_Region_Billing__c,AMER_State_Region_HQ__c),
+&quot;Canada&quot;,IF(CONTAINS($Label.Subregion_AMER_Canada_East,BLANKVALUE(TEXT(State_HQ__c),BillingState) + &quot;;&quot;),&quot;AMER - Canada East&quot;,IF(CONTAINS($Label.Subregion_AMER_Canada_West,BLANKVALUE(TEXT(State_HQ__c),BillingState) + &quot;;&quot;),&quot;AMER - Canada West&quot;,&quot;&quot;)),
+IF(NOT(ISBLANK(BLANKVALUE(Country_HQ__c,BillingCountry))),
+    IF(CONTAINS($Label.Subregion_EMEA_SEE,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - SEE&quot;,
+        IF(CONTAINS($Label.Subregion_EMEA_CEE,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),IF(BLANKVALUE(Country_HQ__c,BillingCountry) = &quot;Israel&quot;,&quot;EMEA - Israel&quot;,&quot;EMEA - CEE&quot;),
+            IF(CONTAINS($Label.Subregion_EMEA_MEA,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - MEA&quot;,
+                IF(CONTAINS($Label.Subregion_EMEA_Africa,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - MEA&quot;,
+                    IF(CONTAINS($Label.Subregion_EMEA_CIS,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - CIS&quot;,
+                        IF(CONTAINS($Label.Subregion_EMEA_UKI,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - UKI&quot;,
+                            IF(CONTAINS($Label.Subregion_EMEA_Nordics,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - Nordics&quot;,
+                                IF(CONTAINS($Label.Subregion_EMEA_BeNeLux,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - BeNeLux&quot;,
+                                    IF(CONTAINS($Label.Subregion_EMEA_DACH,BLANKVALUE(Country_HQ__c,BillingCountry) + &quot;;&quot;),&quot;EMEA - DACH&quot;,
+                                        &quot;&quot;
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    ),
+    &quot;&quot;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Subregion (Automated)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

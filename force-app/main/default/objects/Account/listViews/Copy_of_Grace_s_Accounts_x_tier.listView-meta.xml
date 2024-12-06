@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Grace_s_Accounts_x_tier</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Tier__c</columns>
+    <columns>Primary_Campaign__c</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>Contacts_Touched_in_Last_90_Days__c</columns>
+    <columns>Sales_Activities_in_Last_90_Days__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>gvand</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.LAST_ACTIVITY</field>
+        <operation>greaterOrEqual</operation>
+        <value>10/1/2022</value>
+    </filters>
+    <label>Grace&apos;s Accounts x tier</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BDR_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Active BDR in the Account, field is necessary to allow a comprehensive Account-based approach to routing of any new leads. Separate field for BDR enables follow up withing AE owned account. Set by Insycle/LeanData routing or manually.</description>
+    <externalId>false</externalId>
+    <label>BDR Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>BDR_Team</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

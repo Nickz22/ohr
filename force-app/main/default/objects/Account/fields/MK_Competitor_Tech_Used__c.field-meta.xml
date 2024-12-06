@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MK_Competitor_Tech_Used__c</fullName>
+    <description>Populated real-time from MadKudu computation. Data source: HG Insights and Clearbit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populated real-time from MadKudu computation. Data source: HG Insights and Clearbit</inlineHelpText>
+    <label>MK Competitor Tech Used</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Remote</fullName>
+                <default>false</default>
+                <label>Remote</label>
+            </value>
+            <value>
+                <fullName>Deel</fullName>
+                <default>false</default>
+                <label>Deel</label>
+            </value>
+            <value>
+                <fullName>Papaya</fullName>
+                <default>false</default>
+                <label>Papaya</label>
+            </value>
+            <value>
+                <fullName>Omnipresent</fullName>
+                <default>false</default>
+                <label>Omnipresent</label>
+            </value>
+            <value>
+                <fullName>Panther</fullName>
+                <default>false</default>
+                <label>Panther</label>
+            </value>
+            <value>
+                <fullName>Rippling</fullName>
+                <default>false</default>
+                <label>Rippling</label>
+            </value>
+            <value>
+                <fullName>Justworks</fullName>
+                <default>false</default>
+                <label>Justworks</label>
+            </value>
+            <value>
+                <fullName>ADP Global Payroll</fullName>
+                <default>false</default>
+                <label>ADP Global Payroll</label>
+            </value>
+            <value>
+                <fullName>Employment hero</fullName>
+                <default>false</default>
+                <label>Employment hero</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

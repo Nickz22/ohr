@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_I_m_working</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>mk_likelihood_to_buy_signals__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Actively_Worked__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Accounts I&apos;m working</label>
+</ListView>

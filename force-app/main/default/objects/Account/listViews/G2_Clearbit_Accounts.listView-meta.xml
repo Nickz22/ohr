@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2_Clearbit_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Campaign__c</columns>
+    <columns>ACCOUNT_SOURCE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Owner_Name__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Region__c</columns>
+    <columns>cbit__ClearbitReady__c</columns>
+    <columns>Clearbit_Last_Modified__c</columns>
+    <columns>cbit__ClearbitDomain__c</columns>
+    <columns>Clearbit_Created_Time__c</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <columns>Intent_Source__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Intent_Eligible_for_Distribution__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT_SOURCE</field>
+        <operation>equals</operation>
+        <value>G2 Buyer Intent</value>
+    </filters>
+    <filters>
+        <field>Actively_Worked__c</field>
+        <operation>notEqual</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Primary_Campaign__c</field>
+        <operation>contains</operation>
+        <value>G2 Buyer Intent</value>
+    </filters>
+    <label>G2 Accounts</label>
+</ListView>

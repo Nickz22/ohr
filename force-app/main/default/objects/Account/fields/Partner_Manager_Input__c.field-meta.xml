@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Manager_Input__c</fullName>
+    <description>For partner managers to provide qualitative feedback account-by-account.</description>
+    <externalId>false</externalId>
+    <label>Partner Manager Input</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

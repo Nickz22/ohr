@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Account_Source_on_Create</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; ISPICKVAL(AccountSource, &apos;&apos;) 
+
+/* Users who can bypass this validation */
+&amp;&amp; ($User.FirstName &amp; &apos; &apos; &amp; $User.LastName) != &apos;Natasha Selvey&apos;
+
+/* Lead Source Detail that can bypass this validation */
+&amp;&amp; AND(
+  Lead_Source_Detail__c != &apos;Cognism&apos;,
+  Lead_Source_Detail__c != &apos;Zoominfo&apos;)
+
+/* Account Type that can bypass this validation */
+&amp;&amp; NOT(ISPICKVAL(Type, &apos;Competitor&apos;))</errorConditionFormula>
+    <errorDisplayField>AccountSource</errorDisplayField>
+    <errorMessage>Please choose an Account Source.</errorMessage>
+</ValidationRule>

@@ -4344,16 +4344,16 @@
     </types>
     <types>
         <members>Lead_Scoring</members>
-        <members>BDRReports</members>
+        <!-- <members>BDRReports</members> -->
         <members>RevOps</members>
         <members>SummersolsticeSpecial</members>
         <members>Pitstop360ReportArchive</members>
         <members>AMReport</members>
-        <members>pitstop360</members>
+        <!-- <members>pitstop360</members> -->
         <members>Outbound</members>
         <members>WorkRamp_Reports</members>
         <members>Chili_Piper_Reports</members>
-        <members>Marketing_Operations_Reports</members>
+        <!-- <members>Marketing_Operations_Reports</members> -->
         <members>Campaign_Operations</members>
         <members>IcebergReports</members>
         <members>Qualified_Chat_Performance_Dashboard</members>
@@ -4377,7 +4377,7 @@
         <members>Eli</members>
         <members>Gus</members>
         <members>Cata</members>
-        <members>AEReports</members>
+        <!-- <members>AEReports</members> -->
         <members>InboundQueuedLeads</members>
         <members>RevenueOperations</members>
         <members>Joao</members>
@@ -4399,7 +4399,7 @@
         <members>AvailableAccountsforProspecting</members>
         <members>Q3_22_Lead_to_Sales_Handoff_Revamp</members>
         <members>BDRInvolvement</members>
-        <members>OwnershipCleanUp</members>
+        <!-- <members>OwnershipCleanUp</members> -->
         <members>H2Commissions</members>
         <members>V2</members>
         <members>AdHocReports</members>

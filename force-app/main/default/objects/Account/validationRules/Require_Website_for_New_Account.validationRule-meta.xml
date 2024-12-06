@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Website_for_New_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; ISBLANK(Website)</errorConditionFormula>
+    <errorDisplayField>Website</errorDisplayField>
+    <errorMessage>Website is required.</errorMessage>
+</ValidationRule>

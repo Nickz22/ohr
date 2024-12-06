@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Handover_Created__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checked by a flow when an Account Handover record is created for this account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check box indicating if the account handover has been filled.</inlineHelpText>
+    <label>Account Handover Created</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closed_Lost_Reason_Required_on_CLost</fullName>
+    <active>false</active>
+    <description>Closed Lost Reason required when Closed Lost is selected as Partner Status.</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(  Partner_Status__c ,&quot;Closed Lost&quot;),
+ISCHANGED(Partner_Status__c),
+ISPICKVAL(  Closed_Lost_Details__c , &quot;&quot;)
+
+)</errorConditionFormula>
+    <errorDisplayField>Closed_Lost_Details__c</errorDisplayField>
+    <errorMessage>Closed Lost Reason required when Closed Lost is selected as Partner Status.</errorMessage>
+</ValidationRule>

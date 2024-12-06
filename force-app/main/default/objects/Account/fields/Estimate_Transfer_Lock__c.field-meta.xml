@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimate_Transfer_Lock__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+AND(
+OwnerId &lt;&gt; &quot;0054v00000EFUYi&quot;,
+OwnerId &lt;&gt; &quot;0054v00000DpcVu&quot;,
+CreatedDate &gt; (DATETIMEVALUE(TODAY()) - 30)
+),
+Owner_Change_Date__c &gt; (TODAY() - 30),
+Last_Sales_Activity__c &gt; (TODAY() - 30),
+Last_Primary_Campaign_Assignment__c &gt; (TODAY() - 30),
+NOT(ISBLANK(Future_Sales_Activity__c)),
+Open_Opps__c &gt; 0,
+Won_Opps__c &gt; 0,
+NOT(ISBLANK(Platform_Customer_ID__c)),
+ISPICKVAL(Stage__c, &quot;Rest&quot;),
+ISPICKVAL(Stage__c, &quot;Released&quot;),
+ISPICKVAL(Type, &quot;Competitor&quot;),
+ISPICKVAL(Type, &quot;Customer&quot;),
+ISPICKVAL(Type, &quot;Partner&quot;),
+RecordType.Name = &quot;Partner&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Estimate Transfer Lock</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

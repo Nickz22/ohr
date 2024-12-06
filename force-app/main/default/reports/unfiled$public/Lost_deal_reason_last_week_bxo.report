@@ -43,7 +43,7 @@
             <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>excludes</operator>
+            <operator>notEqual</operator>
             <value>Not a Priority,Misqualified,Duplicate Opp,Unresponsive,Meeting Never Set,Did not
                 hire</value>
         </criteriaItems>

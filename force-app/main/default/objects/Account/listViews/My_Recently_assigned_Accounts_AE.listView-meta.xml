@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Recently_assigned_Accounts_AE</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Campaign__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Company_Linkedin_URL__c</columns>
+    <columns>Funding_Type__c</columns>
+    <columns>Keywords_JD__c</columns>
+    <columns>Industry_Cognism__c</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>Closed_Lost_Opps__c</columns>
+    <columns>Notes__c</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>mk_customer_fit_signals__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Owner_Change_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <label>My Recently assigned Accounts (AE)</label>
+    <sharedTo>
+        <role>AMERICAS_AE</role>
+        <role>AMERICAS_Sales_Director</role>
+        <role>AMERICAS_Sales_Manager</role>
+        <role>AMERICAS_Sales_Manager_II</role>
+        <role>AMER_AE</role>
+        <role>EMEA_AE</role>
+        <role>EMEA_AE_Middle_Managers</role>
+        <role>EMEA_Sales_Director</role>
+        <role>EMEA_Sales_Manager_I</role>
+        <role>EMEA_Sales_Manager_II</role>
+        <role>Executive</role>
+    </sharedTo>
+</ListView>

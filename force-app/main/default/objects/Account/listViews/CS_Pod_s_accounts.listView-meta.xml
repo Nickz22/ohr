@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Pod_s_accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Customer_relationship_score__c</columns>
+    <columns>Health_Score_formula__c</columns>
+    <columns>cARR__c</columns>
+    <columns>TMs_FTE__c</columns>
+    <columns>TMs_Contractors__c</columns>
+    <columns>Open_Opps__c</columns>
+    <columns>CSM_Notes__c</columns>
+    <columns>Platform_Customer_ID__c</columns>
+    <columns>Owner_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CSM_New__c</field>
+        <operation>contains</operation>
+        <value>Pod</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer_Account</value>
+    </filters>
+    <label>CS Pod&apos;s accounts</label>
+    <sharedTo>
+        <role>AMERICAS_Account_Management</role>
+        <role>Account_Management</role>
+        <role>CSM</role>
+        <role>CSM_Management</role>
+        <role>EMEA_Account_Management</role>
+    </sharedTo>
+</ListView>

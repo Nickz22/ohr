@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Camila_s_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>Contacts_Touched_in_Last_90_Days__c</columns>
+    <columns>Sales_Activities_in_Last_90_Days__c</columns>
+    <columns>Primary_Campaign__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Lchav</value>
+    </filters>
+    <label>Camila&apos;s Accounts by region</label>
+</ListView>

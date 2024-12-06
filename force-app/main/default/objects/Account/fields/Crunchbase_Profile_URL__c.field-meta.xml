@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crunchbase_Profile_URL__c</fullName>
+    <description>Crunchbase Profile URL</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide the URL to the company’s profile on Crunchbase.</inlineHelpText>
+    <label>Crunchbase Profile URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pilot_Customer_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Elaborate on the rationale behind choosing this customer as a pilot customer.</inlineHelpText>
+    <label>Pilot Customer Reason</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

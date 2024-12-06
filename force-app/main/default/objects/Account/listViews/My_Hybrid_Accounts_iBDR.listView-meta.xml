@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Hybrid_Accounts_iBDR</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>Number_of_Associated_Contacts__c</columns>
+    <columns>Time_of_Last_Session__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Most_Advanced_Lifecycle_Stage__c</columns>
+    <columns>mk_customer_fit_signals__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Hybrid_Motion__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Hybrid Accounts - iBDR</label>
+</ListView>

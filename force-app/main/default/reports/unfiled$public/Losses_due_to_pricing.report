@@ -40,7 +40,7 @@
             <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>includes</operator>
+            <operator>equals</operator>
             <value>Pricing</value>
         </criteriaItems>
     </filter>

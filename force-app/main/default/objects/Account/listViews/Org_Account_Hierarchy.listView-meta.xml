@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Org_Account_Hierarchy</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Name_Platform__c</columns>
+    <columns>Health_Score_formula__c</columns>
+    <columns>Account_Tier__c</columns>
+    <columns>cARR__c</columns>
+    <columns>TMs_Contractors__c</columns>
+    <columns>TMs_FTE__c</columns>
+    <columns>Open_Opps__c</columns>
+    <columns>CSM_New__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <label>Org_Account_Hierarchy</label>
+</ListView>

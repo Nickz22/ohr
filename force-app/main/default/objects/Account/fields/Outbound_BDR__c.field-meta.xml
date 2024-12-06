@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outbound_BDR__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>box for BDRs to tick when working on accounts/contacts self source (Linkedin/Cognism/ZI)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tick this box only if you have self sourced this account and you are actively working on it.</inlineHelpText>
+    <label>Outbound BDR</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

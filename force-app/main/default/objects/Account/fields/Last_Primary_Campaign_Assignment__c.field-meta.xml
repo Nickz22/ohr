@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Primary_Campaign_Assignment__c</fullName>
+    <description>Updated via flow whenever Primary Campaign is updated to a non-blank value</description>
+    <externalId>false</externalId>
+    <label>Last Primary Campaign Assignment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

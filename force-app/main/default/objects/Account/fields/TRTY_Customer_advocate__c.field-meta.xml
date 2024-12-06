@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRTY_Customer_advocate__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer advocate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>On Partnerstack</fullName>
+                <default>false</default>
+                <label>On Partnerstack</label>
+            </value>
+            <value>
+                <fullName>Not on Partnerstack</fullName>
+                <default>false</default>
+                <label>Not on Partnerstack</label>
+            </value>
+            <value>
+                <fullName>Willing to provide references</fullName>
+                <default>false</default>
+                <label>Willing to provide references</label>
+            </value>
+            <value>
+                <fullName>Declined to provide references</fullName>
+                <default>false</default>
+                <label>Declined to provide references</label>
+            </value>
+            <value>
+                <fullName>Member of CAB</fullName>
+                <default>false</default>
+                <label>Member of CAB</label>
+            </value>
+            <value>
+                <fullName>Investor reference</fullName>
+                <default>false</default>
+                <label>Investor reference</label>
+            </value>
+            <value>
+                <fullName>Completed a case study</fullName>
+                <default>false</default>
+                <label>Completed a case study</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

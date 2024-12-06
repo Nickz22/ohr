@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refuse_to_activate_Direct_Debit__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>CSM and AE will try reinforcing the activation of the direct debit for existing customer. This checkbox is to track who refuses so we don&apos;t keep asking.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the customer refused to activate direct debit.</inlineHelpText>
+    <label>Refuse to activate Direct Debit</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

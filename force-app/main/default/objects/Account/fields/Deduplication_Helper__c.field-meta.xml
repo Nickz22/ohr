@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deduplication_Helper__c</fullName>
+    <description>Technical field to pull records into deduplication. Please insert the ID of the master account. Managed manually in Insycle.</description>
+    <externalId>false</externalId>
+    <label>Deduplication Helper</label>
+    <length>200</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

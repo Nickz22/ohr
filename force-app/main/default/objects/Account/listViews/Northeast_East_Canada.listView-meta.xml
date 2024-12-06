@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Northeast_East_Canada</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE</field>
+        <operation>equals</operation>
+        <value>Connecticut,CT,Rhode Island,RI,Massachusetts,MA,Vermont,VT,New Hampshire,NH,Maine,ME,Ontario,ON,Quebec,QC,New Brunswick,NB,Nova Scotia,NS,Newfoundland,NL,Manitoba,MB,Nunavut,NU</value>
+    </filters>
+    <label>Northeast + East Canada</label>
+</ListView>

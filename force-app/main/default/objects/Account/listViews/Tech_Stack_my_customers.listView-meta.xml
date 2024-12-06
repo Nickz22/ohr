@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tech_Stack_my_customers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Account_Tier__c</columns>
+    <columns>ATS__c</columns>
+    <columns>ERP_Payroll__c</columns>
+    <columns>Expense__c</columns>
+    <columns>HRIS__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Team</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Customer</value>
+    </filters>
+    <filters>
+        <field>Account_Tier__c</field>
+        <operation>equals</operation>
+        <value>1- High Priority,2 -Normal Priority</value>
+    </filters>
+    <label>Tech Stack - my customers</label>
+</ListView>

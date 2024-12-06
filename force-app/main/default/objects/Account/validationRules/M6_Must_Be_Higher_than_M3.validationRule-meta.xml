@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>M6_Must_Be_Higher_than_M3</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(TMs_to_Hire_by_M3__c)),
+    NOT(ISBLANK(TMs_to_Hire_by_M6__c)),
+    TMs_to_Hire_by_M3__c &gt; TMs_to_Hire_by_M6__c
+)</errorConditionFormula>
+    <errorDisplayField>TMs_to_Hire_by_M6__c</errorDisplayField>
+    <errorMessage>Tot #TMs estimated (M1-M6) must be greater than Tot #TMs estimated (M1-M3).</errorMessage>
+</ValidationRule>

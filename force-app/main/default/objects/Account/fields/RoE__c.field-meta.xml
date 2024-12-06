@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RoE__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+    $Profile.Name = &quot;AM User&quot;,
+    Owner_Change_Date__c &gt; TODAY() - 5,
+    Actively_Worked__c = TRUE,
+    NOT(ISBLANK(Future_Sales_Task__c))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>RoE</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CB_Capture_Inactive_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Clearbit-identified prospect account not being worked by sales, with high intent web engagement</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Clearbit-identified prospect account not being worked by sales, with high intent web engagement</inlineHelpText>
+    <label>CB Capture: Inactive Account</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

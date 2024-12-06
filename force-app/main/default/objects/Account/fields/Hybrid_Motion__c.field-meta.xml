@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hybrid_Motion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set manually by iBDR on Accounts they are targeting in via hybrid approach.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please mark this box if the account is involved in your hybrid activities.</inlineHelpText>
+    <label>Hybrid Motion</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

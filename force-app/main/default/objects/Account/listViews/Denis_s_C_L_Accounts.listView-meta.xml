@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Denis_s_C_L_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Campaign__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>Dkala</value>
+    </filters>
+    <filters>
+        <field>Primary_Campaign__c</field>
+        <operation>equals</operation>
+        <value>Closed Lost Opp FollowUp</value>
+    </filters>
+    <label>Denis&apos;s C/L Accounts</label>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Accounts_with_ongoing_opps</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SALES</columns>
+    <columns>Forecast__c</columns>
+    <columns>Forecast_Hires_Next_Q__c</columns>
+    <columns>Forecast_Notes__c</columns>
+    <columns>Risk_of_Churn__c</columns>
+    <columns>Risk_of_Churn_Notes__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Ongoing_Opportunities__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <label>My Accounts (with ongoing opps)</label>
+    <sharedTo>
+        <role>AMERICAS_Account_Management</role>
+        <role>Account_Management</role>
+        <role>EMEA_Account_Management</role>
+    </sharedTo>
+</ListView>

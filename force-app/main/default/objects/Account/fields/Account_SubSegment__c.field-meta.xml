@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_SubSegment__c</fullName>
+    <description>describes the sector or speciality</description>
+    <externalId>false</externalId>
+    <label>Partner SubSegment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Account_Segment__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerator</fullName>
+                <default>false</default>
+                <label>Accelerator</label>
+            </value>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Accounting/Tax</fullName>
+                <default>false</default>
+                <label>Accounting/Tax</label>
+            </value>
+            <value>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+                <label>Affiliate</label>
+            </value>
+            <value>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <fullName>ATS</fullName>
+                <default>false</default>
+                <label>ATS</label>
+            </value>
+            <value>
+                <fullName>Benefits Brokers</fullName>
+                <default>false</default>
+                <label>Benefits Brokers</label>
+            </value>
+            <value>
+                <fullName>Credit Cards</fullName>
+                <default>false</default>
+                <label>Credit Cards</label>
+            </value>
+            <value>
+                <fullName>Culture &amp; Team Engagement</fullName>
+                <default>false</default>
+                <label>Culture &amp; Team Engagement</label>
+            </value>
+            <value>
+                <fullName>Direct to Consumer</fullName>
+                <default>false</default>
+                <label>Direct to Consumer</label>
+            </value>
+            <value>
+                <fullName>EOR</fullName>
+                <default>false</default>
+                <label>EOR</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Equity</fullName>
+                <default>false</default>
+                <label>Equity</label>
+            </value>
+            <value>
+                <fullName>ERP</fullName>
+                <default>false</default>
+                <label>ERP</label>
+            </value>
+            <value>
+                <fullName>Expense Management</fullName>
+                <default>false</default>
+                <label>Expense Management</label>
+            </value>
+            <value>
+                <fullName>Freelance/Contractor</fullName>
+                <default>false</default>
+                <label>Freelance/Contractor</label>
+            </value>
+            <value>
+                <fullName>Future of Work</fullName>
+                <default>false</default>
+                <label>Future of Work</label>
+            </value>
+            <value>
+                <fullName>Global System Integrator</fullName>
+                <default>false</default>
+                <label>Global System Integrator</label>
+            </value>
+            <value>
+                <fullName>HR Consulting</fullName>
+                <default>false</default>
+                <label>HR Consulting</label>
+            </value>
+            <value>
+                <fullName>HRIS</fullName>
+                <default>false</default>
+                <label>HRIS</label>
+            </value>
+            <value>
+                <fullName>Incubator</fullName>
+                <default>false</default>
+                <label>Incubator</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Job Boards</fullName>
+                <default>false</default>
+                <label>Job Boards</label>
+            </value>
+            <value>
+                <fullName>Knowledge Management</fullName>
+                <default>false</default>
+                <label>Knowledge Management</label>
+            </value>
+            <value>
+                <fullName>Learning &amp; Development</fullName>
+                <default>false</default>
+                <label>Learning &amp; Development</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Management Consulting</fullName>
+                <default>false</default>
+                <label>Management Consulting</label>
+            </value>
+            <value>
+                <fullName>Mission Driven</fullName>
+                <default>false</default>
+                <label>Mission Driven</label>
+            </value>
+            <value>
+                <fullName>OFR</fullName>
+                <default>false</default>
+                <label>OFR</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>PEO</fullName>
+                <default>false</default>
+                <label>PEO</label>
+            </value>
+            <value>
+                <fullName>Productivity</fullName>
+                <default>false</default>
+                <label>Productivity</label>
+            </value>
+            <value>
+                <fullName>Recruiting Agency</fullName>
+                <default>false</default>
+                <label>Recruiting Agency</label>
+            </value>
+            <value>
+                <fullName>Referencing &amp; Background Checks</fullName>
+                <default>false</default>
+                <label>Referencing &amp; Background Checks</label>
+            </value>
+            <value>
+                <fullName>Relocation</fullName>
+                <default>false</default>
+                <label>Relocation</label>
+            </value>
+            <value>
+                <fullName>Retirement/Pension plan</fullName>
+                <default>false</default>
+                <label>Retirement/Pension plan</label>
+            </value>
+            <value>
+                <fullName>Screening &amp; Verification</fullName>
+                <default>false</default>
+                <label>Screening &amp; Verification</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Social Impact</fullName>
+                <default>false</default>
+                <label>Social Impact</label>
+            </value>
+            <value>
+                <fullName>Sourcing</fullName>
+                <default>false</default>
+                <label>Sourcing</label>
+            </value>
+            <value>
+                <fullName>Talent Communities</fullName>
+                <default>false</default>
+                <label>Talent Communities</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>VC</fullName>
+                <default>false</default>
+                <label>VC</label>
+            </value>
+            <value>
+                <fullName>Visa Processing</fullName>
+                <default>false</default>
+                <label>Visa Processing</label>
+            </value>
+            <value>
+                <fullName>Visa Sponsorship</fullName>
+                <default>false</default>
+                <label>Visa Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Wellness</fullName>
+                <default>false</default>
+                <label>Wellness</label>
+            </value>
+            <value>
+                <fullName>Working Spaces</fullName>
+                <default>false</default>
+                <label>Working Spaces</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Contractor Payroll</fullName>
+                <default>false</default>
+                <label>Contractor Payroll</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>PEO Broker</fullName>
+                <default>false</default>
+                <label>PEO Broker</label>
+            </value>
+            <value>
+                <fullName>Private Equity</fullName>
+                <default>false</default>
+                <label>Private Equity</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>Worktech</fullName>
+                <default>false</default>
+                <label>Worktech</label>
+            </value>
+            <value>
+                <fullName>Capital</fullName>
+                <default>false</default>
+                <label>Capital</label>
+            </value>
+            <value>
+                <fullName>Auto Rental</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Auto Rental</label>
+            </value>
+            <value>
+                <fullName>Background Checks</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Background Checks</label>
+            </value>
+            <value>
+                <fullName>Business/Tech Consulting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Business/Tech Consulting</label>
+            </value>
+            <value>
+                <fullName>Community/Network</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Community/Network</label>
+            </value>
+            <value>
+                <fullName>Credit or Debit Cards</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Credit or Debit Cards</label>
+            </value>
+            <value>
+                <fullName>Cryptocurrency</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cryptocurrency</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Identity Verification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Identity Verification</label>
+            </value>
+            <value>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Influencer</label>
+            </value>
+            <value>
+                <fullName>Law Firm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Law Firm</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>Non-health insurance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Non-health insurance</label>
+            </value>
+            <value>
+                <fullName>PEO / EoR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PEO / EoR</label>
+            </value>
+            <value>
+                <fullName>Processing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Processing</label>
+            </value>
+            <value>
+                <fullName>Retirement/Pension</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Retirement/Pension</label>
+            </value>
+            <value>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Systems &amp; Tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Systems &amp; Tools</label>
+            </value>
+            <value>
+                <fullName>Team Engagement</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Team Engagement</label>
+            </value>
+            <value>
+                <fullName>Time &amp; Attendance</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Time &amp; Attendance</label>
+            </value>
+            <value>
+                <fullName>Work Spaces</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Work Spaces</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>VC</controllingFieldValue>
+            <valueName>VC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Incubator</controllingFieldValue>
+            <valueName>Incubator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Accelerator</controllingFieldValue>
+            <valueName>Accelerator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Affiliate</controllingFieldValue>
+            <valueName>Affiliate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Social Impact</controllingFieldValue>
+            <valueName>Social Impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OFR</controllingFieldValue>
+            <valueName>OFR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct to Consumer</controllingFieldValue>
+            <valueName>Direct to Consumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Private Equity</controllingFieldValue>
+            <valueName>Private Equity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>HR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Worktech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Capital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visa_&amp;_Relocation</controllingFieldValue>
+            <valueName>Relocation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visa_&amp;_Relocation</controllingFieldValue>
+            <valueName>Visa Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Visa_&amp;_Relocation</controllingFieldValue>
+            <valueName>Visa Sponsorship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mission Driven</controllingFieldValue>
+            <controllingFieldValue>Operations</controllingFieldValue>
+            <valueName>Mission Driven</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Software</controllingFieldValue>
+            <valueName>Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Software</controllingFieldValue>
+            <valueName>Culture &amp; Team Engagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Software</controllingFieldValue>
+            <valueName>HRIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Software</controllingFieldValue>
+            <valueName>Knowledge Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Software</controllingFieldValue>
+            <valueName>Productivity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tools/Software</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEO</controllingFieldValue>
+            <valueName>PEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEO</controllingFieldValue>
+            <valueName>PEO Broker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll</controllingFieldValue>
+            <valueName>Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll</controllingFieldValue>
+            <valueName>Contractor Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll</controllingFieldValue>
+            <valueName>Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EOR</controllingFieldValue>
+            <valueName>EOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Services</controllingFieldValue>
+            <valueName>Job Boards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Services</controllingFieldValue>
+            <valueName>Recruiting Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Services</controllingFieldValue>
+            <valueName>Sourcing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Services</controllingFieldValue>
+            <valueName>Talent Communities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Technology</controllingFieldValue>
+            <valueName>ATS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Technology</controllingFieldValue>
+            <valueName>Freelance/Contractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Technology</controllingFieldValue>
+            <valueName>Referencing &amp; Background Checks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent Acquisition Technology</controllingFieldValue>
+            <valueName>Screening &amp; Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits</controllingFieldValue>
+            <valueName>Equity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits</controllingFieldValue>
+            <valueName>Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits</controllingFieldValue>
+            <valueName>Learning &amp; Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits</controllingFieldValue>
+            <valueName>Retirement/Pension plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits</controllingFieldValue>
+            <valueName>Wellness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; ERP</controllingFieldValue>
+            <valueName>Accounting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; ERP</controllingFieldValue>
+            <valueName>Credit Cards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; ERP</controllingFieldValue>
+            <valueName>ERP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance &amp; ERP</controllingFieldValue>
+            <valueName>Expense Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Future of Work</controllingFieldValue>
+            <valueName>Future of Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operations</controllingFieldValue>
+            <valueName>Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operations</controllingFieldValue>
+            <valueName>Transportation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Operations</controllingFieldValue>
+            <valueName>Working Spaces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance Services</controllingFieldValue>
+            <valueName>Accounting/Tax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance Services</controllingFieldValue>
+            <valueName>Benefits Brokers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance Services</controllingFieldValue>
+            <valueName>Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>Global System Integrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>HR Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Consulting</controllingFieldValue>
+            <valueName>Management Consulting</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

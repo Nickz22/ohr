@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VC_Partner_Re_Engagement_BDR</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Primary_Campaign__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Company_Linkedin_URL__c</columns>
+    <columns>Oyster_Talk_Tracks__c</columns>
+    <columns>Funding_Type__c</columns>
+    <columns>Keywords_JD__c</columns>
+    <columns>Crunchbase_Industries__c</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>Closed_Lost_Opps__c</columns>
+    <columns>Notes__c</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Primary_Campaign__c</field>
+        <operation>contains</operation>
+        <value>VC Partner</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Re-engagement</value>
+    </filters>
+    <label>VC Partner - Re-Engagement (BDR)</label>
+</ListView>

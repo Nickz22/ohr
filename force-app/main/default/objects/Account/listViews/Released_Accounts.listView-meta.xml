@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Released_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Countries__c</columns>
+    <columns>Account_Industry__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Released</value>
+    </filters>
+    <label>Released Accounts</label>
+</ListView>

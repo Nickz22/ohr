@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actively_Worked__c</fullName>
+    <description>TRUE if Last Sales Activity is fewer than 45 days ago</description>
+    <externalId>false</externalId>
+    <formula>OR(
+    Future_Activity_Lock__c = TRUE,
+    Last_Sales_Activity__c &gt;= (TODAY() - 45)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actively Worked</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

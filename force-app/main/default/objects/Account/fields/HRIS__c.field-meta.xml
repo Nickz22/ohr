@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HRIS__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Document the HRIS software the customer operates.</inlineHelpText>
+    <label>HRIS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADP Workforce Now</fullName>
+                <default>false</default>
+                <label>ADP Workforce Now</label>
+            </value>
+            <value>
+                <fullName>Bamboo</fullName>
+                <default>false</default>
+                <label>Bamboo</label>
+            </value>
+            <value>
+                <fullName>Ceridian Dayforce</fullName>
+                <default>false</default>
+                <label>Ceridian Dayforce</label>
+            </value>
+            <value>
+                <fullName>Gusto</fullName>
+                <default>false</default>
+                <label>Gusto</label>
+            </value>
+            <value>
+                <fullName>HiBob</fullName>
+                <default>false</default>
+                <label>HiBob</label>
+            </value>
+            <value>
+                <fullName>Kenjo</fullName>
+                <default>false</default>
+                <label>Kenjo</label>
+            </value>
+            <value>
+                <fullName>Oracle HCM</fullName>
+                <default>false</default>
+                <label>Oracle HCM</label>
+            </value>
+            <value>
+                <fullName>Paycom</fullName>
+                <default>false</default>
+                <label>Paycom</label>
+            </value>
+            <value>
+                <fullName>Paylocity</fullName>
+                <default>false</default>
+                <label>Paylocity</label>
+            </value>
+            <value>
+                <fullName>Personio</fullName>
+                <default>false</default>
+                <label>Personio</label>
+            </value>
+            <value>
+                <fullName>Rippling</fullName>
+                <default>false</default>
+                <label>Rippling</label>
+            </value>
+            <value>
+                <fullName>Sage People</fullName>
+                <default>false</default>
+                <label>Sage People</label>
+            </value>
+            <value>
+                <fullName>Sapling</fullName>
+                <default>false</default>
+                <label>Sapling</label>
+            </value>
+            <value>
+                <fullName>SAP SuccessFactors</fullName>
+                <default>false</default>
+                <label>SAP SuccessFactors</label>
+            </value>
+            <value>
+                <fullName>UKG</fullName>
+                <default>false</default>
+                <label>UKG</label>
+            </value>
+            <value>
+                <fullName>UltiPro</fullName>
+                <default>false</default>
+                <label>UltiPro</label>
+            </value>
+            <value>
+                <fullName>Workday</fullName>
+                <default>false</default>
+                <label>Workday</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t know</fullName>
+                <default>false</default>
+                <label>Don&apos;t know</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

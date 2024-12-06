@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Deactivated_Date__c</fullName>
+    <description>Set in a HubSpot workflow on RoE expiration date - Actively Worked marker turning FALSE: https://app.hubspot.com/workflows/9021803/platform/flow/558498974/edit/actions/1/set-property</description>
+    <externalId>false</externalId>
+    <label>Account Deactivated Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

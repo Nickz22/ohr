@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Describe the type of funding the company has received (e.g., angel, Series A, venture capital).</inlineHelpText>
+    <label>Funding Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Seed</fullName>
+                <default>false</default>
+                <label>Seed</label>
+            </value>
+            <value>
+                <fullName>Series A</fullName>
+                <default>false</default>
+                <label>Series A</label>
+            </value>
+            <value>
+                <fullName>Series B</fullName>
+                <default>false</default>
+                <label>Series B</label>
+            </value>
+            <value>
+                <fullName>Series C</fullName>
+                <default>false</default>
+                <label>Series C</label>
+            </value>
+            <value>
+                <fullName>Series D</fullName>
+                <default>false</default>
+                <label>Series D</label>
+            </value>
+            <value>
+                <fullName>Series E</fullName>
+                <default>false</default>
+                <label>Series E</label>
+            </value>
+            <value>
+                <fullName>Undisclosed Amount</fullName>
+                <default>false</default>
+                <label>Undisclosed Amount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

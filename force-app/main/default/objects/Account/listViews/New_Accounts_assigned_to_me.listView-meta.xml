@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Accounts_assigned_to_me</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Type_of_Organisation__c</columns>
+    <columns>ACCOUNT.SALES</columns>
+    <columns>Company_Linkedin_URL__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>ACCOUNT.EMPLOYEES</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>G2_Buyer_Intent_Buying_Stage__c</columns>
+    <columns>Owner_Name__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>New Accounts (assigned to me)</label>
+    <sharedTo>
+        <role>AMERICAS_BDR</role>
+        <role>AMERICAS_BDR_Manager</role>
+        <role>EMEA_BDR</role>
+        <role>EMEA_BDR_Manager</role>
+    </sharedTo>
+</ListView>

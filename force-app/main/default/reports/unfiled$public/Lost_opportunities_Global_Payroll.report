@@ -39,7 +39,7 @@
             <column>Opportunity.Lost_Reason_new__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
-            <operator>includes</operator>
+            <operator>equals</operator>
             <value>Global Payroll</value>
         </criteriaItems>
     </filter>

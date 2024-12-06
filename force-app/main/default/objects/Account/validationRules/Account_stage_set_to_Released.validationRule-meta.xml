@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_stage_set_to_Released</fullName>
+    <active>true</active>
+    <description>On Account, when Stage__c is set to &quot;Released&quot;
+
+The following fields must have values in order to save changes to Account. 
+Release_Reason_List__c
+Released_Reason</description>
+    <errorConditionFormula>AND(
+
+ISPICKVAL(Stage__c ,&quot;Released&quot;),
+ISCHANGED(Stage__c),
+ISPICKVAL( Release_Reason_List__c, &quot;&quot;),
+IsBLANK ( Released_Reason__c )
+
+)</errorConditionFormula>
+    <errorDisplayField>Release_Reason_List__c</errorDisplayField>
+    <errorMessage>To Release the account fill in the &quot;Release Reason (List)&quot; and &quot;Release Reason (Short Explanation)&quot;</errorMessage>
+</ValidationRule>

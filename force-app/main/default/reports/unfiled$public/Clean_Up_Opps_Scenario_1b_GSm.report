@@ -58,7 +58,7 @@
         <field>Account$LastActivityDate</field>
     </columns>
     <filter>
-        <booleanFilter>(1 AND 2 AND 3 AND 4 AND ((5 AND 6) OR 7) AND 8 AND 9 AND 10 AND 11 AND 12 AND (13 OR 14))</booleanFilter>
+        <booleanFilter>(1 AND 2 AND 3 AND 4 AND ((5 AND 6) OR 7) AND 8 AND 9 AND 10 AND 11 AND 12 AND 13)</booleanFilter>
         <criteriaItems>
             <column>Account.Opportunities$StageName</column>
             <columnToColumn>false</columnToColumn>

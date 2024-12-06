@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Churned_to_Competitor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>To document accounts that are partially/totally churned to the competition.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Add the name of the competitor the account may turn to/will turn to.</inlineHelpText>
+    <label>Churned to Competitor</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>
