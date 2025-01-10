@@ -2,6 +2,13 @@ import xml.etree.ElementTree as ET
 import sys
 
 
+def strip_namespace(elem):
+    if elem.tag.startswith("{"):
+        elem.tag = elem.tag.split("}")[1]
+    for c in elem:
+        strip_namespace(c)
+
+
 def merge_profiles(am_path, hybrid_path):
     am_tree = ET.parse(am_path)
     hybrid_tree = ET.parse(hybrid_path)
@@ -28,6 +35,7 @@ def merge_profiles(am_path, hybrid_path):
                 for x in hybrid_root.findall(section_name)
             ):
                 hybrid_root.append(am_section)
+    strip_namespace(hybrid_root)
     hybrid_tree.write(hybrid_path, encoding="UTF-8", xml_declaration=True)
 
 
