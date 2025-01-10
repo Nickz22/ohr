@@ -5,7 +5,6 @@
     <columns>Primary_Campaign__c</columns>
     <columns>ACCOUNT.URL</columns>
     <columns>Funding_Type__c</columns>
-    <columns>Keywords_JD__c</columns>
     <columns>Industry_Cognism__c</columns>
     <columns>ACCOUNT.EMPLOYEES</columns>
     <columns>Closed_Lost_Opps__c</columns>

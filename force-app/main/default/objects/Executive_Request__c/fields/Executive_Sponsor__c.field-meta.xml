@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Sponsor__c</fullName>
+    <externalId>false</externalId>
+    <label>zzz_Executive Sponsor</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Camilla Gargantini: Chief of Staff to COO</fullName>
+                <default>false</default>
+                <label>Camilla Gargantini: Chief of Staff to COO</label>
+            </value>
+            <value>
+                <fullName>Emmanuel le Blanc: Chief of Staff</fullName>
+                <default>false</default>
+                <label>Emmanuel le Blanc: Chief of Staff</label>
+            </value>
+            <value>
+                <fullName>Mark Frein: COO</fullName>
+                <default>false</default>
+                <label>Mark Frein: COO</label>
+            </value>
+            <value>
+                <fullName>Benjamin Merkley: VP Revenue Operations</fullName>
+                <default>false</default>
+                <label>Benjamin Merkley: VP Revenue Operations</label>
+            </value>
+            <value>
+                <fullName>Sam Schofield: Chief Revenue Officer</fullName>
+                <default>false</default>
+                <label>Sam Schofield: Chief Revenue Officer</label>
+            </value>
+            <value>
+                <fullName>Elise Joy Allen: Senior Director of Account Management</fullName>
+                <default>false</default>
+                <label>Elise Joy Allen: Senior Director of Account Management</label>
+            </value>
+            <value>
+                <fullName>Andrea Di Natale: Analytics and Global Operations</fullName>
+                <default>false</default>
+                <label>Andrea Di Natale: Analytics and Global Operations</label>
+            </value>
+            <value>
+                <fullName>Bianca Burke: People Services Director</fullName>
+                <default>false</default>
+                <label>Bianca Burke: People Services Director</label>
+            </value>
+            <value>
+                <fullName>Adam Clarke: Snr Director of Sales</fullName>
+                <default>false</default>
+                <label>Adam Clarke: Snr Director of Sales</label>
+            </value>
+            <value>
+                <fullName>Miranda Zolot: General Counsel and Secretary</fullName>
+                <default>false</default>
+                <label>Miranda Zolot: General Counsel and Secretary</label>
+            </value>
+            <value>
+                <fullName>Sarah Stephens: Senior Managing Counsel</fullName>
+                <default>false</default>
+                <label>Sarah Stephens: Senior Managing Counsel</label>
+            </value>
+            <value>
+                <fullName>Jeff May: Information Governance and IP Counsel</fullName>
+                <default>false</default>
+                <label>Jeff May: Information Governance and IP Counsel</label>
+            </value>
+            <value>
+                <fullName>Kevin Pratt: Managing Counsel</fullName>
+                <default>false</default>
+                <label>Kevin Pratt: Managing Counsel</label>
+            </value>
+            <value>
+                <fullName>Tony Jamous: Founder and CEO</fullName>
+                <default>false</default>
+                <label>Tony Jamous: Founder and CEO</label>
+            </value>
+            <value>
+                <fullName>Luis Franco: VP Operations</fullName>
+                <default>false</default>
+                <label>Luis Franco: VP Operations</label>
+            </value>
+            <value>
+                <fullName>Ele Guagnino: Senior Director of Hiring Success</fullName>
+                <default>false</default>
+                <label>Ele Guagnino: Senior Director of Hiring Success</label>
+            </value>
+            <value>
+                <fullName>Jack Mardack: Co-Founder</fullName>
+                <default>false</default>
+                <label>Jack Mardack: Co-Founder</label>
+            </value>
+            <value>
+                <fullName>Eryn Marshall: VP of People</fullName>
+                <default>false</default>
+                <label>Eryn Marshall: VP of People</label>
+            </value>
+            <value>
+                <fullName>Matteo Bordin: Senior Director of Product</fullName>
+                <default>false</default>
+                <label>Matteo Bordin: Senior Director of Product</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

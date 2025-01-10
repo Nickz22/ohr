@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_User_Edit_Partner_Accounts</fullName>
+    <active>true</active>
+    <description>Only Partner User Profile can edit Partner Record Type Accounts</description>
+    <errorConditionFormula>AND(
+RecordType.Name  = &quot;Partner&quot;,
+$User.ProfileId &lt;&gt; &quot;00e4v000001Zgrq&quot;, 
+$User.ProfileId &lt;&gt; &quot;00e6g000002UT7l&quot;
+)</errorConditionFormula>
+    <errorMessage>Only Partner User Profile can edit Partner Record Type Accounts</errorMessage>
+</ValidationRule>

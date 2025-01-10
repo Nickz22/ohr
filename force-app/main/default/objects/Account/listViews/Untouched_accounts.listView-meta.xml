@@ -5,17 +5,11 @@
     <columns>ACCOUNT.NAME</columns>
     <columns>Last_Sales_Activity__c</columns>
     <columns>ACCOUNT.ADDRESS1_STATE</columns>
-    <columns>State_HQ__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>Region__c</field>
         <operation>equals</operation>
         <value>AMER</value>
-    </filters>
-    <filters>
-        <field>State_HQ__c</field>
-        <operation>equals</operation>
-        <value>New York</value>
     </filters>
     <label>Untouched accounts</label>
 </ListView>

@@ -4896,6 +4896,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Won_Against_Competitor__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Won_Reason__c</picklist>
         <values>
             <fullName>Ability to customise contracts</fullName>

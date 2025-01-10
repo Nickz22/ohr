@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_User_Owner</fullName>
+    <active>true</active>
+    <description>Only Partner User Profile can own Partner Accounts</description>
+    <errorConditionFormula>AND(
+ISCHANGED(OwnerId), 
+ RecordType.Name  = &quot;Partner&quot;,
+Owner.Profile.Id &lt;&gt; &quot;00e4v000001Zgrq&quot;
+)</errorConditionFormula>
+    <errorMessage>Only Partner User Profile can own Partner Accounts</errorMessage>
+</ValidationRule>

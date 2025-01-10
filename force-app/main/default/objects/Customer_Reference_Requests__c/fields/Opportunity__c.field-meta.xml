@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This is the related opportunity that will be used for deal outcome logic</description>
+    <externalId>false</externalId>
+    <label>Opportunity</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>This opportunity does not match the related account</errorMessage>
+        <filterItems>
+            <field>Opportunity.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.Account__c</valueField>
+        </filterItems>
+        <infoMessage>Please attach the opportunity relevant to this Reference Request</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Opportunity</referenceTo>
+    <relationshipLabel>Customer Reference Requests</relationshipLabel>
+    <relationshipName>Customer_Reference_Requests</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -4,6 +4,7 @@
     <columns>ACCOUNT.NAME</columns>
     <columns>Customer_relationship_score__c</columns>
     <columns>Health_Score_formula__c</columns>
+    <columns>Health_score_number__c</columns>
     <columns>cARR__c</columns>
     <columns>TMs_FTE__c</columns>
     <columns>TMs_Contractors__c</columns>
@@ -16,6 +17,11 @@
         <field>CSM_New__c</field>
         <operation>contains</operation>
         <value>Vanessa</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Customer_Account</value>
     </filters>
     <label>Vanessa&apos;s accounts</label>
     <sharedTo>

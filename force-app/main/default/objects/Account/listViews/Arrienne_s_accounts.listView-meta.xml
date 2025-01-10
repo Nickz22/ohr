@@ -4,6 +4,7 @@
     <columns>ACCOUNT.NAME</columns>
     <columns>Customer_relationship_score__c</columns>
     <columns>Health_Score_formula__c</columns>
+    <columns>Health_score_number__c</columns>
     <columns>cARR__c</columns>
     <columns>TMs_FTE__c</columns>
     <columns>TMs_Contractors__c</columns>

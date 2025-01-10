@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Sponsor_lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Camilla Gargantin - 
+Emmanuel le Blanc - 
+Mark Frein - 
+Ben Merkley - 
+Sam Schofield - 
+Elise Joy Allen - 
+Andrea Di Natale - 
+Bianca Burke - 
+Adam Clarke - 
+Miranda Zolot - 
+Sarah Stephens - 
+Jeff May - 
+Kevin Pratt - 
+Tony Jamous - 
+Luis Franco - 
+Ele Guagnino - 
+Jack Mardack - 
+Eryn Marshall - 
+Matteo Bordin</inlineHelpText>
+    <label>Executive Sponsor</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Executive_Requests</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

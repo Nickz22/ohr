@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Revamp</fullName>
+    <fields>Name</fields>
+    <fields>Account_Tier__c</fields>
+    <fields>Type</fields>
+    <fields>Risk_of_Churn__c</fields>
+    <fields>OwnerId</fields>
+    <fields>Actively_Worked__c</fields>
+    <fields>Website</fields>
+    <label>Partner Revamp</label>
+</CompactLayout>

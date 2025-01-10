@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loom_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+        INCLUDES(Action_Required__c, "Loom Outreach"),
+        OR(
+        ISBLANK(Recipient__c),
+        ISBLANK(Additional_Context__c),
+        ISBLANK(Deadline__c)
+        )
+        )</errorConditionFormula>
+    <errorMessage>When requesting Loom outreach, Recipient, Additional Context, and Deadline fields
+        are required.</errorMessage>
+</ValidationRule> 

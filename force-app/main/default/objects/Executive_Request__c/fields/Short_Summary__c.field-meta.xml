@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_Summary__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide background on the account and deal, the personas we are speaking to, and the goal to be achieved through the sponsorship.</inlineHelpText>
+    <label>Background and Context</label>
+    <length>1000</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

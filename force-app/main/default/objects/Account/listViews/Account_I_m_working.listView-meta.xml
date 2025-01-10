@@ -8,9 +8,9 @@
     <columns>mk_likelihood_to_buy_signals__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>Actively_Worked__c</field>
+        <field>ACCOUNT.RECORDTYPE</field>
         <operation>equals</operation>
-        <value>1</value>
+        <value>Account.Partner_RT</value>
     </filters>
     <label>Accounts I&apos;m working</label>
 </ListView>

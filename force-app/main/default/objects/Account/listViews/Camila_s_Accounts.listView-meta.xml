@@ -5,7 +5,6 @@
     <columns>ACCOUNT.ADDRESS1_STATE</columns>
     <columns>Last_Sales_Activity__c</columns>
     <columns>ACCOUNT.EMPLOYEES</columns>
-    <columns>Contacts_Touched_in_Last_90_Days__c</columns>
     <columns>Sales_Activities_in_Last_90_Days__c</columns>
     <columns>Primary_Campaign__c</columns>
     <columns>CORE.USERS.ALIAS</columns>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competition_Required_at_CW</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+IsClosed ,
+IsWon,
+ISPICKVAL( Won_Against_Competitor__c ,&quot;Yes&quot;),
+ISCHANGED(StageName),
+Isblank(Competition__c)
+)</errorConditionFormula>
+    <errorMessage>Competition must be populated when Won Against Competitor is true.</errorMessage>
+</ValidationRule>

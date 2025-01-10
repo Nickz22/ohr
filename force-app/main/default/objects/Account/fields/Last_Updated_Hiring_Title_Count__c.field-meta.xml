@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Last_Updated_Hiring_Title_Count__c</fullName>
-    <label>Last Updated: Hiring Title Count Bucket</label>
-    <type>Date</type>
-    <description>Latest enriched date. Provides information how many job openings the company has.
-        Possible enrichment sources: Clay, Madkudu.</description>
-</CustomField> 

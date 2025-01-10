@@ -6,7 +6,6 @@
     <columns>ACCOUNT.URL</columns>
     <columns>Company_Linkedin_URL__c</columns>
     <columns>Funding_Type__c</columns>
-    <columns>Keywords_JD__c</columns>
     <columns>Industry_Cognism__c</columns>
     <columns>ACCOUNT.EMPLOYEES</columns>
     <columns>Closed_Lost_Opps__c</columns>

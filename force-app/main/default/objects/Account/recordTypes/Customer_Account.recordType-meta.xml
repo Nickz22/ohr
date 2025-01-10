@@ -4,17 +4,6 @@
     <active>true</active>
     <label>Customer</label>
     <picklistValues>
-        <picklist>AM_Needed__c</picklist>
-        <values>
-            <fullName>No</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Yes</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>ATS__c</picklist>
         <values>
             <fullName>ADP Workforce Now</fullName>
@@ -254,23 +243,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Affiliate</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Benefits</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Compliance Services</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Consulting</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Direct to Consumer</fullName>
             <default>false</default>
         </values>
         <values>
@@ -282,7 +255,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Future of Work</fullName>
+            <fullName>HR Consulting</fullName>
             <default>false</default>
         </values>
         <values>
@@ -290,15 +263,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Mission Driven</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>OFR</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Operations</fullName>
+            <fullName>Management Consulting</fullName>
             <default>false</default>
         </values>
         <values>
@@ -314,19 +279,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Social Impact</fullName>
+            <fullName>Recruitment Process Onboarding</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Talent Acquisition Services</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Talent Acquisition Technology</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Tools%2FSoftware</fullName>
+            <fullName>Talent Acquisition</fullName>
             <default>false</default>
         </values>
         <values>
@@ -335,6 +292,13 @@
         </values>
         <values>
             <fullName>Visa_%26_Relocation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Account_Status__c</picklist>
+        <values>
+            <fullName>Prospect</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -626,26 +590,6 @@
     <picklistValues>
         <picklist>Category__c</picklist>
         <values>
-            <fullName>Affiliate</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Capital</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Direct to Consumer</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Industry Organization</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Integrations</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Other</fullName>
             <default>false</default>
         </values>
@@ -655,10 +599,6 @@
         </values>
         <values>
             <fullName>Services</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Talent</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1016,6 +956,17 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Clay_Attribution__c</picklist>
+        <values>
+            <fullName>Clay Reactivated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clay Sourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Clearbit_Buying_Stage__c</picklist>
         <values>
             <fullName>Awareness</fullName>
@@ -1027,149 +978,6 @@
         </values>
         <values>
             <fullName>Decision</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Clearbit_Tech_Tags__c</picklist>
-        <values>
-            <fullName>adp</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>bamboohr</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>bullhorn</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ceridian</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>extend</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>factset</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>flexera_software</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>greenhouse</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>icims</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>jobvite</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>kronos</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>lever</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>mulberry</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>oracle_cash_and_treasury_management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>oracle_human_resources</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>paychex</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>quickbooks</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>recruiterbox</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>resumator</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>sage_50cloud</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>sage_intacct</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>sap_concur</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>sap_human_capital_management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>sap_sales_order_management</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>silkroad</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>simplicant</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>smartrecruiters</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>success_factors</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>successfactors</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>taleo</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>thomson_reuters_eikon</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>ultipro</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>workable</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>workday</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>xero</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -1223,14 +1031,6 @@
         </values>
         <values>
             <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Perks Marketplace</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Platform</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1315,6 +1115,121 @@
         </values>
         <values>
             <fullName>SaaS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Alternative_Providers__c</picklist>
+        <values>
+            <fullName>Atlas%2FElements Global Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boundless</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment Hero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Globalisation Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Horizons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legacy Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Magnit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiplier</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Disclosed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omnipresent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ontop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panther</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Papaya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remofirst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remotepass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rippling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safeguard Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skuad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TWC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toku</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Velocity Global</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Via</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Workmotion</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -2742,10 +2657,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Kenjo</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Oracle HCM</fullName>
             <default>false</default>
         </values>
@@ -2806,6 +2717,29 @@
         </values>
         <values>
             <fullName>Neutral</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hiring_Title_Count_Bucket__c</picklist>
+        <values>
+            <fullName>0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 - 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 - 45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - 15</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>more than 45</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3150,33 +3084,6 @@
         </values>
     </picklistValues>
     <picklistValues>
-        <picklist>Keywords_JD__c</picklist>
-        <values>
-            <fullName>Digital first</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Fully distributed</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Remote</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Work from anywhere</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Work from home</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>hybrid</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
         <picklist>Large_volume__c</picklist>
         <values>
             <fullName>No</fullName>
@@ -3444,6 +3351,21 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Partner_Category__c</picklist>
+        <values>
+            <fullName>Affiliate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strategic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transactional</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Partner_Marketing_Priority__c</picklist>
         <values>
             <fullName>High</fullName>
@@ -3461,39 +3383,11 @@
     <picklistValues>
         <picklist>Partner_Status__c</picklist>
         <values>
-            <fullName>Closed Won</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Contacted</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Deactivated</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Discovery</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Negotiation</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Not contacted</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Onboarded</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Recycled</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>closed lost</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3573,21 +3467,6 @@
         </values>
         <values>
             <fullName>Length of Payment Terms is too short</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>Reason_to_Request_AM__c</picklist>
-        <values>
-            <fullName>Has long-term expansion potential</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Short-term growth forecasted past month 3</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Strategic logo</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3736,11 +3615,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Not eligible</fullName>
+            <fullName>Not Eligible</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Not interested</fullName>
+            <fullName>Not Interested</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -3819,213 +3698,6 @@
         </values>
         <values>
             <fullName>Rest</fullName>
-            <default>false</default>
-        </values>
-    </picklistValues>
-    <picklistValues>
-        <picklist>State_HQ__c</picklist>
-        <values>
-            <fullName>Alabama</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Alaska</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Arizona</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Arkansas</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>California</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Colorado</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Connecticut</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Delaware</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>District Of Columbia</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Florida</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Georgia</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Hawaii</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Idaho</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Illinois</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Indiana</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Iowa</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Kansas</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Kentucky</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Louisiana</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Maine</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Maryland</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Massachusetts</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Michigan</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Minnesota</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Mississippi</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Missouri</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Montana</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Nebraska</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Nevada</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New Hampshire</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New Jersey</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New Mexico</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New York</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>North Carolina</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>North Dakota</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Ohio</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Oklahoma</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Oregon</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Pennsylvania</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Rhode Island</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>South Carolina</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>South Dakota</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Tennessee</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Texas</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Utah</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Vermont</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Virginia</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Washington</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>West Virginia</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Wisconsin</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Wyoming</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -5819,10 +5491,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Slow growth</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Steady Growth</fullName>
             <default>false</default>
         </values>
@@ -5916,6 +5584,21 @@
         </values>
         <values>
             <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transactional_Strategic_Affiliate_Sub__c</picklist>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral %26 Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
             <default>false</default>
         </values>
     </picklistValues>

@@ -10,10 +10,5 @@
     <columns>Most_Advanced_Lifecycle_Stage__c</columns>
     <columns>mk_customer_fit_signals__c</columns>
     <filterScope>Mine</filterScope>
-    <filters>
-        <field>Hybrid_Motion__c</field>
-        <operation>equals</operation>
-        <value>1</value>
-    </filters>
     <label>My Hybrid Accounts - iBDR</label>
 </ListView>

@@ -6,9 +6,7 @@
     <columns>ACCOUNT.ADDRESS1_STATE</columns>
     <columns>Last_Sales_Activity__c</columns>
     <columns>Primary_Campaign__c</columns>
-    <columns>Contacts_Touched_in_Last_90_Days__c</columns>
     <columns>Sales_Activities_in_Last_90_Days__c</columns>
-    <columns>Average_Sales_Activities_per_Contact_in__c</columns>
     <columns>Stage__c</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <columns>ACCOUNT.PHONE1</columns>

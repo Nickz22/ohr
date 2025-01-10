@@ -5,7 +5,6 @@
     <columns>Account_Tier__c</columns>
     <columns>Primary_Campaign__c</columns>
     <columns>ACCOUNT.EMPLOYEES</columns>
-    <columns>Contacts_Touched_in_Last_90_Days__c</columns>
     <columns>Sales_Activities_in_Last_90_Days__c</columns>
     <columns>ACCOUNT.LAST_ACTIVITY</columns>
     <columns>ACCOUNT.ADDRESS1_STATE</columns>

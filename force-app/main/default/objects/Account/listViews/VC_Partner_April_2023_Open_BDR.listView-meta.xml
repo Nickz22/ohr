@@ -6,13 +6,11 @@
     <columns>ACCOUNT.URL</columns>
     <columns>Company_Linkedin_URL__c</columns>
     <columns>Funding_Type__c</columns>
-    <columns>Keywords_JD__c</columns>
     <columns>Crunchbase_Industries__c</columns>
     <columns>ACCOUNT.EMPLOYEES</columns>
     <columns>Closed_Lost_Opps__c</columns>
     <columns>Notes__c</columns>
     <columns>Last_Sales_Activity__c</columns>
-    <columns>Investor__c</columns>
     <filterScope>Mine</filterScope>
     <filters>
         <field>Primary_Campaign__c</field>

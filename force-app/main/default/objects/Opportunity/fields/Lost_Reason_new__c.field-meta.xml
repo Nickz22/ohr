@@ -86,6 +86,72 @@
                 <default>false</default>
                 <label>Unresponsive</label>
             </value>
+            <value>
+                <fullName>Client Unresponsive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Client Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Country coverage/direct entities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Country coverage/direct entities</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Disqualified</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Duplicate Opp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Duplicate Opp</label>
+            </value>
+            <value>
+                <fullName>Meeting Never Set</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Meeting Never Set</label>
+            </value>
+            <value>
+                <fullName>Misqualified</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Misqualified</label>
+            </value>
+            <value>
+                <fullName>Missing Integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Missing Integration</label>
+            </value>
+            <value>
+                <fullName>Not a Priority</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not a Priority</label>
+            </value>
+            <value>
+                <fullName>Other product gap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other product gap</label>
+            </value>
+            <value>
+                <fullName>Qualified incorrectly</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Qualified incorrectly</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
