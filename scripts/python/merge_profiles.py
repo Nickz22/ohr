@@ -1,3 +1,6 @@
+# This script merges two Salesforce profile XML files.
+# Usage: python merge_profiles.py <AM_profile_path> <Hybrid_profile_path>
+
 import xml.etree.ElementTree as ET
 import sys
 
