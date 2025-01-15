@@ -1,7 +1,7 @@
 @isTest
 public with sharing class TestOpportunityInsertionAsHybrid {
     @isTest static void testLogAllTypesOfOpps() {
-        Profile p = [SELECT Id FROM Profile WHERE Name='Hybrid AE/AM' LIMIT 1];
+        Profile p = [SELECT Id FROM Profile WHERE Name='Hybrid AE_AM' LIMIT 1];
         User u = new User(
             ProfileId=p.Id,
             Username='hybridtester'+DateTime.now().millisecond()+'@example.com',

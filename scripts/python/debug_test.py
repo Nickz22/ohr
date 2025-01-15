@@ -94,7 +94,16 @@ def extract_debug_section(
 
     pattern = f"{start_marker}(.*?){end_marker}"
     matches = re.findall(pattern, log_content, re.DOTALL)
-    return matches
+    filtered_matches = []
+    for match in matches:
+        lines = match.split("\n")
+        filtered_lines = [
+            line
+            for line in lines
+            if not any(x in line for x in ("HEAP_ALLOCATE", "STATEMENT_EXECUTE"))
+        ]
+        filtered_matches.append("\n".join(filtered_lines))
+    return filtered_matches
 
 
 def main():
