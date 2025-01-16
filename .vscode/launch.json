@@ -11,6 +11,19 @@
       "logFile": "${command:AskForLogFileName}",
       "stopOnEntry": true,
       "trace": true
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "/Users/nzozaya/Salesforce/oyster-hr/scripts/python/merge_profiles.py",
+      "args": [
+        "/Users/nzozaya/Salesforce/oyster-hr/force-app/main/default/profiles/AE User.profile-meta.xml",
+        "/Users/nzozaya/Salesforce/oyster-hr/force-app/main/default/profiles/AM User.profile-meta.xml",
+        "/Users/nzozaya/Salesforce/oyster-hr/force-app/main/default/profiles/Hybrid AE_AM.profile-meta.xml"
+      ],
+      "console": "integratedTerminal",
+      "stopOnEntry": true
     }
   ]
 }
