@@ -6,7 +6,7 @@ public class TestOpportunityRenewalFlow {
         System.debug('PARSE_DEBUG_END');
 
         Account testAccount = new Account(
-            Name = 'Test Account',
+            Name = 'Test Account ZZZ',
             AccountSource = 'Web',
             Website = 'https://test.com'
         );
@@ -127,6 +127,8 @@ public class TestOpportunityRenewalFlow {
         System.debug('PARSE_DEBUG_END');
 
         System.assertEquals(1, renewalOpps.size(), 'Expected one renewal opportunity to be created');
-        System.assertEquals('Test Account Oyster Scale Renewal 5', renewalOpps[0].Name, 'Renewal opportunity name does not match expected format');
+        Integer expectedYear = Date.today().addMonths(12).year();
+        String expectedName = 'Test Account ZZZ - Oyster Scale Renewal ' + expectedYear + ' - 5 Seats';
+        System.assertEquals(expectedName, renewalOpps[0].Name, 'Renewal opportunity name does not match expected format');
     }
-} 
+}

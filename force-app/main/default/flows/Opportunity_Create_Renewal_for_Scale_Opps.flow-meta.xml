@@ -87,7 +87,7 @@
         </rules>
     </decisions>
     <description>2024-10-04: Exclude Churn/Contraction Risk opps
-2025-01-14: Change renewal Opportunity name</description>
+        2025-01-14: Change renewal Opportunity name</description>
     <environments>Default</environments>
     <formulas>
         <name>fx_renewalCloseDate</name>
@@ -98,7 +98,8 @@
         <description>Customer Name - Oyster Scale Renewal - # Seats</description>
         <name>varRenewalOpportunityName</name>
         <dataType>String</dataType>
-        <expression>{!$Record.Account.Name} + &quot; Oyster Scale Renewal &quot; + TEXT({!$Record.Number_of_Seats__c})</expression>
+        <expression>{!$Record.Account.Name} + " - Oyster Scale Renewal " +
+            TEXT(YEAR(fx_renewalCloseDate)) + " - " + TEXT({!$Record.Number_of_Seats__c}) + " Seats"</expression>
     </formulas>
     <interviewLabel>Opportunity - Create Renewal for Scale Opps {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity - Create Renewal for Scale Opps</label>
