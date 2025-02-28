@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <formula>Partner__r.Owner.FirstName + &quot; &quot; + Partner__r.Owner.LastName</formula>
     <inlineHelpText>Provide the name of the person responsible for managing the relationship with the partner.</inlineHelpText>
-    <label>Partner Manager (transactional)</label>
+    <label>Partner Manager</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <type>Text</type>

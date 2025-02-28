@@ -4,16 +4,16 @@
     <active>true</active>
     <errorConditionFormula>OR(
         AND(
-        INCLUDES(Lost_Reason__c, "Feature gap"),
-        ISNULL(Feature_Gap__c)
+        TEXT(Lost_Reason_new__c) = &quot;Feature gap&quot;,
+        PICKLISTCOUNT(Feature_Gap__c) = 0
         ),
         AND(
-        INCLUDES(Lost_Reason__c, "Service gap (example: Visas, Benefits, Time to Hire etc)"),
-        ISNULL(Service_Gap__c)
+        TEXT(Lost_Reason_new__c) = &quot;Service gap (example: Visas, Benefits, Time to Hire etc)&quot;,
+        PICKLISTCOUNT(Service_Gap__c) = 0
         )
         )</errorConditionFormula>
     <errorDisplayField>Lost_Reason__c</errorDisplayField>
-    <errorMessage>When "Feature gap" is selected as a Lost Reason, you must specify at least one
-        Feature Gap. When "Service gap" is selected as a Lost Reason, you must specify at least one
+    <errorMessage>When &quot;Feature gap&quot; is selected as a Lost Reason, you must specify at least one
+        Feature Gap. When &quot;Service gap&quot; is selected as a Lost Reason, you must specify at least one
         Service Gap.</errorMessage>
-</ValidationRule> 
+</ValidationRule>

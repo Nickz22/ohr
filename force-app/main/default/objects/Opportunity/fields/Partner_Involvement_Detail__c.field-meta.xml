@@ -3,7 +3,7 @@
     <fullName>Partner_Involvement_Detail__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>Describe in detail the extent and manner of the partner&apos;s involvement in the sales process.</inlineHelpText>
-    <label>Partner Involvement Det (transactional)</label>
+    <label>Partner Involvement Detail</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

@@ -6,5 +6,5 @@
 ISPICKVAL(Was_a_Partner_Involved_in_Sales_Cycle__c, &quot;Yes&quot;),
 ISBLANK(Partner_strategic__c),
 ISBLANK(Partner__c))</errorConditionFormula>
-    <errorMessage>When &quot;Was a Partner Involved or leveraged?&quot; is &quot;Yes,&quot; Partner (Strategic) or Partner (Transactional) must have a value.</errorMessage>
+    <errorMessage>When &quot;Was a Partner Involved or leveraged?&quot; is &quot;Yes,&quot; Partner must have a value.</errorMessage>
 </ValidationRule>

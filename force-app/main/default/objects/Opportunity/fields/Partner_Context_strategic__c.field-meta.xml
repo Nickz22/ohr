@@ -3,7 +3,7 @@
     <fullName>Partner_Context_strategic__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>Explain the role or contribution of the partner in the context of this deal.</inlineHelpText>
-    <label>Partner Context (strategic)</label>
+    <label>zzzPartner Context (strategic)</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

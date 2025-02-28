@@ -3,7 +3,7 @@
     <fullName>Partner_Involvement_Type__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>Specify the nature of the partner&apos;s involvement.</inlineHelpText>
-    <label>Partner Involvement Type (transactional)</label>
+    <label>Partner Involvement Type</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

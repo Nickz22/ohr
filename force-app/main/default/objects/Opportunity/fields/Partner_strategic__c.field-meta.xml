@@ -3,7 +3,7 @@
     <fullName>Partner_strategic__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>Partner (strategic)</label>
+    <label>zzzPartner (strategic)</label>
     <lookupFilter>
         <active>true</active>
         <filterItems>

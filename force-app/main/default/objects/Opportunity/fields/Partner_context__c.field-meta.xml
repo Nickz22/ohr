@@ -3,7 +3,7 @@
     <fullName>Partner_context__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>Explain the role or contribution of the partner in the context of this deal.</inlineHelpText>
-    <label>Partner context (transactional)</label>
+    <label>Partner context</label>
     <length>100000</length>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

@@ -4,7 +4,7 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <inlineHelpText>Enter the name of the partner involved in the deal.</inlineHelpText>
-    <label>Partner (transactional)</label>
+    <label>Partner</label>
     <lookupFilter>
         <active>true</active>
         <errorMessage>The account selected is not set up as a partner account. Reach out to the partner team or rev ops.</errorMessage>
