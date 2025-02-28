@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Churn_Contraction_Reasons_Copy__c</fullName>
+    <description>Copies value of Secondary Churn/Contraction Reasons so that it can be displayed in Gong.</description>
+    <externalId>false</externalId>
+    <label>Secondary Churn/Contraction Reasons Copy</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

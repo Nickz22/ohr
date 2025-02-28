@@ -1151,6 +1151,53 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Feature_Gap__c</picklist>
+        <values>
+            <fullName>Contractor of Record %28Deel Shield%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customize contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customized payroll cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cutoff dates flexibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HRIS capabilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hourly pay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited integration capabilities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offcycle payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform language</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ForecastCategoryName</picklist>
         <values>
             <fullName>Best Case</fullName>
@@ -4759,6 +4806,45 @@
         </values>
         <values>
             <fullName>Visa Support Limitations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Gap__c</picklist>
+        <values>
+            <fullName>Benefits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compensation limitations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entity setup services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hiring and Onboarding Speed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local language support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visas</fullName>
             <default>false</default>
         </values>
     </picklistValues>

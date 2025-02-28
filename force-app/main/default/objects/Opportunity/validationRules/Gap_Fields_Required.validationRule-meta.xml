@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gap_Fields_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+        AND(
+        INCLUDES(Lost_Reason__c, "Feature gap"),
+        ISNULL(Feature_Gap__c)
+        ),
+        AND(
+        INCLUDES(Lost_Reason__c, "Service gap (example: Visas, Benefits, Time to Hire etc)"),
+        ISNULL(Service_Gap__c)
+        )
+        )</errorConditionFormula>
+    <errorDisplayField>Lost_Reason__c</errorDisplayField>
+    <errorMessage>When "Feature gap" is selected as a Lost Reason, you must specify at least one
+        Feature Gap. When "Service gap" is selected as a Lost Reason, you must specify at least one
+        Service Gap.</errorMessage>
+</ValidationRule> 
