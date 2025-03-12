@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_Lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Created as part of the Auto Lead Assignment project at request of Alex R. At time of creation, t is automatically set by the &quot;Invocable - Assign Country to Lead&quot; flow which is called from the &quot;Lead Processes&quot; process in Process Builder.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup field to the Country object. Automatically assigned.</inlineHelpText>
+    <label>Country (Lookup)</label>
+    <referenceTo>Country__c</referenceTo>
+    <relationshipLabel>Leads</relationshipLabel>
+    <relationshipName>Leads</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

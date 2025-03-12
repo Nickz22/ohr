@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Earliest_Event_Date_After_Acc_Activate__c</fullName>
+    <description>Used in Sales Effectiveness Reporting. Populated by DLRS</description>
+    <externalId>false</externalId>
+    <label>Earliest Event Date After Acc Activate</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

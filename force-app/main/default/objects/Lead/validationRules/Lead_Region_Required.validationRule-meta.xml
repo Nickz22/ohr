@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Region_Required</fullName>
+    <active>false</active>
+    <description>Before converting a Lead, a Region must be selected.</description>
+    <errorConditionFormula>AND (
+ISCHANGED(IsConverted),
+ISBLANK( TEXT(Region__c) )
+)</errorConditionFormula>
+    <errorMessage>Please go back to the Details page and select a Region for this Lead before converting.</errorMessage>
+</ValidationRule>

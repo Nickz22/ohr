@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intent_Source__c</fullName>
+    <description>MOps managed field. Set automatically via our account router in Leandata.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>MOps managed field. Set automatically via our account router in Leandata.</inlineHelpText>
+    <label>Intent Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>G2 - MM</fullName>
+                <default>false</default>
+                <label>G2 - MM</label>
+            </value>
+            <value>
+                <fullName>G2 - SMB</fullName>
+                <default>false</default>
+                <label>G2 - SMB</label>
+            </value>
+            <value>
+                <fullName>Clearbit - MM</fullName>
+                <default>false</default>
+                <label>Clearbit - MM</label>
+            </value>
+            <value>
+                <fullName>Clearbit - SMB</fullName>
+                <default>false</default>
+                <label>Clearbit - SMB</label>
+            </value>
+            <value>
+                <fullName>Clearbit Intent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clearbit Intent</label>
+            </value>
+            <value>
+                <fullName>Clearbit Intent - MM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clearbit Intent - MM</label>
+            </value>
+            <value>
+                <fullName>Clearbit Intent - SMB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Clearbit Intent - SMB</label>
+            </value>
+            <value>
+                <fullName>G2 Intent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>G2 Intent</label>
+            </value>
+            <value>
+                <fullName>G2 Intent - MM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>G2 Intent - MM</label>
+            </value>
+            <value>
+                <fullName>G2 Intent - SMB</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>G2 Intent - SMB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

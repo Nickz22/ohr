@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Response_Time_Minutes__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(NOT(ISBLANK(Response_Date_Time__c)),NOT(ISBLANK(Became_MQL_Date_Time__c))),
+    (Response_Date_Time__c - Became_MQL_Date_Time__c) * 24 * 60,
+    NULL
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Response Time (Minutes)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeanData_Reassign_to_the_Lead_Owner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used by LeanData to mark when an Account should be aligned with Lead Ownership. HubSpot workflow aligns the ownership and clears the value.</description>
+    <externalId>false</externalId>
+    <label>LeanData Reassign to the Lead Owner</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

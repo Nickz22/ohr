@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Assignment_Helper__c</fullName>
+    <description>5 minutes after created date, created because Leads are being automatically created then updated with address information. In order to send through to lead round robin on create, we have to delay by the automation by 5 minutes. This field is what we use to reference the 5 minutes after create time for the automation. At time of creation, this was used in the &quot;Lead - Delay Auto-Assignment&quot; process in process builder. 06/20/22 updated from 2 minutes to 5 minutes for ChiliPiper</description>
+    <externalId>false</externalId>
+    <formula>/* 5 minutes after the Created Date, (5/1440) */
+CreatedDate + 0.00347</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>5 minutes after created date</inlineHelpText>
+    <label>Lead Assignment (Helper)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

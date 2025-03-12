@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MK_Funding_Range__c</fullName>
+    <description>Populated real-time from MadKudu computation. Data source: PredictLeads</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Populated real-time from MadKudu computation. Data source: PredictLeads</inlineHelpText>
+    <label>MK Funding Range</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-$1M</fullName>
+                <default>false</default>
+                <label>1-$1M</label>
+            </value>
+            <value>
+                <fullName>2-$3M</fullName>
+                <default>false</default>
+                <label>2-$3M</label>
+            </value>
+            <value>
+                <fullName>3-$10M</fullName>
+                <default>false</default>
+                <label>3-$10M</label>
+            </value>
+            <value>
+                <fullName>4-$25M</fullName>
+                <default>false</default>
+                <label>4-$25M</label>
+            </value>
+            <value>
+                <fullName>5-$50M</fullName>
+                <default>false</default>
+                <label>5-$50M</label>
+            </value>
+            <value>
+                <fullName>6-$75M</fullName>
+                <default>false</default>
+                <label>6-$75M</label>
+            </value>
+            <value>
+                <fullName>7-$100M</fullName>
+                <default>false</default>
+                <label>7-$100M</label>
+            </value>
+            <value>
+                <fullName>8-$100M+</fullName>
+                <default>false</default>
+                <label>8-$100M+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

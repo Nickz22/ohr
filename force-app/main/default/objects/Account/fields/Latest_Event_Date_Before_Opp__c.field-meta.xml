@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Event_Date_Before_Opp__c</fullName>
+    <description>Used in Sales Effectiveness Reporting. Populated by DLRS</description>
+    <externalId>false</externalId>
+    <label>Latest Event Date Before Opp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

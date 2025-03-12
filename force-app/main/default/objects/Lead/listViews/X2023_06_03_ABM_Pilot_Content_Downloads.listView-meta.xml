@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2023_06_03_ABM_Pilot_Content_Downloads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>Lead_Objective__c</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>MK_Lead_Grade__c</columns>
+    <columns>MK_Customer_Fit__c</columns>
+    <columns>MK_Likelihood_to_Buy__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>2023-06-03 ABM Pilot - Content Downloads</label>
+</ListView>

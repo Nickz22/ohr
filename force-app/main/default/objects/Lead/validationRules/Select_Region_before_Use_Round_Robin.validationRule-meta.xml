@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_Region_before_Use_Round_Robin</fullName>
+    <active>false</active>
+    <description>Region must be selected before sending to Round Robin</description>
+    <errorConditionFormula>AND (
+   ISBLANK(TEXT(Region__c))
+)</errorConditionFormula>
+    <errorDisplayField>Region__c</errorDisplayField>
+    <errorMessage>Please select Region before converting this Lead</errorMessage>
+</ValidationRule>

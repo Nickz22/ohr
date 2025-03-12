@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2_Buyer_Intent_Buying_Stage__c</fullName>
+    <description>Buying Stage evaluates our buyer&apos;s journey by combining funnel-dependent factors such as G2 page engagement and G2 signal type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Buying Stage evaluates our buyer&apos;s journey by combining funnel-dependent factors such as G2 page engagement and G2 signal type.</inlineHelpText>
+    <label>G2 Buyer Intent Buying Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awareness</fullName>
+                <default>false</default>
+                <label>Awareness</label>
+            </value>
+            <value>
+                <fullName>Consideration</fullName>
+                <default>false</default>
+                <label>Consideration</label>
+            </value>
+            <value>
+                <fullName>Decision</fullName>
+                <default>false</default>
+                <label>Decision</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

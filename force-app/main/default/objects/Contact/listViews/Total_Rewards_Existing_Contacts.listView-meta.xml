@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Rewards_Existing_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>MK_Customer_Fit__c</columns>
+    <columns>MK_Customer_Fit_Score__c</columns>
+    <columns>MK_Customer_Fit_Segment__c</columns>
+    <columns>MK_Lead_Grade__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CAMPAIGN_MEMBER.STATUS</field>
+        <operation>equals</operation>
+        <value>ICP Fit</value>
+    </filters>
+    <label>Total Rewards - Waitlist - Contacts</label>
+</ListView>

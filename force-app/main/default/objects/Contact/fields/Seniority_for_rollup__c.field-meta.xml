@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seniority_for_rollup__c</fullName>
+    <description>Rolled up into &quot;Contact Seniority&quot; field on the account.</description>
+    <externalId>false</externalId>
+    <formula>CASE(Seniority__c,
+&quot;Director&quot;,&quot;Director+&quot;,
+&quot;director&quot;,&quot;Director+&quot;,
+&quot;Entry-Level&quot;,&quot;Entry-level&quot;,
+&quot;Executive&quot;,&quot;Director+&quot;,
+&quot;executive&quot;,&quot;Director+&quot;,
+&quot;Executive-Level&quot;,&quot;Director+&quot;,
+&quot;Experienced Staff&quot;,&quot;Mid-level&quot;,
+&quot;Global Head of Talent Acquisition&quot;,&quot;Director+&quot;,
+&quot;Head of Engineering&quot;,&quot;Director+&quot;,
+&quot;Manager&quot;,&quot;Mid-level&quot;,
+&quot;manager&quot;,&quot;Mid-level&quot;,
+&quot;Middle-Management&quot;,&quot;Mid-level&quot;,
+&quot;Other&quot;,&quot;Entry-level&quot;,
+&quot;Senior Leadership&quot;,&quot;Mid-level&quot;,
+&quot;Team-lead&quot;,&quot;Mid-level&quot;,
+&quot;Top-Tier Leadership&quot;,&quot;Director+&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Seniority (for rollup)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

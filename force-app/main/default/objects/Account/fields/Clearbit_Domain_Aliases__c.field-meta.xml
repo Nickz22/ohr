@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Domain_Aliases__c</fullName>
+    <description>A list of domains that redirect to the company&apos;s main website, enriched from Clearbit.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A list of domains that redirect to the company&apos;s main website, enriched from Clearbit.</inlineHelpText>
+    <label>Clearbit Domain Aliases</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

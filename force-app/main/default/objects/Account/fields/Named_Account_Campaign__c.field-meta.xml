@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Named_Account_Campaign__c</fullName>
+    <description>For Atrium</description>
+    <externalId>false</externalId>
+    <formula>CONTAINS(LOWER(Primary_Campaign__r.Name),&quot;named account&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Named Account Campaign</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

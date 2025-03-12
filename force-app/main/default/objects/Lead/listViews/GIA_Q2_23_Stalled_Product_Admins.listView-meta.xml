@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GIA_Q2_23_Stalled_Product_Admins</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>CountriesHiringIn__c</columns>
+    <columns>Hires_and_Start_Date_CP__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Sub_Status__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>MK_Lead_Grade__c</columns>
+    <columns>MK_Customer_Fit__c</columns>
+    <columns>MK_Likelihood_to_Buy__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <label>[GIA] Q2-23 Stalled Product Admins</label>
+</ListView>

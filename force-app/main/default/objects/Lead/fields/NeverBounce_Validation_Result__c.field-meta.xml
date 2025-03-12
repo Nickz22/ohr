@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NeverBounce_Validation_Result__c</fullName>
+    <description>Set via integration with Neverbounce in hubSpot. One time job run on backlog in March 2024, on creation verification for records created after.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Catch All (unverifiable) = May turn out to be a bad email, or lead to no response. However it may turn out to be a good email, and we ensure we didn’t miss out on an opportunity. 
+
+Unknown = Most likely to turn out a bad email, but can’t be sure.
+
+Look here for details: https://www.notion.so/oysterhr/Lead-Email-Verification-8966ee7a61aa4e759897f84c7e40d4df</inlineHelpText>
+    <label>NeverBounce Validation Result</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Round_Robin_Required</fullName>
+    <active>false</active>
+    <description>Users must choose whether or not to use Round Robin before converting Leads</description>
+    <errorConditionFormula>AND (
+  ISCHANGED(IsConverted),
+  ISBLANK(TEXT(leadassist__Use_Round_Robin__c))
+)</errorConditionFormula>
+    <errorMessage>Please go back to the Details page and select an option for the &quot;Use Round Robin&quot; field. Set to TRUE for automatic assignment via Round Robin. Set to FALSE to ignore the Round Robin and maintain the current owner.</errorMessage>
+</ValidationRule>

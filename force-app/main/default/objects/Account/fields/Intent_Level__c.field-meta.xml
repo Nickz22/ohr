@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intent_Level__c</fullName>
+    <externalId>false</externalId>
+    <label>Intent Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Intent</fullName>
+                <default>false</default>
+                <label>High Intent</label>
+            </value>
+            <value>
+                <fullName>Low Intent</fullName>
+                <default>false</default>
+                <label>Low Intent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Growth_Percentage__c</fullName>
+    <description>Provides information about percentage growth of the company based on the employee size and open jobs information. Enrichment source: Clay.</description>
+    <externalId>false</externalId>
+    <label>Company Growth Percentage</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

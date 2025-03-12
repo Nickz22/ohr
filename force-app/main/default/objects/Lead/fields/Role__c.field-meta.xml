@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <description>Person&apos;s standardized role, based on title (ex: sales, marketing, etc.) from Clearbit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Person&apos;s role enriched from Clearbit</inlineHelpText>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

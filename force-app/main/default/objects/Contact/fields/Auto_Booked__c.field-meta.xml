@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Booked__c</fullName>
+    <description>Auto checked if the Lead Source is &quot;Qualified_Chat&quot; and the Owner is Alex Berry or any AE&apos;s.</description>
+    <externalId>false</externalId>
+    <formula>OR(
+    AND (
+        ISPICKVAL(LeadSource, &apos;Qualified_Chat&apos;),
+        OR (
+            Owner.Alias = &quot;aberr&quot;,
+            CONTAINS(Owner.UserRole.Name , &apos;AE&apos;)
+        )
+    ),
+Booking_Status_CP__c = &quot;Booked&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Auto checked if the Lead Source is &quot;Qualified_Chat&quot; and the Owner is Alex Berry or any AE&apos;s.</inlineHelpText>
+    <label>Auto-Booked</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

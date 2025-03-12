@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Case_v2__c</fullName>
+    <description>Replacing single picklist Use Case list used on forms on our website.</description>
+    <externalId>false</externalId>
+    <label>Use Case [Multi]</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Use_case</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

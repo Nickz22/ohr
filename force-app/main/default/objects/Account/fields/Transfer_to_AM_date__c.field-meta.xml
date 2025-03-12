@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transfer_to_AM_date__c</fullName>
+    <description>use to indicate when the account can be passed on to the AM team</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate the scheduled date for transferring the account to account management post-pilot phase.</inlineHelpText>
+    <label>Transfer to AM date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

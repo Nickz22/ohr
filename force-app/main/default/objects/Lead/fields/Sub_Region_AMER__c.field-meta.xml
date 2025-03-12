@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Region_AMER__c</fullName>
+    <description>Used in the &quot;Sub Region&quot; formula.  AMER is split into this formula for clarity.</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(State)),
+    IF(CONTAINS($Label.Subregion_AMER_Pacific_Northwest,State + &quot;;&quot;),&quot;Pacific Northwest&quot;,
+        IF(State = &quot;California&quot; || State = &quot;CA&quot;,&quot;California&quot;,
+            IF(CONTAINS($Label.Subregion_AMER_Mountain_West,State + &quot;;&quot;),&quot;Mountain West&quot;,
+                IF(CONTAINS($Label.Subregion_AMER_Southwest,State + &quot;;&quot;),&quot;Southwest&quot;,
+                    IF(CONTAINS($Label.Subregion_AMER_Midwest,State + &quot;;&quot;),&quot;Midwest&quot;,
+                        IF(CONTAINS($Label.Subregion_AMER_Southeast,State + &quot;;&quot;),&quot;Southeast&quot;,
+                            IF(CONTAINS($Label.Subregion_AMER_Mid_Atlantic,State + &quot;;&quot;),&quot;Mid Atlantic&quot;,
+                                IF(CONTAINS($Label.Tri_State,State + &quot;;&quot;),&quot;Tri State&quot;,
+                                    IF(CONTAINS($Label.Subregion_AMER_Northeast,State + &quot;;&quot;),&quot;Northeast&quot;,&quot;&quot;)
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    ),
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sub Region (AMER)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

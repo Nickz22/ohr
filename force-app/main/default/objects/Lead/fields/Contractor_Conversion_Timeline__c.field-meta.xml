@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contractor_Conversion_Timeline__c</fullName>
+    <description>Form field on the Contractor Conversion landing page that indicates how quickly the contact wants to convert a contractor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Form field on the Contractor Conversion landing page that indicates how quickly the contact wants to convert a contractor</inlineHelpText>
+    <label>Contractor Conversion Timeline</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>As soon as possible, I have a candidate ready to be converted</fullName>
+                <default>false</default>
+                <label>As soon as possible, I have a candidate ready to be converted</label>
+            </value>
+            <value>
+                <fullName>I&apos;ll be ready to convert my contractor(s) in a few weeks</fullName>
+                <default>false</default>
+                <label>I&apos;ll be ready to convert my contractor(s) in a few weeks</label>
+            </value>
+            <value>
+                <fullName>I&apos;m exploring, I&apos;ll be ready to convert contractor(s) in the near future</fullName>
+                <default>false</default>
+                <label>I&apos;m exploring, I&apos;ll be ready to convert contractor(s) in the near future</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

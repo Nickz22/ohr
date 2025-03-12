@@ -5,6 +5,15 @@ import time
 import re
 import sys
 
+# INSTRUCTIONS
+# 1. Set debug logging in the Apex test class using markers - every single debug statement should be enclosed with PARSE_DEBUG_START and PARSE_DEBUG_END
+# 2. Run the script with the class name as an argument, make sure to cat the results into a separate file. Do not print them in the chat console.  
+# 3. The script will run the test and print the debug output
+# 4. Analyze the output and decide on the next best step.
+# 5. Make sure to verbalize what you are thinking after each result so that I can help you.
+# 6. Make sure to explicitly deploy the changes after each step.
+
+
 
 def run_command(cmd):
     try:

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Partner_Program__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerator</fullName>
+                <default>false</default>
+                <label>Accelerator</label>
+            </value>
+            <value>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+                <label>Affiliate</label>
+            </value>
+            <value>
+                <fullName>Benefits</fullName>
+                <default>false</default>
+                <label>Benefits</label>
+            </value>
+            <value>
+                <fullName>Compliance Services</fullName>
+                <default>false</default>
+                <label>Compliance Services</label>
+            </value>
+            <value>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <fullName>Direct to Consumer</fullName>
+                <default>false</default>
+                <label>Direct to Consumer</label>
+            </value>
+            <value>
+                <fullName>EOR</fullName>
+                <default>false</default>
+                <label>EOR</label>
+            </value>
+            <value>
+                <fullName>Finance &amp; ERP</fullName>
+                <default>false</default>
+                <label>Finance &amp; ERP</label>
+            </value>
+            <value>
+                <fullName>Future of Work</fullName>
+                <default>false</default>
+                <label>Future of Work</label>
+            </value>
+            <value>
+                <fullName>Incubator</fullName>
+                <default>false</default>
+                <label>Incubator</label>
+            </value>
+            <value>
+                <fullName>Mission Driven</fullName>
+                <default>false</default>
+                <label>Mission Driven</label>
+            </value>
+            <value>
+                <fullName>OFR</fullName>
+                <default>false</default>
+                <label>OFR</label>
+            </value>
+            <value>
+                <fullName>Operations</fullName>
+                <default>false</default>
+                <label>Operations</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>PEO</fullName>
+                <default>false</default>
+                <label>PEO</label>
+            </value>
+            <value>
+                <fullName>Social Impact</fullName>
+                <default>false</default>
+                <label>Social Impact</label>
+            </value>
+            <value>
+                <fullName>Talent Acquisition Services</fullName>
+                <default>false</default>
+                <label>Talent Acquisition Services</label>
+            </value>
+            <value>
+                <fullName>Talent Acquisition Technology</fullName>
+                <default>false</default>
+                <label>Talent Acquisition Technology</label>
+            </value>
+            <value>
+                <fullName>Tools/Software</fullName>
+                <default>false</default>
+                <label>Tools/Software</label>
+            </value>
+            <value>
+                <fullName>VC</fullName>
+                <default>false</default>
+                <label>VC</label>
+            </value>
+            <value>
+                <fullName>Visa &amp; Relocation</fullName>
+                <default>false</default>
+                <label>Visa &amp; Relocation</label>
+            </value>
+            <value>
+                <fullName>Consulting &amp; Advisory</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Consulting &amp; Advisory</label>
+            </value>
+            <value>
+                <fullName>HR Tech</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HR Tech</label>
+            </value>
+            <value>
+                <fullName>HR Tech Stack</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HR Tech Stack</label>
+            </value>
+            <value>
+                <fullName>Operations &amp; Tools</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Operations &amp; Tools</label>
+            </value>
+            <value>
+                <fullName>Recruiting</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Recruiting</label>
+            </value>
+            <value>
+                <fullName>Relocation/Visas</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Relocation/Visas</label>
+            </value>
+            <value>
+                <fullName>Remote Work / Future of Work</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Remote Work / Future of Work</label>
+            </value>
+            <value>
+                <fullName>Social Impact - ESG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Social Impact - ESG</label>
+            </value>
+            <value>
+                <fullName>Social Impact - Talent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Social Impact - Talent</label>
+            </value>
+            <value>
+                <fullName>Start up ecosystem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Start up ecosystem</label>
+            </value>
+            <value>
+                <fullName>Talent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Talent</label>
+            </value>
+            <value>
+                <fullName>VC/Startup Ecosystem</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>VC/Startup Ecosystem</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Affiliate</controllingFieldValue>
+            <valueName>Affiliate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Compliance Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Services</controllingFieldValue>
+            <valueName>Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capital</controllingFieldValue>
+            <valueName>Accelerator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capital</controllingFieldValue>
+            <valueName>Incubator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Capital</controllingFieldValue>
+            <valueName>VC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEO/Payroll</controllingFieldValue>
+            <valueName>EOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEO/Payroll</controllingFieldValue>
+            <valueName>Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PEO/Payroll</controllingFieldValue>
+            <valueName>PEO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industry Organization</controllingFieldValue>
+            <valueName>Future of Work</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industry Organization</controllingFieldValue>
+            <valueName>Mission Driven</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industry Organization</controllingFieldValue>
+            <valueName>OFR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industry Organization</controllingFieldValue>
+            <valueName>Social Impact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Direct to Consumer</controllingFieldValue>
+            <valueName>Direct to Consumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent</controllingFieldValue>
+            <valueName>Talent Acquisition Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Talent</controllingFieldValue>
+            <valueName>Talent Acquisition Technology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

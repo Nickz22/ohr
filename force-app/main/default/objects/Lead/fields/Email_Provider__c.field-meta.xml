@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Provider__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Enriched from Clearbit. Indicates whether the email domain is associated with a free email provider (ex: Gmail). Used for identifying work emails</description>
+    <externalId>false</externalId>
+    <label>Email Provider</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

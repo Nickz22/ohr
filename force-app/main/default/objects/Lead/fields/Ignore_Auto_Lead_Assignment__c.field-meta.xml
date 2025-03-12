@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ignore_Auto_Lead_Assignment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Created as part of the Auto Lead Assignment project at request of Alex R. Allows users to stop the auto-assignment from happening if manually creating Leads. This field is referenced in the &quot;Lead Processes&quot; process in Process Builder.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use only when Lead is created. Check this box if you would like ignore auto-assigning this Lead based on the Country.</inlineHelpText>
+    <label>Ignore Auto-Lead Assignment</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

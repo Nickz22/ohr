@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ignore_SRR_Qualified_Chat__c</fullName>
+    <description>Automatically checked if Lead Source = &quot;Chat&quot; and Lead Owner Role contains &quot;BDR&quot;. For use in the Lead - Delay Auto</description>
+    <externalId>false</externalId>
+    <formula>IF (
+   AND (
+      Lead_Type__c = &quot;Chat&quot;,
+      CONTAINS(Owner:User.UserRole.Name, &quot;BDR&quot;)
+   ),
+   true,
+   false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ignore SRR (Qualified Chat)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Alternative_Providers__c</fullName>
+    <externalId>false</externalId>
+    <label>Current Alternative Providers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Atlas/Elements Global Services</fullName>
+                <default>false</default>
+                <label>Atlas/Elements Global Services</label>
+            </value>
+            <value>
+                <fullName>Boundless</fullName>
+                <default>false</default>
+                <label>Boundless</label>
+            </value>
+            <value>
+                <fullName>Deel</fullName>
+                <default>false</default>
+                <label>Deel</label>
+            </value>
+            <value>
+                <fullName>Employment Hero</fullName>
+                <default>false</default>
+                <label>Employment Hero</label>
+            </value>
+            <value>
+                <fullName>Globalisation Partners</fullName>
+                <default>false</default>
+                <label>Globalisation Partners</label>
+            </value>
+            <value>
+                <fullName>Horizons</fullName>
+                <default>false</default>
+                <label>Horizons</label>
+            </value>
+            <value>
+                <fullName>Lano</fullName>
+                <default>false</default>
+                <label>Lano</label>
+            </value>
+            <value>
+                <fullName>Legacy Provider</fullName>
+                <default>false</default>
+                <label>Legacy Provider</label>
+            </value>
+            <value>
+                <fullName>Magnit</fullName>
+                <default>false</default>
+                <label>Magnit</label>
+            </value>
+            <value>
+                <fullName>Multiplier</fullName>
+                <default>false</default>
+                <label>Multiplier</label>
+            </value>
+            <value>
+                <fullName>Not Disclosed</fullName>
+                <default>false</default>
+                <label>Not Disclosed</label>
+            </value>
+            <value>
+                <fullName>Omnipresent</fullName>
+                <default>false</default>
+                <label>Omnipresent</label>
+            </value>
+            <value>
+                <fullName>Ontop</fullName>
+                <default>false</default>
+                <label>Ontop</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Panther</fullName>
+                <default>false</default>
+                <label>Panther</label>
+            </value>
+            <value>
+                <fullName>Papaya</fullName>
+                <default>false</default>
+                <label>Papaya</label>
+            </value>
+            <value>
+                <fullName>Pilot</fullName>
+                <default>false</default>
+                <label>Pilot</label>
+            </value>
+            <value>
+                <fullName>Remofirst</fullName>
+                <default>false</default>
+                <label>Remofirst</label>
+            </value>
+            <value>
+                <fullName>Remote.com</fullName>
+                <default>false</default>
+                <label>Remote.com</label>
+            </value>
+            <value>
+                <fullName>Remotepass</fullName>
+                <default>false</default>
+                <label>Remotepass</label>
+            </value>
+            <value>
+                <fullName>Rippling</fullName>
+                <default>false</default>
+                <label>Rippling</label>
+            </value>
+            <value>
+                <fullName>Safeguard Global</fullName>
+                <default>false</default>
+                <label>Safeguard Global</label>
+            </value>
+            <value>
+                <fullName>Skuad</fullName>
+                <default>false</default>
+                <label>Skuad</label>
+            </value>
+            <value>
+                <fullName>TWC</fullName>
+                <default>false</default>
+                <label>TWC</label>
+            </value>
+            <value>
+                <fullName>Velocity Global</fullName>
+                <default>false</default>
+                <label>Velocity Global</label>
+            </value>
+            <value>
+                <fullName>Via</fullName>
+                <default>false</default>
+                <label>Via</label>
+            </value>
+            <value>
+                <fullName>Workmotion</fullName>
+                <default>false</default>
+                <label>Workmotion</label>
+            </value>
+            <value>
+                <fullName>Toku</fullName>
+                <default>false</default>
+                <label>Toku</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

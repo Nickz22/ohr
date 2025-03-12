@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_New_Leads</fullName>
+    <columns>MQL_Date__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Lead_Objective__c</columns>
+    <columns>Last_MQL_Reason__c</columns>
+    <columns>Lead_Type__c</columns>
+    <columns>Current_Situation__c</columns>
+    <columns>CountriesHiringIn__c</columns>
+    <columns>Hiring_Outside_HQ_Country__c</columns>
+    <columns>MK_Customer_Fit_Segment__c</columns>
+    <columns>MK_Likelihood_to_Buy_Signals__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>MQL__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>New</value>
+    </filters>
+    <filters>
+        <field>Last_MQL_Reason__c</field>
+        <operation>notContain</operation>
+        <value>Hot Lead</value>
+    </filters>
+    <filters>
+        <field>MQL_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2024</value>
+    </filters>
+    <filters>
+        <field>Lead_Objective__c</field>
+        <operation>notEqual</operation>
+        <value>FTE,Contractor</value>
+    </filters>
+    <filters>
+        <field>Lead_Objective__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>&quot;My&quot; New Leads</label>
+    <sharedTo>
+        <role>AMERICAS_BDR_Inbound</role>
+        <role>AMERICAS_BDR_Manager</role>
+        <role>EMEA_BDR_Inbound</role>
+        <role>EMEA_BDR_Manager</role>
+        <role>Marketing</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>G2_Visit_Page_Title__c</fullName>
+    <description>The title of the page that was viewed on G2.com.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The title of the page that was viewed on G2.com.</inlineHelpText>
+    <label>G2 Visit Page Title</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

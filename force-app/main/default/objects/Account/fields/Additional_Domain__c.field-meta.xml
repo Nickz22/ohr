@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Domain__c</fullName>
+    <description>Recognized supplementary email domain for the Account. Added manually or filled as a result of merging accounts.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>List any additional email domains used by the company that are not evident from the company name or primary domain.</inlineHelpText>
+    <label>Additional Email Domain</label>
+    <length>99</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

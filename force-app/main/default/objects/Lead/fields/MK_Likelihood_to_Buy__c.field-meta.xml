@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MK_Likelihood_to_Buy__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MK_Likelihood_to_Buy_Segment__c ,
+&apos;very high&apos;, IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20) + IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20) + IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20),
+&apos;high&apos;, IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20) + IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20),
+&apos;medium&apos;, IMAGE(&quot;https://cdn.madkudu.com/images/fire.png&quot;, &quot;Fire&quot;, 20, 20),
+IMAGE(&quot;https://cdn.madkudu.com/images/snowflake.png&quot;, &quot;Snowflake&quot;, 20, 20))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MK Likelihood to Buy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

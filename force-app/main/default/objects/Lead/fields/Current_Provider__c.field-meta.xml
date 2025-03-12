@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Provider__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Enables Sales to track who is currently serving the account - to be used to run campaigns with accounts served by competitors</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the prospect is currently working with one of Oyster&apos;s competitors, add it here</inlineHelpText>
+    <label>Current Provider</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Leads (Current Provider)</relationshipLabel>
+    <relationshipName>Leads2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

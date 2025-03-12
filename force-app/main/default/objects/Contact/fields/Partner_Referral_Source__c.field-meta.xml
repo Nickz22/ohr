@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Referral_Source__c</fullName>
+    <description>Source of the partner referral, used for automated referrals from partner marketplaces. Most recent value. Can be overwritten.</description>
+    <externalId>false</externalId>
+    <label>Partner Referral Source</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

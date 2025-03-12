@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Integration_Request__c</fullName>
+    <description>Name of the company that a visitor or customer is requesting an integration from the webform</description>
+    <externalId>false</externalId>
+    <label>Partner Integration Request</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

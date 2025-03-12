@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Entity_where_GP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Are you currently operating business entities in the country where you&apos;re looking for global payroll? Qualification question used in forms and chat experiences.</description>
+    <externalId>false</externalId>
+    <label>Business Entity where GP need?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

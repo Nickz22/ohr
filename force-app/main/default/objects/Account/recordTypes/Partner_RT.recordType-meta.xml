@@ -1128,6 +1128,29 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>Company_Segment_Stamp__c</picklist>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Startup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>Company_Type__c</picklist>
         <values>
             <fullName>education</fullName>
@@ -4322,6 +4345,33 @@
         </values>
         <values>
             <fullName>Wireless Telecommunication Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Region_2__c</picklist>
+        <values>
+            <fullName>AMER EAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMER WEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LATAM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UKI</fullName>
             <default>false</default>
         </values>
     </picklistValues>

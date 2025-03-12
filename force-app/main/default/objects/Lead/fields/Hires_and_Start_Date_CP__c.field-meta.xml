@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hires_and_Start_Date_CP__c</fullName>
+    <description># Hires and Start Date from Chili Piper</description>
+    <externalId>false</externalId>
+    <inlineHelpText># Hires and Start Date from Chili Piper</inlineHelpText>
+    <label># Hires and Start Date (CP)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

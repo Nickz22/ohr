@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>leadassist__Round_Robin_Info__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>What did SRR do? Bypassed: means SRR didn&apos;t run, the Use_Round_Robin value was probably not set to TRUE.  RUN: SRR matching starts. NMR: No Match Rules. MER: Matched Existing Record. ES: Email notification sent.</inlineHelpText>
+    <label>Round Robin Info</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

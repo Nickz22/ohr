@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owned_by_BDR__c</fullName>
+    <description>For use in Lead Auto Delay Assignment process in process builder. Allows for the lead owner role criteria check before assigning to round robin. Created at request of Natasha.</description>
+    <externalId>false</externalId>
+    <formula>IF (
+    CONTAINS(Owner:User.UserRole.Name, &quot;BDR&quot;),
+    true,
+    false
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Automatically checked if Owner is BDR</inlineHelpText>
+    <label>Owned by BDR</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

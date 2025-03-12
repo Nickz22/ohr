@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Months_Since_First_Assisted_Setup_Date__c</fullName>
+    <description>The number of months since the Customer&apos;s First Assisted Setup Date. First month = 0, second month = 1, etc.</description>
+    <externalId>false</externalId>
+    <formula>(MONTH(TODAY()) + (12*(YEAR(TODAY())-YEAR(Customer_First_Assisted_Setup_Date__c))) - MONTH(Customer_First_Assisted_Setup_Date__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The number of months since the Customer&apos;s First Assisted Setup Date. First month = 0, second month = 1, etc.</inlineHelpText>
+    <label>Months Since First Assisted Setup Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

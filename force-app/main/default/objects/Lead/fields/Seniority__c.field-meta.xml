@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seniority__c</fullName>
+    <description>Person&apos;s seniority at employer (manager, director or executive) enriched from Clearbit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Person&apos;s seniority enriched from Clearbit</inlineHelpText>
+    <label>Seniority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

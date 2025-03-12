@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Sales_Connect_Event__c</fullName>
+    <description>A DLRS field for account rollups on last sales connect for commissions reporting in the LinkedIn Pilot.  Excludes any event where &quot;Meeting Type&quot; = &quot;Oyster Demo Call&quot; to suppress meetings booked via the LinkedIn Partnership.</description>
+    <externalId>false</externalId>
+    <label>Last Sales Connect Event</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

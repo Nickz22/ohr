@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Intent_Details__c</fullName>
+    <description>Summary of each Clearbit website intent signal, and corresponding visit date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Summary of each Clearbit website intent signal, and corresponding visit date.</inlineHelpText>
+    <label>Clearbit Intent Details</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

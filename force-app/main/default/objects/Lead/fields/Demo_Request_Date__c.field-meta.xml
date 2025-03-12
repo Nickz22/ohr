@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo_Request_Date__c</fullName>
+    <description>Updates the last time a demo was requested</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Last date of a demo request</inlineHelpText>
+    <label>Demo Request Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

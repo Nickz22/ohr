@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Referral_Page_URL__c</fullName>
+    <description>URL should start with &quot;partner-referral/&quot;.  Used for automatically filling in the Partner field on leads that come in through the referral landing page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Should start with &quot;partner-referral/&quot;</inlineHelpText>
+    <label>Partner Referral Page URL</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IP_Timezone__c</fullName>
+    <description>Set by HubSpot on form submission, this is HubSpot default data point.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the lead timezone recognized on form submission, be mindful of location changes and VPN usage.</inlineHelpText>
+    <label>IP Timezone</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

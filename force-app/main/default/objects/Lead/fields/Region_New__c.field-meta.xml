@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region_New__c</fullName>
+    <description>Created as part of the Auto Lead Assignment project at request of Alex R. 
+
+The formula first checks the old Region picklist field for a value, if it finds one then it returns that value. 
+This is in place to ensure that the transition from the old Region (picklist) field to the new Region (Formula) field is smooth.
+
+If it doesn’t find a value, it uses the Country (Lookup) field’s “Region” field and returns it. 
+
+If no Country (Lookup) field is found, it returns “Unknown”</description>
+    <externalId>false</externalId>
+    <formula>IF ( 
+    NOT(ISBLANK(TEXT(Region__c))), /* If old Region picklist field contains a value... */
+    TEXT(Region__c), /* Then, use that value... */
+    IF (
+        NOT(ISBLANK(Country_Lookup__c)), /* Otherwise, if the new Country lookup field is populated... */
+        Country_Lookup__r.Region__c ,  /* Then, use the &quot;Region&quot; field value on the Country record */
+        &quot;Unknown&quot; /* Otherwise, return &quot;Unknown&quot; */
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Region</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

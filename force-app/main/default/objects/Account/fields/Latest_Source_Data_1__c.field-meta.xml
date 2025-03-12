@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latest_Source_Data_1__c</fullName>
+    <description>Additional source details of the last session attributed to any contacts that are associated with this company</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Additional source details of the last session attributed to any contacts that are associated with this company</inlineHelpText>
+    <label>Latest Source Data 1</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

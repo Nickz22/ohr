@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PB_ERGs_in_Action_Sales_Ready</fullName>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Actively_Worked__c</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>PB|ERGs in Action| Sales Ready</label>
+</ListView>

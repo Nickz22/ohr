@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>The person was marked as &quot;Do Not Contact&quot; in Salesloft.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The person was marked as &quot;Do Not Contact&quot; in Salesloft.</inlineHelpText>
+    <label>Do Not Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

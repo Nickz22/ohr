@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_for_LSG__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(LeadSource,
+
+
+&apos;Direct Traffic&apos;, &apos;Inbound&apos;,
+&apos;Display&apos;, &apos;Inbound&apos;,
+&apos;Email Marketing&apos;, &apos;Inbound&apos;,
+&apos;Event&apos;, &apos;Inbound&apos;,
+&apos;Inbound Other&apos;, &apos;Inbound&apos;,
+&apos;Native_Form_Lead&apos;, &apos;Inbound&apos;,
+&apos;Organic Search&apos;, &apos;Inbound&apos;,
+&apos;Organic Social&apos;, &apos;Inbound&apos;,
+&apos;Other Campaigns&apos;, &apos;Inbound&apos;,
+&apos;Paid Search&apos;, &apos;Inbound&apos;,
+&apos;Paid Social&apos;, &apos;Inbound&apos;,
+&apos;Qualified_Chat&apos;, &apos;Inbound&apos;,
+&apos;Referrals&apos;, &apos;Inbound&apos;,
+&apos;Self_Service_Signup&apos;, &apos;Inbound&apos;,
+&apos;Affiliate&apos;, &apos;Inbound&apos;,
+&apos;Startup Offer Inbound&apos;, &apos;Inbound&apos;,
+&apos;Video&apos;, &apos;Inbound&apos;,
+&apos;Webflow_Employee_Signup&apos;, &apos;Inbound&apos;,
+&apos;Webflow_Employer_Signup&apos;, &apos;Inbound&apos;,
+&apos;Webflow_Platform_Signup&apos;, &apos;Inbound&apos;,
+&apos;Webflow_Remote_Ready_Signup&apos;, &apos;Inbound&apos;,
+&apos;Webflow_Signup_Footer&apos;, &apos;Inbound&apos;,
+&apos;Webflow_Signup_popover&apos;, &apos;Inbound&apos;,
+&apos;Webinar&apos;, &apos;Inbound&apos;,
+
+&apos;AE Outbound&apos;, &apos;Outbound&apos;,
+&apos;BDR Outbound&apos;, &apos;Outbound&apos;,
+&apos;External Referral&apos;, &apos;Inbound&apos;,
+&apos;Growthonics&apos;, &apos;Outbound&apos;,
+&apos;List&apos;, &apos;Outbound&apos;,
+&apos;Offline Sources&apos;, &apos;Outbound&apos;,
+&apos;Operatix&apos;, &apos;Outbound&apos;,
+&apos;Oyster Employee Referral&apos;, &apos;Inbound&apos;,
+
+
+&apos;Partner&apos;, &apos;Partner&apos;,
+&apos;Partner Referral&apos;, &apos;Partner&apos;,
+&apos;VC Referral&apos;, &apos;Partner&apos;,
+&apos;Webflow_Partner_Signup&apos;,&apos;Partner&apos;,
+&apos;Partner Traffic&apos;, &apos;Partner&apos;,
+&apos;Ecosystem Partners&apos;, &apos;Partner&apos;,
+&apos;PartnerStack&apos;,&apos;Partner&apos;,
+&apos;Partnerships&apos;, &apos;Partner&apos;,
+&quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Test for LSG</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

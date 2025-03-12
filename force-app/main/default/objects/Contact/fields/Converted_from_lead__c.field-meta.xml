@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converted_from_lead__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to differentiate Contacts created on lead conversion. Accurate for conversions Jan 12, 2024 and after. Set to true on lead conversion through lead to contact mapping.</description>
+    <externalId>false</externalId>
+    <label>Converted from lead</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

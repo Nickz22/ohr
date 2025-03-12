@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Office_Locations__c</fullName>
+    <description>Provides information about the company&apos;s office locations. Possible enrichment
+        sources: Zoominfo, Clearbit, Cognism, Clay, Crunchbase, G2, Madkudu.</description>
+    <externalId>false</externalId>
+    <label>Office Locations</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

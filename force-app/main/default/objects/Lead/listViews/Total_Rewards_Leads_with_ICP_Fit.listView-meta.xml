@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Rewards_Leads_with_ICP_Fit</fullName>
+    <columns>MK_Customer_Fit_Segment__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Last_Sales_Activity__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Lead_Objective__c</columns>
+    <columns>Lead_Type__c</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Lead_Source_Detail__c</columns>
+    <columns>LEAD.COUNTRY</columns>
+    <columns>MK_Customer_Fit_Signals__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Total Rewards - Leads with ICP Fit</label>
+</ListView>

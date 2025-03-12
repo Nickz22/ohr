@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeanData_Reassign_to_Account_Owner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field set in the LeanData lead router, helping align the Account owner within RoE with the Lead Ownership.</description>
+    <externalId>false</externalId>
+    <label>LeanData Reassign to Account Owner</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

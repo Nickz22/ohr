@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LinkedIn_Ad_Id__c</fullName>
+    <description>Synced from HubSpot, value of the LinkedIn Ad Id. Originally set from LinkedIn through Zapier (https://zapier.com/app/assets/zaps?context=7049137&amp;search=linkedin)</description>
+    <externalId>false</externalId>
+    <label>LinkedIn Ad Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

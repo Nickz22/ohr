@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <description>describes the ‘kind’ or ‘type’ of partner</description>
+    <externalId>false</externalId>
+    <label>Partner Program</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PEO/Payroll</fullName>
+                <default>false</default>
+                <label>PEO/Payroll</label>
+            </value>
+            <value>
+                <fullName>Services</fullName>
+                <default>false</default>
+                <label>Services</label>
+            </value>
+            <value>
+                <fullName>Venture</fullName>
+                <default>false</default>
+                <label>Venture</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Worktech</fullName>
+                <default>false</default>
+                <label>Worktech</label>
+            </value>
+            <value>
+                <fullName>Affiliate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Affiliate</label>
+            </value>
+            <value>
+                <fullName>Capital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Capital</label>
+            </value>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>Direct to Consumer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Direct to Consumer</label>
+            </value>
+            <value>
+                <fullName>Industry Organization</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Industry Organization</label>
+            </value>
+            <value>
+                <fullName>Integration/Product</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Integration/Product</label>
+            </value>
+            <value>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Integrations</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Talent</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Talent</label>
+            </value>
+            <value>
+                <fullName>Work Tech</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Work Tech</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

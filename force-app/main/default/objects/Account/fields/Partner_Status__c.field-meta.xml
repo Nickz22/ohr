@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Status__c</fullName>
+    <description>To identify the &quot;pipeline status&quot; of partner accounts.</description>
+    <externalId>false</externalId>
+    <label>Partner Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Negotiation</fullName>
+                <default>false</default>
+                <label>Negotiation</label>
+            </value>
+            <value>
+                <fullName>Recycled</fullName>
+                <default>false</default>
+                <label>Recycled</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Churned</fullName>
+                <default>false</default>
+                <label>Churned</label>
+            </value>
+            <value>
+                <fullName>closed lost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed Lost</label>
+            </value>
+            <value>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Closed Won</label>
+            </value>
+            <value>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contacted</label>
+            </value>
+            <value>
+                <fullName>Deactivated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Deactivated</label>
+            </value>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Not contacted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Not contacted</label>
+            </value>
+            <value>
+                <fullName>Onboarded</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Onboarded</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remove_from_Cadence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used in automation in Salesloft to remove person from Cadence.
+Set in LeanData C+L routers for some leads and manually.</description>
+    <externalId>false</externalId>
+    <label>Remove from Cadence</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

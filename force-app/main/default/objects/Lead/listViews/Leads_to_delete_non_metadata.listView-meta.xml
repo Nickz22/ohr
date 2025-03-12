@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_to_delete_non_metadata</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Lead_Type__c</columns>
+    <columns>LEAD.LAST_NAME</columns>
+    <columns>LEAD.RATING</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>8/9/2021 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>LEAD.EMAIL</field>
+        <operation>contains</operation>
+        <value>@gmail.com,@yahoo.com,@outlook.com,@oysterhr.com,@hotmail.com,@icloud.com</value>
+    </filters>
+    <filters>
+        <field>Lead_Type__c</field>
+        <operation>notEqual</operation>
+        <value>LeadGen Form</value>
+    </filters>
+    <filters>
+        <field>LEAD.COMPANY</field>
+        <operation>equals</operation>
+        <value>[not provided]</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>akama</value>
+    </filters>
+    <label>Nurture Low Leads (non metadata)</label>
+</ListView>

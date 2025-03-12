@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contractors_to_Convert__c</fullName>
+    <description>Form field in the Contractor Conversion Landing Page to understand how many contractors the contact wants to convert</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Form field in the Contractor Conversion Landing Page to understand how many contractors the contact wants to convert</inlineHelpText>
+    <label>Contractors to Convert</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than 5 contractors</fullName>
+                <default>false</default>
+                <label>Less than 5 contractors</label>
+            </value>
+            <value>
+                <fullName>More than 5 contractors</fullName>
+                <default>false</default>
+                <label>More than 5 contractors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

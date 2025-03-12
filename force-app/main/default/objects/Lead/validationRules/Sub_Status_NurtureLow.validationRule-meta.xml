@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Status_NurtureLow</fullName>
+    <active>false</active>
+    <description>Requires the Sub Status field to be filled in if the lead is set to Nurture Low</description>
+    <errorConditionFormula>AND(
+  ISCHANGED( Status),
+  ISPICKVAL(Status, &quot;Nurture low&quot;),
+  ISBLANK(TEXT(Sub_Status__c )),
+  NOT(ISCHANGED( First_Activity_Date__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Sub_Status__c</errorDisplayField>
+    <errorMessage>Fill in the Sub Status field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Camila_s_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>MK_Customer_Fit__c</columns>
+    <columns>MK_Customer_Fit_Score__c</columns>
+    <columns>MK_Customer_Fit_Signals__c</columns>
+    <columns>MK_Lead_Grade__c</columns>
+    <columns>MK_Lead_Grade_Score__c</columns>
+    <columns>MK_Likelihood_to_Buy__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>lchav</value>
+    </filters>
+    <label>Camila&apos;s Contacts</label>
+</ListView>
