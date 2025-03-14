@@ -57,6 +57,31 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>Unable to support visas</fullName>
+                <default>false</default>
+                <label>Unable to support visas</label>
+            </value>
+            <value>
+                <fullName>Time to hire</fullName>
+                <default>false</default>
+                <label>Time to hire</label>
+            </value>
+            <value>
+                <fullName>Advisory and consultancy services</fullName>
+                <default>false</default>
+                <label>Advisory and consultancy services</label>
+            </value>
+            <value>
+                <fullName>Compliance Gap</fullName>
+                <default>false</default>
+                <label>Compliance Gap</label>
+            </value>
+            <value>
+                <fullName>Unable to customize contracts</fullName>
+                <default>false</default>
+                <label>Unable to customize contracts</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Service gap (example: Visas, Benefits, Time to Hire etc)</controllingFieldValue>

@@ -1173,7 +1173,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Missing ERP Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing HRIS Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Missing integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Contractor of Record %28Deel Shield%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No HRIS capabilities</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1182,6 +1198,10 @@
         </values>
         <values>
             <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other payroll capabilities</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4840,6 +4860,10 @@
     <picklistValues>
         <picklist>Service_Gap__c</picklist>
         <values>
+            <fullName>Advisory and consultancy services</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Benefits</fullName>
             <default>false</default>
         </values>
@@ -4849,6 +4873,10 @@
         </values>
         <values>
             <fullName>Compliance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance Gap</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4869,6 +4897,18 @@
         </values>
         <values>
             <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Time to hire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to customize contracts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to support visas</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4898,11 +4938,7 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Existing Business</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>New Business</fullName>
+            <fullName>Partner Reseller</fullName>
             <default>false</default>
         </values>
     </picklistValues>

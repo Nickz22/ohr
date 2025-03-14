@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <description>Automation before Scale opportunities are created/updated</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fx_scaleAmount</name>
+        <dataType>Currency</dataType>
+        <expression>BLANKVALUE({!$Record.Amount_Scale_Conversion__c},0) + BLANKVALUE({!$Record.Incremental_Amount_Scale__c},0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Opportunity - Before Create/Update Scale Opp Automation {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - Before Create/Update Scale Opp Automation</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Amount</name>
+        <label>Set Amount</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>Amount</field>
+            <value>
+                <elementReference>fx_scaleAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Amount</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Product_Name__c</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Oyster Scale</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Record_Type_Atrium__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Churn/Contraction Risk</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

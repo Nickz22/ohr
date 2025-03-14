@@ -67,6 +67,31 @@
                 <default>false</default>
                 <label>Other</label>
             </value>
+            <value>
+                <fullName>Missing ERP Integration</fullName>
+                <default>false</default>
+                <label>Missing ERP Integration</label>
+            </value>
+            <value>
+                <fullName>Missing HRIS Integration</fullName>
+                <default>false</default>
+                <label>Missing HRIS Integration</label>
+            </value>
+            <value>
+                <fullName>No Contractor of Record (Deel Shield)</fullName>
+                <default>false</default>
+                <label>No Contractor of Record (Deel Shield)</label>
+            </value>
+            <value>
+                <fullName>No HRIS capabilities</fullName>
+                <default>false</default>
+                <label>No HRIS capabilities</label>
+            </value>
+            <value>
+                <fullName>Other payroll capabilities</fullName>
+                <default>false</default>
+                <label>Other payroll capabilities</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Feature gap</controllingFieldValue>

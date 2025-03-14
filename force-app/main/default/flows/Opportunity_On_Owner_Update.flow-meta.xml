@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Check_Owner_Changed_by_BDR</name>
+        <label>Check &quot;Owner Changed by BDR&quot;</label>
+        <locationX>182</locationX>
+        <locationY>731</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Owner_Changed_by_BDR__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Type_to_Existing_Business</name>
+        <label>Set Type to Existing Business</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Type</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Existing Business</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Running_User_Profile_Check</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Type_to_New_Business</name>
+        <label>Set Type to New Business</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Type</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>New Business</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Running_User_Profile_Check</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>New_Owner_Role_Check</name>
+        <label>New Owner Role Check</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnector>
+            <targetReference>Running_User_Profile_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>New_Owner_is_AE</name>
+            <conditionLogic>(1 OR 3) AND 2</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner.UserRole.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>AE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Churn/Contraction Risk</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.UserRole.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>BDR</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Type_to_New_Business</targetReference>
+            </connector>
+            <label>New Owner is AE or BDR</label>
+        </rules>
+        <rules>
+            <name>New_Owner_is_AM</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner.UserRole.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Account</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.Name</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Churn/Contraction Risk</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Type_to_Existing_Business</targetReference>
+            </connector>
+            <label>New Owner is AM</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Running_User_Profile_Check</name>
+        <label>Running User Profile Check</label>
+        <locationX>314</locationX>
+        <locationY>623</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BDR_Profile</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>BDR</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Owner_Changed_by_BDR</targetReference>
+            </connector>
+            <label>BDR Profile</label>
+        </rules>
+    </decisions>
+    <description>Runs when an opportunity&apos;s owner is updated.</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity - On Owner Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity - On Owner Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>314</locationX>
+        <locationY>923</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>New_Owner_Role_Check</targetReference>
+        </connector>
+        <filterFormula>ISNEW() || ISCHANGED({!$Record.OwnerId})</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

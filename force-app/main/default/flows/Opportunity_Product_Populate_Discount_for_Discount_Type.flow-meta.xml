@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Discount_Type_Check</name>
+        <label>Discount Type Check</label>
+        <locationX>578</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>test</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Discount_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>2022 Year End Promo - $699 countries only</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Discount_to_16</targetReference>
+            </connector>
+            <label>2022 Year End Promo - $699 countries only</label>
+        </rules>
+        <rules>
+            <name>Partner_Buy_2_1_Free</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Discount_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Partner Buy 2 / 1 Free</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Discount_and_Discount_Duration</targetReference>
+            </connector>
+            <label>Partner Buy 2 / 1 Free</label>
+        </rules>
+        <rules>
+            <name>X399_Price_Lock</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Discount_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>$399 Price Lock</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Price_Lock_Discount_Fields</targetReference>
+            </connector>
+            <label>$399 Price Lock</label>
+        </rules>
+        <rules>
+            <name>Partnerships_Discount_20</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Discount_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Partnerships Discount - 20%</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Partnerships_Discount_discount_fields</targetReference>
+            </connector>
+            <label>Partnerships Discount - 20%</label>
+        </rules>
+    </decisions>
+    <description>Sets Discount fields based on Discount Type
+2023-05-08: updated to include &quot;Partnerships Discount - 20%&quot;</description>
+    <environments>Default</environments>
+    <interviewLabel>Opportunity Product - Populate Discount for {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Product - Populate Discount for Discount Type</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_Discount_and_Discount_Duration</name>
+        <label>Set Discount and Discount Duration</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Discount_Duration__c</field>
+            <value>
+                <stringValue>6 Months</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount__c</field>
+            <value>
+                <numberValue>100.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Discount_to_16</name>
+        <label>Set Discount to 16%</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Discount</field>
+            <value>
+                <numberValue>16.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount_Details__c</field>
+            <value>
+                <stringValue>year end promotion</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount_Duration__c</field>
+            <value>
+                <stringValue>1 Year</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount_Info__c</field>
+            <value>
+                <stringValue>year end promotion</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount__c</field>
+            <value>
+                <numberValue>16.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Partnerships_Discount_discount_fields</name>
+        <label>Set Partnerships Discount discount fields</label>
+        <locationX>842</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Discount_Duration__c</field>
+            <value>
+                <stringValue>1 Year</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount__c</field>
+            <value>
+                <numberValue>20.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Set_Price_Lock_Discount_Fields</name>
+        <label>Set Price Lock Discount Fields</label>
+        <locationX>578</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Discount_Duration__c</field>
+            <value>
+                <stringValue>1 Year</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount_Info__c</field>
+            <value>
+                <stringValue>Price lock for $399 - 12 months</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Discount__c</field>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Discount_Type_Check</targetReference>
+        </connector>
+        <filterFormula>(ISNEW() &amp;&amp; NOT(ISBLANK(TEXT({!$Record.Discount_Type__c}))))
+||
+ISCHANGED({!$Record.Discount_Type__c})</filterFormula>
+        <object>OpportunityLineItem</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -98,8 +98,8 @@
         <description>Customer Name - Oyster Scale Renewal - # Seats</description>
         <name>varRenewalOpportunityName</name>
         <dataType>String</dataType>
-        <expression>{!$Record.Account.Name} + " - Oyster Scale Renewal " +
-            TEXT(YEAR(fx_renewalCloseDate)) + " - " + TEXT({!$Record.Number_of_Seats__c}) + " Seats"</expression>
+        <expression>{!$Record.Account.Name} + &quot; - Oyster Scale Renewal &quot; +
+            TEXT(YEAR(fx_renewalCloseDate)) + &quot; - &quot; + TEXT({!$Record.Number_of_Seats__c}) + &quot; Seats&quot;</expression>
     </formulas>
     <interviewLabel>Opportunity - Create Renewal for Scale Opps {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity - Create Renewal for Scale Opps</label>

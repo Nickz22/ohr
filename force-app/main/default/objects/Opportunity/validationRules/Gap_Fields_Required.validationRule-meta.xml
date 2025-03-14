@@ -12,7 +12,7 @@
         PICKLISTCOUNT(Service_Gap__c) = 0
         )
         )</errorConditionFormula>
-    <errorDisplayField>Lost_Reason__c</errorDisplayField>
+    <errorDisplayField>Lost_Reason_new__c</errorDisplayField>
     <errorMessage>When &quot;Feature gap&quot; is selected as a Lost Reason, you must specify at least one
         Feature Gap. When &quot;Service gap&quot; is selected as a Lost Reason, you must specify at least one
         Service Gap.</errorMessage>

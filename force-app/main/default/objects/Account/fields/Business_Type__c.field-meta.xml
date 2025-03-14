@@ -15,7 +15,7 @@
     )
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Business Type</label>
+    <label>ZZZ_Business Type</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <type>Text</type>
