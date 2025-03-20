@@ -21,7 +21,7 @@ OR(
         ISPICKVAL(StageName,&quot;Closed Lost&quot;)
     ),
     AND(
-        RecordType.DeveloperName = &quot;Subsequent_Opportunity&quot;,
+        RecordType.DeveloperName = &quot;Expansion_Upsell&quot;,
         NOT(ISNEW()),
         ISCHANGED(StageName),
         IsClosed

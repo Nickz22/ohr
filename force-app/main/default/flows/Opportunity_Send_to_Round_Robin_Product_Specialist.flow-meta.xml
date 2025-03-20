@@ -120,13 +120,13 @@
                 <leftValueReference>Get_Opportunity.RecordType.Name</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Expansion/Upsell</stringValue>
+                    <stringValue>Expansion</stringValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>Get_Initial_Opp</targetReference>
             </connector>
-            <label>Expansion/Upsell</label>
+            <label>Expansion</label>
         </rules>
     </decisions>
     <decisions>
@@ -152,7 +152,7 @@
         </rules>
     </decisions>
     <description>Invoked from the &quot;Assign Product Specialist&quot; button on the Opportunity page. Created at request of Sonia to separate Product Specialist round robin from Owner round robin assignments
-V5 - Added Expansion/Upsell logic at request of Valeriya</description>
+V5 - Added Expansion logic at request of Valeriya</description>
     <environments>Default</environments>
     <interviewLabel>Opportunity - Send to Round Robin - Product Specialist {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Opportunity - Send to Round Robin - Product Specialist</label>

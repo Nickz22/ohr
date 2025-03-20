@@ -32011,7 +32011,7 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Opportunity-Subsequent Page Layout</layout>
-        <recordType>Opportunity.Subsequent_Opportunity</recordType>
+        <recordType>Opportunity.Expansion_Upsell</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>OpportunityContactRole-Opportunity Contact Role Layout</layout>
@@ -33902,11 +33902,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Opportunity.Renewal</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Opportunity.Subsequent_Opportunity</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

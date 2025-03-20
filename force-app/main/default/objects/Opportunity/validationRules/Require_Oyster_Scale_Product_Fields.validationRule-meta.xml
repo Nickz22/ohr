@@ -4,7 +4,7 @@
     <active>true</active>
     <errorConditionFormula>AND(
     INCLUDES(Product_Name__c,&quot;Oyster Scale&quot;),
-    RecordType.Name = &quot;Expansion/Upsell&quot;,
+    RecordType.Name = &quot;Expansion&quot;,
     OR(
         ISBLANK(Number_of_Seats__c),
         ISBLANK(Price_Per_Seat__c),

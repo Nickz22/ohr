@@ -115,7 +115,7 @@
                 <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Subsequent_Opportunity</stringValue>
+                    <stringValue>Expansion_Upsell</stringValue>
                 </rightValue>
             </conditions>
             <connector>

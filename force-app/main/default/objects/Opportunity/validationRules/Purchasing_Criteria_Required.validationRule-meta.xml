@@ -14,7 +14,7 @@ AND(
     ISPICKVAL(Purchasing_Criteria_Details_1__c,&quot;&quot;),
     ISPICKVAL(Purchasing_Criteria_Details_2__c,&quot;&quot;),
     ISPICKVAL(Purchasing_Criteria_Details_3__c,&quot;&quot;),
-    NOT(RecordType.DeveloperName = &quot;Subsequent_Opportunity&quot;),
+    NOT(RecordType.DeveloperName = &quot;Expansion_Upsell&quot;),
     NOT(RecordType.DeveloperName = &quot;Partner&quot;),
     NOT(RecordType.DeveloperName = &quot;Organic_Growth&quot;),
     NOT(RecordType.DeveloperName = &quot;Renewal&quot;),

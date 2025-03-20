@@ -10,7 +10,7 @@
 &amp;&amp; ISPICKVAL(StageName, &quot;Verbal Commit&quot;)
 &amp;&amp; OR(
     RecordType.DeveloperName = &quot;Initial_Opportunity&quot;,
-    RecordType.DeveloperName = &quot;Subsequent_Opportunity&quot;
+    RecordType.DeveloperName = &quot;Expansion_Upsell&quot;
 )
 &amp;&amp; OR(
     ISPICKVAL(Type,&quot;New Business&quot;),

@@ -136,7 +136,7 @@
             <field>Record_Type_Atrium__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Expansion/Upsell</stringValue>
+                <stringValue>Expansion</stringValue>
             </value>
         </filters>
         <object>Opportunity</object>

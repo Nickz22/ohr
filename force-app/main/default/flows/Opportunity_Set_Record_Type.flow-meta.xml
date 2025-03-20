@@ -194,7 +194,7 @@
                 <leftValueReference>Loop_Through_Record_Types.DeveloperName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Subsequent_Opportunity</stringValue>
+                    <stringValue>Expansion_Upsell</stringValue>
                 </rightValue>
             </conditions>
             <connector>

@@ -14,7 +14,7 @@ public class OpportunityRecordTypeBatch implements Database.Batchable<sObject>, 
         }
         //get opps related to accounts
         List<Opportunity> accountOpps = [SELECT AccountId, IsClosed, IsWon, CloseDate, RecordTypeId, Do_Not_Auto_Update_Record_Type__c FROM Opportunity WHERE AccountId IN :accountIds 
-                                         AND (RecordType.Name = 'New Logo' OR RecordType.Name = 'Expansion/Upsell')
+                                         AND (RecordType.Name = 'New Logo' OR RecordType.Name = 'Expansion')
                                          ORDER BY CloseDate ASC, Deal_Date__c ASC NULLS LAST, CreatedDate ASC];
         if(!accountOpps.isEmpty()){
             //map of account id to a list of their opps
@@ -26,7 +26,7 @@ public class OpportunityRecordTypeBatch implements Database.Batchable<sObject>, 
             }
             
             Id initialRecTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Initial_Opportunity').getRecordTypeId();
-            Id subsequentRecTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Subsequent_Opportunity').getRecordTypeId();
+            Id subsequentRecTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByDeveloperName().get('Expansion_Upsell').getRecordTypeId();
             List<Opportunity> oppsToUpdate = new List<Opportunity>();
             for(Id accountId : accountOppMap.keySet()){
                 List<Opportunity> accountOppList = accountOppMap.get(accountId);

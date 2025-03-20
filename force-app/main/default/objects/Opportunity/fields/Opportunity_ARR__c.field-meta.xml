@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <formula>CASE(RecordType.Name,
     &quot;Organic Growth&quot;, Amount * 12,
-    &quot;Expansion/Upsell&quot;, IF(INCLUDES(Product_Name__c,&quot;Oyster Scale&quot;) || INCLUDES(Product_Name__c,&quot;Salary Insights&quot;),Amount, Amount * 12),   
+    &quot;Expansion&quot;, IF(INCLUDES(Product_Name__c,&quot;Oyster Scale&quot;) || INCLUDES(Product_Name__c,&quot;Salary Insights&quot;),Amount, Amount * 12),   
     Amount
 )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>

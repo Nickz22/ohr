@@ -5,7 +5,7 @@
     <errorConditionFormula>AND(
     OR(
         RecordType.Name = &apos;New Logo&apos;,
-        RecordType.Name = &apos;Expansion/Upsell&apos;
+        RecordType.Name = &apos;Expansion&apos;
     ),
     ISCHANGED(StageName),
     OR(

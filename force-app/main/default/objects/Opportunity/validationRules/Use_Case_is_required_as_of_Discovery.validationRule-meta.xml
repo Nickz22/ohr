@@ -13,7 +13,7 @@
             NOT(ISPICKVAL(StageName,&quot;Prospecting&quot;))
         ),
         AND(
-            RecordType.DeveloperName = &quot;Subsequent_Opportunity&quot;,
+            RecordType.DeveloperName = &quot;Expansion_Upsell&quot;,
             NOT(ISPICKVAL(StageName,&quot;Validation&quot;))
         )
         
