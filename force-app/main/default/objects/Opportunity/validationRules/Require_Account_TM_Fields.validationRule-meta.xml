@@ -3,19 +3,20 @@
     <fullName>Require_Account_TM_Fields</fullName>
     <active>true</active>
     <errorConditionFormula>OR(
-    ISBLANK(Account.TMs_to_Hire_by_M3__c),
-    ISBLANK(Account.TMs_to_Hire_by_M6__c)
-)
-&amp;&amp; ISCHANGED(StageName)
-&amp;&amp; ISPICKVAL(StageName, &quot;Verbal Commit&quot;)
-&amp;&amp; OR(
-    RecordType.DeveloperName = &quot;Initial_Opportunity&quot;,
-    RecordType.DeveloperName = &quot;Expansion_Upsell&quot;
-)
-&amp;&amp; OR(
-    ISPICKVAL(Type,&quot;New Business&quot;),
-    CONTAINS(Owner.UserRole.Name,&quot; AE&quot;)
-)</errorConditionFormula>
+        ISBLANK(Account.TMs_to_Hire_by_M3__c),
+        ISBLANK(Account.TMs_to_Hire_by_M6__c)
+        )
+        &amp;&amp; ISCHANGED(StageName)
+        &amp;&amp; ISPICKVAL(StageName, &quot;Verbal Commit&quot;)
+        &amp;&amp; OR(
+        RecordType.DeveloperName = &quot;Initial_Opportunity&quot;,
+        RecordType.DeveloperName = &quot;Expansion_Upsell&quot;
+        )
+        &amp;&amp; OR(
+        ISPICKVAL(Type,&quot;New Business&quot;),
+        CONTAINS(Owner.UserRole.Name,&quot; AE&quot;)
+        )</errorConditionFormula>
     <errorDisplayField>StageName</errorDisplayField>
-    <errorMessage>Please fill in [TMs to Hire by M3] and [TMs to Hire by M6] on the account before changing this opportunity&apos;s Stage.</errorMessage>
+    <errorMessage>Please fill in [TMs to Hire by M3] and [TMs to Hire by M6] on the account before
+        changing this opportunity&apos;s Stage.</errorMessage>
 </ValidationRule>

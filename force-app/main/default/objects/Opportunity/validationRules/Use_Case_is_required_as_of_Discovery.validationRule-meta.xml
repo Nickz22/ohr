@@ -3,23 +3,23 @@
     <fullName>Use_Case_is_required_as_of_Discovery</fullName>
     <active>true</active>
     <errorConditionFormula>AND(
-    OR(
+        OR(
         ISCHANGED(StageName),
         ISNEW()
-    ),
-    OR(
+        ),
+        OR(
         AND(
-            RecordType.DeveloperName = &quot;Initial_Opportunity&quot;,
-            NOT(ISPICKVAL(StageName,&quot;Prospecting&quot;))
+        RecordType.DeveloperName = &quot;Initial_Opportunity&quot;,
+        NOT(ISPICKVAL(StageName,&quot;Prospecting&quot;))
         ),
         AND(
-            RecordType.DeveloperName = &quot;Expansion_Upsell&quot;,
-            NOT(ISPICKVAL(StageName,&quot;Validation&quot;))
+        RecordType.DeveloperName = &quot;Expansion_Upsell&quot;,
+        NOT(ISPICKVAL(StageName,&quot;Validation&quot;))
         )
-        
-    ),
-    ISBLANK(Use_Case__c)
-)</errorConditionFormula>
+
+        ),
+        ISBLANK(Use_Case__c)
+        )</errorConditionFormula>
     <errorDisplayField>Use_Case__c</errorDisplayField>
     <errorMessage>&quot;Use Case&quot; is required to move further starting Discovery stage</errorMessage>
 </ValidationRule>

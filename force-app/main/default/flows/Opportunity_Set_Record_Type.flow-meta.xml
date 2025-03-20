@@ -458,7 +458,7 @@ TEXT({!Loop_Through_Open_Opps.StageName})
             <field>Record_Type_Atrium__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Subsequent Opportunity</stringValue>
+                <stringValue>Expansion</stringValue>
             </value>
         </filters>
         <object>Opportunity</object>

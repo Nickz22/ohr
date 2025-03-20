@@ -2,39 +2,41 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Require_Opportunity_Products_and_Amount</fullName>
     <active>true</active>
-    <description>Requires that the opp has at least one product and a nonzero Amount.  Initial opps have this requirement past the Discovery stage.  Subsequent opps have this requirement anytime the opp is edited.</description>
+    <description>Requires that the opp has at least one product and a nonzero Amount. Initial opps
+        have this requirement past the Discovery stage. Subsequent opps have this requirement
+        anytime the opp is edited.</description>
     <errorConditionFormula>OR(
-    of_Opportunity_Products__c = 0,
-    ISBLANK(Amount),
-    Amount &lt; 0
-)
-&amp;&amp;
-OR(
-    RecordType.DeveloperName = &quot;Initial_Opportunity&quot; &amp;&amp; 
-    ISCHANGED(StageName) &amp;&amp;
-    OR(
+        of_Opportunity_Products__c = 0,
+        ISBLANK(Amount),
+        Amount &lt; 0
+        )
+        &amp;&amp;
+        OR(
+        RecordType.DeveloperName = &quot;Initial_Opportunity&quot; &amp;&amp;
+        ISCHANGED(StageName) &amp;&amp;
+        OR(
         ISPICKVAL(StageName,&quot;Discovery&quot;),
         ISPICKVAL(StageName,&quot;Validation&quot;),
-        ISPICKVAL(StageName,&quot;Negotiation&quot;), 
+        ISPICKVAL(StageName,&quot;Negotiation&quot;),
         ISPICKVAL(StageName,&quot;Verbal Commit&quot;),
         ISPICKVAL(StageName,&quot;Closed Won&quot;),
         ISPICKVAL(StageName,&quot;Closed Lost&quot;)
-    ),
-    AND(
+        ),
+        AND(
         RecordType.DeveloperName = &quot;Expansion_Upsell&quot;,
         NOT(ISNEW()),
         ISCHANGED(StageName),
         IsClosed
-    )
-)
-&amp;&amp;
-NOT(
-    AND(
+        )
+        )
+        &amp;&amp;
+        NOT(
+        AND(
         TEXT(PRIORVALUE(StageName)) = &quot;Prospecting&quot;,
         ISPICKVAL(StageName,&quot;Closed Lost&quot;)
-    )
-)
-&amp;&amp; 
-!ISCHANGED(RecordTypeId)</errorConditionFormula>
+        )
+        )
+        &amp;&amp;
+        !ISCHANGED(RecordTypeId)</errorConditionFormula>
     <errorMessage>Please make sure this opportunity has at least one opportunity product.</errorMessage>
 </ValidationRule>

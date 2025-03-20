@@ -2,19 +2,24 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>OPP_Require_3_Months_Free_on_Tier_Produc</fullName>
     <active>true</active>
-    <description>Requires 3 Months Free to be populated on all opp products whose product names start with &quot;Tier&quot; when opps reach Verbal Commit or Closed Won stage, and with opps with the New Logo or Expansion record type.</description>   
+    <description>Requires 3 Months Free to be populated on all opp products whose product names
+        start with &quot;Tier&quot; when opps reach Verbal Commit or Closed Won stage, and with opps
+        with the New Logo or Expansion record type.</description>
     <errorConditionFormula>AND(
-ISCHANGED(StageName),
-    (ISPICKVAL(StageName,&quot;Verbal Commit&quot;)|| ISPICKVAL(StageName,&quot;Closed Won&quot;)),
-    (RecordType.Name=&quot;New Logo&quot;|| RecordType.Name=&quot;Expansion&quot;),
-    X3_Months_Promo_calc2__c=1
-  
-   
-)
+        ISCHANGED(StageName),
+        (ISPICKVAL(StageName,&quot;Verbal Commit&quot;)|| ISPICKVAL(StageName,&quot;Closed
+        Won&quot;)),
+        (RecordType.Name=&quot;New Logo&quot;|| RecordType.Name=&quot;Expansion&quot;),
+        X3_Months_Promo_calc2__c=1
 
 
+        )
 
 
-/* If the Product&apos;s Opp is updated to Closed Won or Verbal Commit and is an New Logo or Expansion, The products needs to have the &quot;3 Months Free&quot; field input if it starts with &quot;Tier&quot; in the name. This is shown in the 3 Months Free Promo2 rollup with a 2. */</errorConditionFormula>
-    <errorMessage>Please ensure 3 Months Free is populated on all Opportunity Products whose product names start with &quot;Tier&quot;.</errorMessage>
+        /* If the Product&apos;s Opp is updated to Closed Won or Verbal Commit and is an Initial
+        Opportunity or Expansion, The products needs to have the &quot;3 Months Free&quot; field
+        input if it starts with &quot;Tier&quot; in the name. This is shown in the 3 Months Free
+        Promo2 rollup with a 2. */</errorConditionFormula>
+    <errorMessage>Please ensure 3 Months Free is populated on all Opportunity Products whose product
+        names start with &quot;Tier&quot;.</errorMessage>
 </ValidationRule>

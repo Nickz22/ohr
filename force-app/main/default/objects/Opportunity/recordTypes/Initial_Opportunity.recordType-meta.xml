@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Initial_Opportunity</fullName>
     <active>true</active>
-    <businessProcess>Initial opportunity</businessProcess>
+    <businessProcess>New Logo</businessProcess>
     <compactLayoutAssignment>Opportunity_Compact_Layout</compactLayoutAssignment>
     <description>For the first opportunity with a prospect</description>
     <label>New Logo</label>

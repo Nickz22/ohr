@@ -2,25 +2,27 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Purchasing_Criteria_Required</fullName>
     <active>true</active>
-    <description>At least one of the 3 Purchasing Criteria fields are required when closing an opp (won or lost)</description>
+    <description>At least one of the 3 Purchasing Criteria fields are required when closing an opp
+        (won or lost)</description>
     <errorConditionFormula>ISCHANGED(StageName)
-&amp;&amp;
-IsClosed
-&amp;&amp;
-AND(
-    ISPICKVAL(Purchasing_Criteria_1__c,&quot;&quot;),
-    ISPICKVAL(Purchasing_Criteria_2__c,&quot;&quot;),
-    ISPICKVAL(Purchasing_Criteria_3__c,&quot;&quot;),
-    ISPICKVAL(Purchasing_Criteria_Details_1__c,&quot;&quot;),
-    ISPICKVAL(Purchasing_Criteria_Details_2__c,&quot;&quot;),
-    ISPICKVAL(Purchasing_Criteria_Details_3__c,&quot;&quot;),
-    NOT(RecordType.DeveloperName = &quot;Expansion_Upsell&quot;),
-    NOT(RecordType.DeveloperName = &quot;Partner&quot;),
-    NOT(RecordType.DeveloperName = &quot;Organic_Growth&quot;),
-    NOT(RecordType.DeveloperName = &quot;Renewal&quot;),
-    NOT(RecordType.DeveloperName = &quot;Expansion_Upsell&quot;),
-    NOT(RecordType.DeveloperName = &quot;Churn_Contraction_Risk&quot;)
-)</errorConditionFormula>
+        &amp;&amp;
+        IsClosed
+        &amp;&amp;
+        AND(
+        ISPICKVAL(Purchasing_Criteria_1__c,&quot;&quot;),
+        ISPICKVAL(Purchasing_Criteria_2__c,&quot;&quot;),
+        ISPICKVAL(Purchasing_Criteria_3__c,&quot;&quot;),
+        ISPICKVAL(Purchasing_Criteria_Details_1__c,&quot;&quot;),
+        ISPICKVAL(Purchasing_Criteria_Details_2__c,&quot;&quot;),
+        ISPICKVAL(Purchasing_Criteria_Details_3__c,&quot;&quot;),
+        NOT(RecordType.DeveloperName = &quot;Expansion_Upsell&quot;),
+        NOT(RecordType.DeveloperName = &quot;Partner&quot;),
+        NOT(RecordType.DeveloperName = &quot;Organic_Growth&quot;),
+        NOT(RecordType.DeveloperName = &quot;Renewal&quot;),
+        NOT(RecordType.DeveloperName = &quot;Expansion_Upsell&quot;),
+        NOT(RecordType.DeveloperName = &quot;Churn_Contraction_Risk&quot;)
+        )</errorConditionFormula>
     <errorDisplayField>Purchasing_Criteria_1__c</errorDisplayField>
-    <errorMessage>Please fill in at least one of the three Purchasing Criteria fields and its corresponding Purchasing Criteria Details field.</errorMessage>
+    <errorMessage>Please fill in at least one of the three Purchasing Criteria fields and its
+        corresponding Purchasing Criteria Details field.</errorMessage>
 </ValidationRule>

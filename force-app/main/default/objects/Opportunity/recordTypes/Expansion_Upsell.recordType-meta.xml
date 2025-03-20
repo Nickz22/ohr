@@ -4,7 +4,7 @@
     <active>true</active>
     <businessProcess>Expansion%2FUpsell</businessProcess>
     <compactLayoutAssignment>Opportunity_Compact_Layout</compactLayoutAssignment>
-    <label>Expansion</label>
+    <label>Expansion/Upsell</label>
     <picklistValues>
         <picklist>Churn_Contraction_Risk_Destination__c</picklist>
         <values>

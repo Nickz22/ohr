@@ -56,7 +56,7 @@ return validationMap;
    public static void handleBeforeUpdate(List<Opportunity> newList, Map<Id, Opportunity> oldmap) {
         List<productSpecialistAlert__e> eventList = new List<productSpecialistAlert__e>();
        
-       id initialRecordTypeId=Schema.getGlobalDescribe().get('Opportunity').getDescribe().getRecordTypeInfosByName().get('Initial Opportunity').getRecordTypeId();
+       id initialRecordTypeId=Schema.getGlobalDescribe().get('Opportunity').getDescribe().getRecordTypeInfosByName().get('New Logo').getRecordTypeId();
         
 
         for (Opportunity opp : newList) {
