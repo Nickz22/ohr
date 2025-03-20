@@ -4,8 +4,8 @@
     <active>true</active>
     <errorConditionFormula>AND(
     OR(
-        RecordType.Name = &apos;Initial Opportunity&apos;,
-        RecordType.Name = &apos;Subsequent Opportunity&apos;
+        RecordType.Name = &apos;New Logo&apos;,
+        RecordType.Name = &apos;Expansion/Upsell&apos;
     ),
     ISCHANGED(StageName),
     OR(

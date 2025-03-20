@@ -246,7 +246,7 @@ Mar 2023: now runs if Months Since First Assisted Setup Date is 0, 1, 2, or blan
             <field>Record_Type_Atrium__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Initial Opportunity</stringValue>
+                <stringValue>New Logo</stringValue>
             </value>
         </filters>
         <filters>

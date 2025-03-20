@@ -451,7 +451,7 @@ TEXT({!Loop_Through_Open_Opps.StageName})
             <field>Record_Type_Atrium__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Initial Opportunity	</stringValue>
+                <stringValue>New Logo</stringValue>
             </value>
         </filters>
         <filters>

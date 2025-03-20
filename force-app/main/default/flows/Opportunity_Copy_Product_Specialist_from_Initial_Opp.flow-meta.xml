@@ -70,7 +70,7 @@
             <field>Record_Type_Atrium__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Initial Opportunity</stringValue>
+                <stringValue>New Logo</stringValue>
             </value>
         </filters>
         <filters>
@@ -136,7 +136,7 @@
             <field>Record_Type_Atrium__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Subsequent Opportunity</stringValue>
+                <stringValue>Expansion/Upsell</stringValue>
             </value>
         </filters>
         <object>Opportunity</object>
